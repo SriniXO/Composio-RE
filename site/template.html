@@ -77,7 +77,7 @@ const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>(
 const ver=a=>a.evidence.some(e=>e.quote_verified);
 const tiles=[['Apps',A.length],['ready_now',S.easy_wins.length],['Need outreach',S.needs_outreach.length],['Existing MCP',S.existing_mcp_exists],['Verified-evidence records',S.with_verified_evidence],['Flagged for human',S.needs_human.length]];
 $('#tiles').innerHTML=tiles.map(t=>`<div class="tile"><b>${t[1]}</b>${t[0]}</div>`).join('');
-$('#trust').innerHTML=`<b>Read with care:</b> this data was produced by small local models and is only as good as its checks. Accuracy against a hand-checked sample is in section 6; until that is filled in, treat every row as <i>unverified</i> unless its evidence quote is marked verified.`;
+$('#trust').innerHTML=`<b>Read with care:</b> this data was produced by small local models and is only as good as its checks. Section 6 shows measured accuracy: pass 2 was right on roughly two thirds of the sampled answers, so treat every count here as an estimate, not a fact.`;
 $('#nh').textContent=S.needs_human.length;
 $('#repo2').textContent=D.repo||'(pending)';
 const list=(id,arr)=>$(id).innerHTML=arr.length?arr.map(a=>`<span class="pill">${esc(a)}</span> `).join(''):'<span class="mut">none yet</span>';
@@ -101,9 +101,16 @@ const a=A.find(x=>x.id==tr.dataset.id);const h=a.evidence.map(v=>`<li><a href="$
 tr.insertAdjacentHTML('afterend',`<tr class="ev"><td colspan="10"><ul>${h}</ul><div class="mut">${esc(a.gate_detail)} ${esc(a.blocker_detail)}</div><details><summary>verification log</summary><pre>${esc(a.verification_log.join('\n'))}</pre></details></td></tr>`)};
 render();
 const ac=D.accuracy||{};
-if(ac.pass2&&ac.pass2.ALL){const f=Object.keys(ac.pass2);$('#acc').innerHTML=`<table><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th></tr>${f.map(k=>`<tr><td>${esc(k)}</td><td>${ac.pass1&&ac.pass1[k]?Math.round(ac.pass1[k].accuracy*100)+'% (n='+ac.pass1[k].n+')':'n/a'}</td><td>${Math.round(ac.pass2[k].accuracy*100)+'% (n='+ac.pass2[k].n+')'}</td></tr>`).join('')}</table>
-<h3>Wrong answers</h3><table><tr><th>App</th><th>Field</th><th>Agent said</th><th>Truth</th><th>Pass</th></tr>${(ac.wrong_answers||[]).map(w=>`<tr><td>${esc(w.app)}</td><td>${esc(w.field)}</td><td>${esc(w.agent_said)}</td><td>${esc(w.truth)}</td><td>${w.pass}</td></tr>`).join('')}</table>`}
-else $('#acc').innerHTML='<p class="warn"><b>Accuracy not yet measured.</b> It requires hand-checked verdicts on the stratified sample (<code>verification/sample.csv</code>). No accuracy figure is claimed until that exists.</p>';
+const pc=x=>x?Math.round(x.accuracy*100)+'% <span class="mut">('+Math.round(x.strict*100)+'% strict, n='+x.n+')</span>':'n/a';
+function accTable(src,label){const d=ac[src];if(!d||!d.pass2||!d.pass2.ALL)return'';const f=['auth_methods','self_serve','api_surface','existing_mcp','buildability','ALL'];
+return `<h3>${label}</h3><table><tr><th>Field</th><th>Pass 1 (baseline)</th><th>Pass 2 (verified)</th></tr>${f.map(k=>`<tr><td>${k==='ALL'?'<b>All fields</b>':k}</td><td>${pc(d.pass1&&d.pass1[k])}</td><td>${pc(d.pass2[k])}</td></tr>`).join('')}</table>`}
+let html=`<p>Sample: <b>${ac.sample_apps||28} apps</b> (seed 1512, at least 2 per category), 5 fields each. <i>Accuracy</i> counts a partial answer as half; <i>strict</i> counts only fully correct answers.</p>`;
+html+=accTable('ai_audit','Independent AI audit (Claude read the official docs; not a human)');
+html+=ac.human_rows_filled?accTable('human',`Human check (${ac.human_rows_filled} rows filled)`):`<p class="warn"><b>Human check: not yet recorded.</b> The sheet <code>verification/sample.csv</code> is waiting for a person's verdicts. The AI audit above can share the agent's blind spots, so treat it as an estimate until a human confirms it.</p>`;
+const wr=ac.ai_audit_wrong_answers||[];
+html+=`<h3>Where it was wrong (${wr.length} wrong answers; showing the audit's findings)</h3><div class="tw"><table><tr><th>App</th><th>Field</th><th>Pass</th><th>Agent said</th><th>Truth per docs</th><th>Source</th></tr>${wr.map(w=>`<tr><td>${esc(w.app)}</td><td>${esc(w.field)}</td><td>${w.pass}</td><td>${esc(w.agent_said)}</td><td>${esc(w.truth)}</td><td><a href="${esc(w.source)}" rel="noopener">link</a></td></tr>`).join('')}</table></div>`;
+html+=`<p class="mut">${ac.ai_audit_unverifiable_excluded||0} rows were excluded as unverifiable (Paygent Connect: the product could not be identified).</p>`;
+$('#acc').innerHTML=html;
 $('#defeated').textContent=S.defeated.length?S.defeated.join(', '):'none';
 </script>
 </body></html>

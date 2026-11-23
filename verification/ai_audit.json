@@ -1,0 +1,898 @@
+{
+ "4": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "OAuth 2.0 and API key (workspace access token)",
+   "https://docs.attio.com/rest-api/guides/authentication"
+  ],
+  "self_serve": [
+   "correct",
+   "correct",
+   "14-day Pro trial for new workspaces; API access on plans",
+   "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "Public REST API (type should be REST)",
+   "https://docs.attio.com/rest-api/guides/authentication"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "Official hosted MCP exists at mcp.attio.com/mcp; both passes cited wrong URLs (aggregator / community repo)",
+   "https://mcpservers.org/servers/attio-mcp"
+  ],
+  "buildability": [
+   "partial",
+   "correct",
+   "ready_now plausible: API key from workspace + REST + MCP",
+   "https://docs.attio.com/rest-api/guides/authentication"
+  ]
+ },
+ "8": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "API key and OAuth 2.0",
+   "https://developer.close.com/api/overview/api-key-authentication"
+  ],
+  "self_serve": [
+   "wrong",
+   "correct",
+   "Self-serve signup + trial; API keys in Settings > Developer; free dev org via email for partners",
+   "https://close.com/pricing"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "Public REST API with reference docs (type should be REST)",
+   "https://developer.close.com"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_now: self-serve key, public REST",
+   "https://developer.close.com/api/overview/api-key-authentication"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "Official Close MCP server exists (close.com 'Explore MCP', developer.close.com/mcp/tools)",
+   "https://developer.close.com/mcp/tools"
+  ]
+ },
+ "11": {
+  "auth_methods": [
+   "partial",
+   "correct",
+   "OAuth, API token, basic auth",
+   "https://developer.zendesk.com/api-reference/introduction/security-and-auth"
+  ],
+  "self_serve": [
+   "partial",
+   "correct",
+   "14-day free trial; sponsored account for dev partners (not free tier)",
+   "https://developer.zendesk.com/documentation/api-basics"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "Public REST API, broad (type should be REST)",
+   "https://developer.zendesk.com/api-reference/introduction/security-and-auth"
+  ],
+  "existing_mcp": [
+   "partial",
+   "wrong",
+   "Official Zendesk MCP server exists (per-tenant, OAuth); pass 2 said NOT official",
+   "https://www.usecarly.com/blog/zendesk-mcp"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_with_caveats: trial account needed",
+   "https://developer.zendesk.com/documentation/api-basics"
+  ]
+ },
+ "17": {
+  "auth_methods": [
+   "wrong",
+   "partial",
+   "GraphQL API key (Bearer plainApiKey); MCP uses OAuth",
+   "https://www.plain.com/docs/graphql/authentication"
+  ],
+  "self_serve": [
+   "wrong",
+   "wrong",
+   "7-day free trial; API keys created in workspace",
+   "https://www.plain.com/llms.txt"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "GraphQL API (pass 2 cited plainframework.com, wrong product)",
+   "https://www.plain.com/docs/graphql/authentication"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "Official MCP server exists (help.plain.com/article/mcp-server)",
+   "https://www.plain.com/docs/agents/mcp-server"
+  ],
+  "buildability": [
+   "wrong",
+   "wrong",
+   "ready_with_caveats/ready_now: trial + API key + GraphQL + MCP",
+   "https://www.plain.com/docs/graphql/authentication"
+  ]
+ },
+ "20": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "API token (created in Settings > API token), basic auth with email:token",
+   "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+  ],
+  "self_serve": [
+   "wrong",
+   "wrong",
+   "Requires an existing Gladly customer account (enterprise); no public trial found. LOW CONFIDENCE",
+   "https://developer.gladly.com/rest"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST API with sandbox",
+   "https://developer.gladly.com/rest"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "No official Gladly MCP found; third-party MCPs exist (Cotlet, Truto). Both passes said unknown",
+   "https://mcpservers.org/servers/cotlet-dev-integrations-gladly-api-mcp-server"
+  ],
+  "buildability": [
+   "correct",
+   "partial",
+   "Customer-only access suggests blocked/caveats. LOW CONFIDENCE",
+   "https://developer.gladly.com/rest"
+  ]
+ },
+ "23": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "OAuth 2.0 only (REST v3)",
+   "https://www.zoho.com/cliq/help/platform/faq.html"
+  ],
+  "self_serve": [
+   "correct",
+   "partial",
+   "Free plan + 14-day trial; developer console self-serve",
+   "https://www.zoho.com/cliq/pricing.html?src=en"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "REST API v3 (type should be REST)",
+   "https://www.zoho.com/cliq/help/platform/faq.html"
+  ],
+  "existing_mcp": [
+   "partial",
+   "correct",
+   "Official Zoho Cliq MCP server: zoho.com/cliq/mcp-server.html (pass 1 URL was generic)",
+   "https://www.zoho.com/cliq/mcp-server.html"
+  ],
+  "buildability": [
+   "correct",
+   "correct",
+   "ready_with_caveats: OAuth client registration, plan limits",
+   "https://www.zoho.com/cliq/help/restapi/v3/oauth"
+  ]
+ },
+ "26": {
+  "auth_methods": [
+   "partial",
+   "partial",
+   "Bot token, OAuth2 bearer, basic (client credentials)",
+   "https://docs.discord.com/developers/reference"
+  ],
+  "self_serve": [
+   "correct",
+   "correct",
+   "Free Developer Portal; verification needed only at scale",
+   "https://docs.discord.com/developers/reference"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST (+ Gateway websocket)",
+   "https://docs.discord.com/developers/reference"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "No official Discord MCP server; community only (SaseQ etc.)",
+   "https://www.enterpret.com/guides/the-5-best-mcp-servers-for-discord-community-feedback"
+  ],
+  "buildability": [
+   "correct",
+   "correct",
+   "ready_now: bot token self-serve",
+   "https://docs.discord.com/developers/reference"
+  ]
+ },
+ "33": {
+  "auth_methods": [
+   "partial",
+   "correct",
+   "OAuth 2.0 (3-legged; limited client-credentials)",
+   "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow"
+  ],
+  "self_serve": [
+   "wrong",
+   "wrong",
+   "Marketing API needs an approved developer application (review); not self-serve",
+   "https://www.linkedin.com/posts/outstand-so_linkedins-api-has-no-price-tag-it-still-activity-7505188637647548416-D51J"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST (Marketing APIs)",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "No official LinkedIn Ads MCP; third-party only",
+   "https://adplug.app/best-linkedin-ads-mcp-servers"
+  ],
+  "buildability": [
+   "partial",
+   "partial",
+   "Blocked behind app approval (review_process) until granted",
+   "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"
+  ]
+ },
+ "34": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "OAuth 2.0 + private integration token",
+   "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0"
+  ],
+  "self_serve": [
+   "partial",
+   "correct",
+   "14-day free trial; API access tied to paid plans",
+   "https://www.gohighlevel.com/pricing"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST API v2 (marketplace.gohighlevel.com/docs)",
+   "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "Official HighLevel MCP exists; both passes cited wrong URLs (docs site / community repo)",
+   "https://www.enrichlabs.ai/blog/gohighlevel-mcp"
+  ],
+  "buildability": [
+   "correct",
+   "partial",
+   "ready_with_caveats (trial + paid plan for API)",
+   "https://www.gohighlevel.com/pricing"
+  ]
+ },
+ "40": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "API key (Bearer)",
+   "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication"
+  ],
+  "self_serve": [
+   "partial",
+   "correct",
+   "60-day free trial (100 emails/day), then paid",
+   "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST v3",
+   "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "correct",
+   "No official SendGrid MCP; community only",
+   "https://www.usecarly.com/blog/sendgrid-mcp"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_with_caveats (trial limits)",
+   "https://www.twilio.com/en-us/products/email-api/pricing"
+  ]
+ },
+ "42": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "Consumer key/secret (basic over HTTPS; OAuth 1.0a over HTTP)",
+   "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  ],
+  "self_serve": [
+   "correct",
+   "correct",
+   "Open-source plugin; keys generated in WP admin of your own store",
+   "https://woocommerce.com/document/woocommerce-rest-api"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "REST API (type should be REST)",
+   "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "Official WooCommerce MCP docs exist (woocommerce.com/document/w7s-mcp); both URLs wrong",
+   "https://woocommerce.com/document/w7s-mcp"
+  ],
+  "buildability": [
+   "correct",
+   "partial",
+   "ready_with_caveats: per-store credentials, self-hosted base URL",
+   "https://woocommerce.com/document/woocommerce-rest-api"
+  ]
+ },
+ "45": {
+  "auth_methods": [
+   "wrong",
+   "wrong",
+   "OAuth 1.0a integration, bearer tokens (admin/customer)",
+   "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth"
+  ],
+  "self_serve": [
+   "correct",
+   "partial",
+   "Magento Open Source is free self-hosted; Adobe Commerce is paid/sales-led",
+   "https://developer.adobe.com/commerce/webapi/rest"
+  ],
+  "api_surface": [
+   "wrong",
+   "partial",
+   "REST and GraphQL",
+   "https://developer.adobe.com/commerce/webapi/rest"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "No usable official MCP yet (Adobe docs say Coming Soon); community servers only",
+   "https://www.aiondata.io/mcp-servers/magento"
+  ],
+  "buildability": [
+   "correct",
+   "partial",
+   "ready_with_caveats: per-merchant instance, sales-led edition",
+   "https://developer.adobe.com/commerce/webapi/rest"
+  ]
+ },
+ "48": {
+  "auth_methods": [
+   "correct",
+   "partial",
+   "OAuth2 app + personal access token",
+   "https://gumroad.com/help/article/280-create-application-api"
+  ],
+  "self_serve": [
+   "correct",
+   "partial",
+   "Free account; create application / access token in settings (no trial concept)",
+   "https://gumroad.com/help/article/280-create-application-api"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://gumroad.com/help/article/280-create-application-api"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "No official Gumroad MCP found; community only",
+   "https://github.com/rmarescu/gumroad-mcp"
+  ],
+  "buildability": [
+   "partial",
+   "correct",
+   "ready_now",
+   "https://gumroad.com/help/article/280-create-application-api"
+  ]
+ },
+ "49": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "Login with Amazon (OAuth 2.0)",
+   "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview"
+  ],
+  "self_serve": [
+   "wrong",
+   "wrong",
+   "Developer registration/profile with review; seller account required",
+   "https://developer-docs.amazon.com/sp-api/docs/register-as-a-public-developer"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "MCP exists; official status unclear from sources (one video claims Amazon shipped one). LOW CONFIDENCE",
+   "https://mcp.so/servers/amazonseller-mcp-server"
+  ],
+  "buildability": [
+   "correct",
+   "partial",
+   "Gated by developer registration approval (review_process). LOW CONFIDENCE",
+   "https://developer-docs.amazon.com/sp-api/docs/register-as-a-public-developer"
+  ]
+ },
+ "51": {
+  "auth_methods": [
+   "wrong",
+   "partial",
+   "HTTP Basic with API login:password (not a key)",
+   "https://docs.dataforseo.com/v3/auth"
+  ],
+  "self_serve": [
+   "wrong",
+   "correct",
+   "Free account with $1 trial credit and sandbox",
+   "https://dataforseo.com/help-center/how-to-test-google-web-scraping-for-free-with-dataforseo-sandbox"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://docs.dataforseo.com/v3/auth"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "correct",
+   "Official MCP: dataforseo.com/seo-mcp-server (mcp.dataforseo.com/mcp)",
+   "https://dataforseo.com/seo-mcp-server"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_now",
+   "https://dataforseo.com/apis/serp-api"
+  ]
+ },
+ "52": {
+  "auth_methods": [
+   "partial",
+   "correct",
+   "API key (OAuth only for the MCP server)",
+   "https://help.seranking.com/hc/en-us/articles/28449005578012"
+  ],
+  "self_serve": [
+   "partial",
+   "partial",
+   "14-day trial with 100K credits, no card; standalone API product",
+   "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API"
+  ],
+  "api_surface": [
+   "correct",
+   "correct",
+   "REST",
+   "https://seranking.com/api/se-visible/getting-started"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "correct",
+   "Official MCP (180+ tools)",
+   "https://seranking.com/mcp.html"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_now (trial credits)",
+   "https://seranking.com/api-pricing.html"
+  ]
+ },
+ "53": {
+  "auth_methods": [
+   "partial",
+   "correct",
+   "API key (APIv3 bearer key)",
+   "https://docs.ahrefs.com/en/api/reference/public/get-domain-rating-free"
+  ],
+  "self_serve": [
+   "wrong",
+   "wrong",
+   "Paid plan required for the API (Lite $129/mo+); only a few free test endpoints",
+   "https://ahrefs.com/seo-api"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST v3",
+   "https://docs.ahrefs.com"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "correct",
+   "Official remote MCP (requires paid subscription)",
+   "https://agenticskills.io/mcp/ahrefs"
+  ],
+  "buildability": [
+   "partial",
+   "wrong",
+   "ready_with_caveats at best: paid_plan blocker",
+   "https://ahrefs.com/seo-api"
+  ]
+ },
+ "65": {
+  "auth_methods": [
+   "partial",
+   "partial",
+   "API keys (publishable/secret), personal access token, OAuth apps, JWT",
+   "https://supabase.com/docs/guides/getting-started/api-keys"
+  ],
+  "self_serve": [
+   "correct",
+   "correct",
+   "Free plan, 2 projects",
+   "https://supabase.com/pricing"
+  ],
+  "api_surface": [
+   "wrong",
+   "wrong",
+   "REST (PostgREST + Management API), type should not be unclear",
+   "https://supabase.com/docs/guides/getting-started/api-keys"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "Official MCP exists (supabase.com/blog/mcp-server); URLs cited were wrong",
+   "https://supabase.com/blog/mcp-server"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_now",
+   "https://supabase.com/pricing"
+  ]
+ },
+ "69": {
+  "auth_methods": [
+   "correct",
+   "partial",
+   "API key + application key; OAuth 2.0 for apps",
+   "https://www.datadoghq.com/blog/datadog-api-authentication"
+  ],
+  "self_serve": [
+   "partial",
+   "correct",
+   "14-day free trial",
+   "https://www.datadoghq.com/blog/datadog-api-authentication"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints"
+  ],
+  "existing_mcp": [
+   "partial",
+   "correct",
+   "Official managed MCP: docs.datadoghq.com/mcp_server",
+   "https://docs.datadoghq.com/mcp_server"
+  ],
+  "buildability": [
+   "correct",
+   "partial",
+   "ready_with_caveats (trial)",
+   "https://www.datadoghq.com/pricing"
+  ]
+ },
+ "73": {
+  "auth_methods": [
+   "correct",
+   "correct",
+   "OAuth 2.0 + personal API key",
+   "https://linear.app/developers/graphql"
+  ],
+  "self_serve": [
+   "correct",
+   "partial",
+   "Free plan includes API (not a trial)",
+   "https://www.linear.app/pricing"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "GraphQL",
+   "https://linear.app/developers/graphql"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "wrong",
+   "Official remote Linear MCP exists; pass 2 said not official",
+   "https://coworker.ai/blog/linear-mcp"
+  ],
+  "buildability": [
+   "wrong",
+   "partial",
+   "ready_now",
+   "https://linear.app/developers/graphql"
+  ]
+ },
+ "76": {
+  "auth_methods": [
+   "wrong",
+   "partial",
+   "Personal API token + OAuth 2.0 for apps",
+   "https://developer.monday.com/api-reference/docs/getting-started"
+  ],
+  "self_serve": [
+   "correct",
+   "partial",
+   "Free plan with full API access; free developer account",
+   "https://monday.com/agents-signup"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "GraphQL",
+   "https://developer.monday.com/api-reference/docs/getting-started"
+  ],
+  "existing_mcp": [
+   "partial",
+   "correct",
+   "Official mondaycom/mcp + hosted MCP",
+   "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp"
+  ],
+  "buildability": [
+   "wrong",
+   "partial",
+   "ready_now",
+   "https://developer.monday.com/api-reference/docs/developer-sandbox"
+  ]
+ },
+ "79": {
+  "auth_methods": [
+   "correct",
+   "partial",
+   "Access token (API key, Bearer) + OAuth 2.0",
+   "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+  ],
+  "self_serve": [
+   "partial",
+   "correct",
+   "Free plan closed to new signups Aug 2024; trial + developer account",
+   "https://help.smartsheet.com/articles/2482687-free-plan"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "Official MCP exists (developers.smartsheet.com/ai-mcp); both cited wrong URLs",
+   "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+  ],
+  "buildability": [
+   "wrong",
+   "partial",
+   "ready_with_caveats (trial)",
+   "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs"
+  ]
+ },
+ "81": {
+  "auth_methods": [
+   "partial",
+   "correct",
+   "Secret/restricted API keys (Bearer or Basic) + OAuth 2.0 for Connect/Apps",
+   "https://docs.stripe.com/stripe-apps/api-authentication"
+  ],
+  "self_serve": [
+   "correct",
+   "correct",
+   "Free signup; instant test-mode keys",
+   "https://docs.stripe.com/stripe-apps/api-authentication"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://docs.stripe.com/stripe-apps/api-authentication"
+  ],
+  "existing_mcp": [
+   "partial",
+   "correct",
+   "Official hosted MCP: mcp.stripe.com",
+   "https://www.scalekit.com/blog/stripe-mcp-vs-api"
+  ],
+  "buildability": [
+   "correct",
+   "correct",
+   "ready_now",
+   "https://docs.stripe.com/stripe-apps/api-authentication"
+  ]
+ },
+ "84": {
+  "auth_methods": [
+   "unverifiable",
+   "unverifiable",
+   "Product identity ambiguous: hint says 'NMI-powered'; searches return NMI gateway, an unrelated 'Paygent' AI-wallet, and pass 2 used payaconnect.com (Paya Connect, possibly a different product). DEFEATED - needs human to confirm which product was meant",
+   "https://docs.nmi.com"
+  ],
+  "self_serve": [
+   "unverifiable",
+   "unverifiable",
+   "Product identity ambiguous: hint says 'NMI-powered'; searches return NMI gateway, an unrelated 'Paygent' AI-wallet, and pass 2 used payaconnect.com (Paya Connect, possibly a different product). DEFEATED - needs human to confirm which product was meant",
+   "https://docs.nmi.com"
+  ],
+  "api_surface": [
+   "unverifiable",
+   "unverifiable",
+   "Product identity ambiguous: hint says 'NMI-powered'; searches return NMI gateway, an unrelated 'Paygent' AI-wallet, and pass 2 used payaconnect.com (Paya Connect, possibly a different product). DEFEATED - needs human to confirm which product was meant",
+   "https://docs.nmi.com"
+  ],
+  "existing_mcp": [
+   "unverifiable",
+   "unverifiable",
+   "Product identity ambiguous: hint says 'NMI-powered'; searches return NMI gateway, an unrelated 'Paygent' AI-wallet, and pass 2 used payaconnect.com (Paya Connect, possibly a different product). DEFEATED - needs human to confirm which product was meant",
+   "https://docs.nmi.com"
+  ],
+  "buildability": [
+   "unverifiable",
+   "unverifiable",
+   "Product identity ambiguous: hint says 'NMI-powered'; searches return NMI gateway, an unrelated 'Paygent' AI-wallet, and pass 2 used payaconnect.com (Paya Connect, possibly a different product). DEFEATED - needs human to confirm which product was meant",
+   "https://docs.nmi.com"
+  ]
+ },
+ "87": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "OAuth 2.0 only; no API key",
+   "https://developer.xero.com/faq/getting-started#api-keys"
+  ],
+  "self_serve": [
+   "correct",
+   "correct",
+   "Free Xero account + demo company; register app for client id/secret",
+   "https://developer.xero.com/documentation/development-accounts"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST",
+   "https://developer.xero.com/documentation/development-accounts"
+  ],
+  "existing_mcp": [
+   "partial",
+   "partial",
+   "Official xeroapi/xero-mcp-server + hosted connector; both cited wrong URLs",
+   "https://github.com/xeroapi/xero-mcp-server"
+  ],
+  "buildability": [
+   "partial",
+   "correct",
+   "ready_now",
+   "https://developer.xero.com/documentation/development-accounts"
+  ]
+ },
+ "93": {
+  "auth_methods": [
+   "wrong",
+   "partial",
+   "API key (Bearer) + OAuth for apps",
+   "https://developers.fathom.ai/faq"
+  ],
+  "self_serve": [
+   "wrong",
+   "correct",
+   "API access (keys, webhooks) included on all plans incl. free",
+   "https://developers.fathom.ai/faq"
+  ],
+  "api_surface": [
+   "wrong",
+   "correct",
+   "REST (OpenAPI available)",
+   "https://developers.fathom.ai/sdks/authentication"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "correct",
+   "Official MCP (developers.fathom.ai/mcp-docs)",
+   "https://www.lunar.dev/mcp-server-directory/fathom"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_now",
+   "https://developers.fathom.ai/faq"
+  ]
+ },
+ "98": {
+  "auth_methods": [
+   "correct",
+   "wrong",
+   "No auth: local npm CLI (mermaid-cli). Pass 2 used data-mermaid.org, a different project",
+   "https://github.com/mermaid-js/mermaid-cli"
+  ],
+  "self_serve": [
+   "correct",
+   "wrong",
+   "Open source, install via npm; no credentials",
+   "https://github.com/mermaid-js/mermaid-cli"
+  ],
+  "api_surface": [
+   "partial",
+   "wrong",
+   "No hosted API; CLI + Node.js API only (type should be none/SDK-only). Pass 2 cited an unrelated REST API",
+   "https://github.com/mermaid-js/mermaid-cli"
+  ],
+  "existing_mcp": [
+   "partial",
+   "correct",
+   "No official mermaid-cli MCP; community wrappers only (Mermaid Chart has its own MCP, a different product)",
+   "https://github.com/andrewginns/mermaid-mcp-server"
+  ],
+  "buildability": [
+   "wrong",
+   "partial",
+   "ready_with_caveats as a CLI wrapper; pass 2 right label, wrong reasons",
+   "https://github.com/mermaid-js/mermaid-cli"
+  ]
+ },
+ "100": {
+  "auth_methods": [
+   "wrong",
+   "correct",
+   "OAuth 2.0 (PKCE) + personal access token (Bearer)",
+   "https://developers.grain.com/authentication.html"
+  ],
+  "self_serve": [
+   "partial",
+   "correct",
+   "Free plan + 14-day Business trial (API plan availability not confirmed). LOW CONFIDENCE",
+   "https://support.grain.com/en/articles/9253220-plans"
+  ],
+  "api_surface": [
+   "correct",
+   "correct",
+   "REST (versioned Public API)",
+   "https://developers.grain.com"
+  ],
+  "existing_mcp": [
+   "wrong",
+   "correct",
+   "Official Grain MCP (developers.grain.com/mcp)",
+   "https://developers.grain.com/mcp"
+  ],
+  "buildability": [
+   "wrong",
+   "correct",
+   "ready_now",
+   "https://developers.grain.com"
+  ]
+ }
+}

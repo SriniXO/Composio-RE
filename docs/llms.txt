@@ -1,0 +1,12 @@
+# Agent-toolkit buildability research: 100 apps
+
+Source: https://srinixo.github.io/Composio-RE/  Repo: https://github.com/SriniXO/Composio-RE
+Data: apps.json, apps.csv. Every field has evidence[] with url + quote; quote_verified=true means the quote was found verbatim in the fetched page.
+
+## Headline patterns
+- oauth2 is the most common auth method (52 of 100 apps list it).
+- 31 apps are self-serve today; 55 via trial; 0 are gated; 14 are unclear.
+- Most common blocker among non-ready apps: partner approval (29 apps).
+- 60 apps are ready_now (easy wins); 33 need outreach.
+- Existing MCP found for 81 apps; 10 unverified.
+- Only 75 of 100 records have at least one machine-verified evidence quote; 53 are flagged for a human.

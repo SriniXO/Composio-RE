@@ -1,0 +1,869 @@
+{
+ "ai_audit": {
+  "pass1": {
+   "auth_methods": {
+    "accuracy": 0.315,
+    "strict": 0.185,
+    "n": 27
+   },
+   "ALL": {
+    "accuracy": 0.333,
+    "strict": 0.207,
+    "n": 135
+   },
+   "self_serve": {
+    "accuracy": 0.574,
+    "strict": 0.444,
+    "n": 27
+   },
+   "api_surface": {
+    "accuracy": 0.093,
+    "strict": 0.074,
+    "n": 27
+   },
+   "existing_mcp": {
+    "accuracy": 0.259,
+    "strict": 0.0,
+    "n": 27
+   },
+   "buildability": {
+    "accuracy": 0.426,
+    "strict": 0.333,
+    "n": 27
+   }
+  },
+  "pass2": {
+   "auth_methods": {
+    "accuracy": 0.759,
+    "strict": 0.593,
+    "n": 27
+   },
+   "ALL": {
+    "accuracy": 0.678,
+    "strict": 0.548,
+    "n": 135
+   },
+   "self_serve": {
+    "accuracy": 0.667,
+    "strict": 0.556,
+    "n": 27
+   },
+   "api_surface": {
+    "accuracy": 0.685,
+    "strict": 0.667,
+    "n": 27
+   },
+   "existing_mcp": {
+    "accuracy": 0.556,
+    "strict": 0.407,
+    "n": 27
+   },
+   "buildability": {
+    "accuracy": 0.722,
+    "strict": 0.519,
+    "n": 27
+   }
+  }
+ },
+ "ai_audit_unverifiable_excluded": 10,
+ "ai_audit_wrong_answers": [
+  {
+   "pass": "pass1",
+   "app": "Attio",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "OAuth 2.0 and API key (workspace access token)",
+   "source": "https://docs.attio.com/rest-api/guides/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Attio",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://docs.attio.com/rest-api/guides/authenticat",
+   "truth": "Public REST API (type should be REST)",
+   "source": "https://docs.attio.com/rest-api/guides/authentication"
+  },
+  {
+   "pass": "pass2",
+   "app": "Attio",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://attio.com/platform/developers\", \"rate_limi",
+   "truth": "Public REST API (type should be REST)",
+   "source": "https://docs.attio.com/rest-api/guides/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Close",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "API key and OAuth 2.0",
+   "source": "https://developer.close.com/api/overview/api-key-authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Close",
+   "field": "self_serve",
+   "agent_said": "unclear",
+   "truth": "Self-serve signup + trial; API keys in Settings > Developer; free dev org via email for partners",
+   "source": "https://close.com/pricing"
+  },
+  {
+   "pass": "pass1",
+   "app": "Close",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://close.com/api/docs/\", \"rate_limits\": \"Uncl",
+   "truth": "Public REST API with reference docs (type should be REST)",
+   "source": "https://developer.close.com"
+  },
+  {
+   "pass": "pass2",
+   "app": "Close",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": null, \"rate_limits\": \"Not specified in the provided",
+   "truth": "Public REST API with reference docs (type should be REST)",
+   "source": "https://developer.close.com"
+  },
+  {
+   "pass": "pass1",
+   "app": "Close",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": \"null\"}",
+   "truth": "Official Close MCP server exists (close.com 'Explore MCP', developer.close.com/mcp/tools)",
+   "source": "https://developer.close.com/mcp/tools"
+  },
+  {
+   "pass": "pass2",
+   "app": "Close",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": false, \"official\": null, \"url\": null}",
+   "truth": "Official Close MCP server exists (close.com 'Explore MCP', developer.close.com/mcp/tools)",
+   "source": "https://developer.close.com/mcp/tools"
+  },
+  {
+   "pass": "pass1",
+   "app": "Close",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now: self-serve key, public REST",
+   "source": "https://developer.close.com/api/overview/api-key-authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Zendesk",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://developer.zendesk.com/documentation/api-refer",
+   "truth": "Public REST API, broad (type should be REST)",
+   "source": "https://developer.zendesk.com/api-reference/introduction/security-and-auth"
+  },
+  {
+   "pass": "pass2",
+   "app": "Zendesk",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://developer.zendesk.com/api-reference/ticket",
+   "truth": "Public REST API, broad (type should be REST)",
+   "source": "https://developer.zendesk.com/api-reference/introduction/security-and-auth"
+  },
+  {
+   "pass": "pass2",
+   "app": "Zendesk",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": false, \"url\": \"https://github.com/fruggr/zendesk-mcp-server/issues/72\"}",
+   "truth": "Official Zendesk MCP server exists (per-tenant, OAuth); pass 2 said NOT official",
+   "source": "https://www.usecarly.com/blog/zendesk-mcp"
+  },
+  {
+   "pass": "pass1",
+   "app": "Zendesk",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_with_caveats: trial account needed",
+   "source": "https://developer.zendesk.com/documentation/api-basics"
+  },
+  {
+   "pass": "pass1",
+   "app": "Plain",
+   "field": "auth_methods",
+   "agent_said": "[]",
+   "truth": "GraphQL API key (Bearer plainApiKey); MCP uses OAuth",
+   "source": "https://www.plain.com/docs/graphql/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Plain",
+   "field": "self_serve",
+   "agent_said": "unclear",
+   "truth": "7-day free trial; API keys created in workspace",
+   "source": "https://www.plain.com/llms.txt"
+  },
+  {
+   "pass": "pass2",
+   "app": "Plain",
+   "field": "self_serve",
+   "agent_said": "unclear",
+   "truth": "7-day free trial; API keys created in workspace",
+   "source": "https://www.plain.com/llms.txt"
+  },
+  {
+   "pass": "pass1",
+   "app": "Plain",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"unclear\", \"rate_limits\": \"unclear\"}",
+   "truth": "GraphQL API (pass 2 cited plainframework.com, wrong product)",
+   "source": "https://www.plain.com/docs/graphql/authentication"
+  },
+  {
+   "pass": "pass2",
+   "app": "Plain",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://plainframework.com/docs/plain-api/plain/ap",
+   "truth": "GraphQL API (pass 2 cited plainframework.com, wrong product)",
+   "source": "https://www.plain.com/docs/graphql/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Plain",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": \"unclear\"}",
+   "truth": "Official MCP server exists (help.plain.com/article/mcp-server)",
+   "source": "https://www.plain.com/docs/agents/mcp-server"
+  },
+  {
+   "pass": "pass2",
+   "app": "Plain",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": false, \"official\": false, \"url\": null}",
+   "truth": "Official MCP server exists (help.plain.com/article/mcp-server)",
+   "source": "https://www.plain.com/docs/agents/mcp-server"
+  },
+  {
+   "pass": "pass1",
+   "app": "Plain",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_with_caveats/ready_now: trial + API key + GraphQL + MCP",
+   "source": "https://www.plain.com/docs/graphql/authentication"
+  },
+  {
+   "pass": "pass2",
+   "app": "Plain",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_with_caveats/ready_now: trial + API key + GraphQL + MCP",
+   "source": "https://www.plain.com/docs/graphql/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Gladly",
+   "field": "auth_methods",
+   "agent_said": "[]",
+   "truth": "API token (created in Settings > API token), basic auth with email:token",
+   "source": "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+  },
+  {
+   "pass": "pass1",
+   "app": "Gladly",
+   "field": "self_serve",
+   "agent_said": "unclear",
+   "truth": "Requires an existing Gladly customer account (enterprise); no public trial found. LOW CONFIDENCE",
+   "source": "https://developer.gladly.com/rest"
+  },
+  {
+   "pass": "pass2",
+   "app": "Gladly",
+   "field": "self_serve",
+   "agent_said": "trial",
+   "truth": "Requires an existing Gladly customer account (enterprise); no public trial found. LOW CONFIDENCE",
+   "source": "https://developer.gladly.com/rest"
+  },
+  {
+   "pass": "pass1",
+   "app": "Gladly",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"unclear\", \"rate_limits\": \"unclear\"}",
+   "truth": "REST API with sandbox",
+   "source": "https://developer.gladly.com/rest"
+  },
+  {
+   "pass": "pass1",
+   "app": "Zoho Cliq",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "OAuth 2.0 only (REST v3)",
+   "source": "https://www.zoho.com/cliq/help/platform/faq.html"
+  },
+  {
+   "pass": "pass1",
+   "app": "Zoho Cliq",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"medium\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://cliq.zoho.com/api/v2/\", \"rate_limits\": \"50 req",
+   "truth": "REST API v3 (type should be REST)",
+   "source": "https://www.zoho.com/cliq/help/platform/faq.html"
+  },
+  {
+   "pass": "pass2",
+   "app": "Zoho Cliq",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://www.zoho.com/cliq/help/restapi/v3/openapi\"",
+   "truth": "REST API v3 (type should be REST)",
+   "source": "https://www.zoho.com/cliq/help/platform/faq.html"
+  },
+  {
+   "pass": "pass1",
+   "app": "Discord",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://discord.com/api/docs\", \"rate_limits\": \"varies",
+   "truth": "REST (+ Gateway websocket)",
+   "source": "https://docs.discord.com/developers/reference"
+  },
+  {
+   "pass": "pass1",
+   "app": "Discord",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://discord.com/api\"}",
+   "truth": "No official Discord MCP server; community only (SaseQ etc.)",
+   "source": "https://www.enterpret.com/guides/the-5-best-mcp-servers-for-discord-community-feedback"
+  },
+  {
+   "pass": "pass2",
+   "app": "Discord",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://github.com/SaseQ/discord-mcp\"}",
+   "truth": "No official Discord MCP server; community only (SaseQ etc.)",
+   "source": "https://www.enterpret.com/guides/the-5-best-mcp-servers-for-discord-community-feedback"
+  },
+  {
+   "pass": "pass1",
+   "app": "LinkedIn Ads",
+   "field": "self_serve",
+   "agent_said": "yes",
+   "truth": "Marketing API needs an approved developer application (review); not self-serve",
+   "source": "https://www.linkedin.com/posts/outstand-so_linkedins-api-has-no-price-tag-it-still-activity-7505188637647548416-D51J"
+  },
+  {
+   "pass": "pass2",
+   "app": "LinkedIn Ads",
+   "field": "self_serve",
+   "agent_said": "trial",
+   "truth": "Marketing API needs an approved developer application (review); not self-serve",
+   "source": "https://www.linkedin.com/posts/outstand-so_linkedins-api-has-no-price-tag-it-still-activity-7505188637647548416-D51J"
+  },
+  {
+   "pass": "pass1",
+   "app": "LinkedIn Ads",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://docs.microsoft.com/en-us/linkedin/marketin",
+   "truth": "REST (Marketing APIs)",
+   "source": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started"
+  },
+  {
+   "pass": "pass1",
+   "app": "LinkedIn Ads",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://developer.linkedin.com/\"}",
+   "truth": "No official LinkedIn Ads MCP; third-party only",
+   "source": "https://adplug.app/best-linkedin-ads-mcp-servers"
+  },
+  {
+   "pass": "pass2",
+   "app": "LinkedIn Ads",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://github.com/danielpopamd/linkedin-ads-mcp\"}",
+   "truth": "No official LinkedIn Ads MCP; third-party only",
+   "source": "https://adplug.app/best-linkedin-ads-mcp-servers"
+  },
+  {
+   "pass": "pass1",
+   "app": "GoHighLevel",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "OAuth 2.0 + private integration token",
+   "source": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0"
+  },
+  {
+   "pass": "pass1",
+   "app": "GoHighLevel",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://highlevel.stoplight.io/openapi\", \"rate_limits",
+   "truth": "REST API v2 (marketplace.gohighlevel.com/docs)",
+   "source": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0"
+  },
+  {
+   "pass": "pass1",
+   "app": "SendGrid",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "API key (Bearer)",
+   "source": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "SendGrid",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://api.sendgrid.com/docs/\", \"rate_limits\": \"R",
+   "truth": "REST v3",
+   "source": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "SendGrid",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://docs.sendgrid.com/\"}",
+   "truth": "No official SendGrid MCP; community only",
+   "source": "https://www.usecarly.com/blog/sendgrid-mcp"
+  },
+  {
+   "pass": "pass1",
+   "app": "SendGrid",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_with_caveats (trial limits)",
+   "source": "https://www.twilio.com/en-us/products/email-api/pricing"
+  },
+  {
+   "pass": "pass1",
+   "app": "WooCommerce",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "Consumer key/secret (basic over HTTPS; OAuth 1.0a over HTTP)",
+   "source": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "WooCommerce",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://woocommerce.github.io/rest-api/\", \"rate_li",
+   "truth": "REST API (type should be REST)",
+   "source": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  },
+  {
+   "pass": "pass2",
+   "app": "WooCommerce",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://woocommerce.github.io/woocommerce-rest-api",
+   "truth": "REST API (type should be REST)",
+   "source": "https://developer.woocommerce.com/docs/apis/rest-api/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Magento (Adobe Commerce)",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "OAuth 1.0a integration, bearer tokens (admin/customer)",
+   "source": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth"
+  },
+  {
+   "pass": "pass2",
+   "app": "Magento (Adobe Commerce)",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "OAuth 1.0a integration, bearer tokens (admin/customer)",
+   "source": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth"
+  },
+  {
+   "pass": "pass1",
+   "app": "Magento (Adobe Commerce)",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://developer.adobe.com/commerce/api-apis/\", \"",
+   "truth": "REST and GraphQL",
+   "source": "https://developer.adobe.com/commerce/webapi/rest"
+  },
+  {
+   "pass": "pass1",
+   "app": "Magento (Adobe Commerce)",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://developer.adobe.com/commerce/mcp/\"}",
+   "truth": "No usable official MCP yet (Adobe docs say Coming Soon); community servers only",
+   "source": "https://www.aiondata.io/mcp-servers/magento"
+  },
+  {
+   "pass": "pass2",
+   "app": "Magento (Adobe Commerce)",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://github.com/magendooro/magemcp\"}",
+   "truth": "No usable official MCP yet (Adobe docs say Coming Soon); community servers only",
+   "source": "https://www.aiondata.io/mcp-servers/magento"
+  },
+  {
+   "pass": "pass1",
+   "app": "Gumroad",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://api.gumroad.com/v2/\", \"rate_limits\": \"10 requ",
+   "truth": "REST",
+   "source": "https://gumroad.com/help/article/280-create-application-api"
+  },
+  {
+   "pass": "pass1",
+   "app": "Gumroad",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://gumroad.com/api\"}",
+   "truth": "No official Gumroad MCP found; community only",
+   "source": "https://github.com/rmarescu/gumroad-mcp"
+  },
+  {
+   "pass": "pass2",
+   "app": "Gumroad",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": true, \"url\": \"https://github.com/rmarescu/gumroad-mcp\"}",
+   "truth": "No official Gumroad MCP found; community only",
+   "source": "https://github.com/rmarescu/gumroad-mcp"
+  },
+  {
+   "pass": "pass1",
+   "app": "Amazon Selling Partner",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "Login with Amazon (OAuth 2.0)",
+   "source": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview"
+  },
+  {
+   "pass": "pass1",
+   "app": "Amazon Selling Partner",
+   "field": "self_serve",
+   "agent_said": "yes",
+   "truth": "Developer registration/profile with review; seller account required",
+   "source": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-public-developer"
+  },
+  {
+   "pass": "pass2",
+   "app": "Amazon Selling Partner",
+   "field": "self_serve",
+   "agent_said": "trial",
+   "truth": "Developer registration/profile with review; seller account required",
+   "source": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-public-developer"
+  },
+  {
+   "pass": "pass1",
+   "app": "Amazon Selling Partner",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://docs.aws.amazon.com/sp-api/latest/APIRefer",
+   "truth": "REST",
+   "source": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api"
+  },
+  {
+   "pass": "pass1",
+   "app": "DataForSEO",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "HTTP Basic with API login:password (not a key)",
+   "source": "https://docs.dataforseo.com/v3/auth"
+  },
+  {
+   "pass": "pass1",
+   "app": "DataForSEO",
+   "field": "self_serve",
+   "agent_said": "unclear",
+   "truth": "Free account with $1 trial credit and sandbox",
+   "source": "https://dataforseo.com/help-center/how-to-test-google-web-scraping-for-free-with-dataforseo-sandbox"
+  },
+  {
+   "pass": "pass1",
+   "app": "DataForSEO",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"unclear\", \"rate_limits\": \"unclear\"}",
+   "truth": "REST",
+   "source": "https://docs.dataforseo.com/v3/auth"
+  },
+  {
+   "pass": "pass1",
+   "app": "DataForSEO",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": \"null\"}",
+   "truth": "Official MCP: dataforseo.com/seo-mcp-server (mcp.dataforseo.com/mcp)",
+   "source": "https://dataforseo.com/seo-mcp-server"
+  },
+  {
+   "pass": "pass1",
+   "app": "DataForSEO",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now",
+   "source": "https://dataforseo.com/apis/serp-api"
+  },
+  {
+   "pass": "pass1",
+   "app": "SE Ranking",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": null}",
+   "truth": "Official MCP (180+ tools)",
+   "source": "https://seranking.com/mcp.html"
+  },
+  {
+   "pass": "pass1",
+   "app": "SE Ranking",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now (trial credits)",
+   "source": "https://seranking.com/api-pricing.html"
+  },
+  {
+   "pass": "pass1",
+   "app": "Ahrefs",
+   "field": "self_serve",
+   "agent_said": "yes",
+   "truth": "Paid plan required for the API (Lite $129/mo+); only a few free test endpoints",
+   "source": "https://ahrefs.com/seo-api"
+  },
+  {
+   "pass": "pass2",
+   "app": "Ahrefs",
+   "field": "self_serve",
+   "agent_said": "trial",
+   "truth": "Paid plan required for the API (Lite $129/mo+); only a few free test endpoints",
+   "source": "https://ahrefs.com/seo-api"
+  },
+  {
+   "pass": "pass1",
+   "app": "Ahrefs",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://ahrefs.com/api/docs\", \"rate_limits\": \"unclear",
+   "truth": "REST v3",
+   "source": "https://docs.ahrefs.com"
+  },
+  {
+   "pass": "pass1",
+   "app": "Ahrefs",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": \"unclear\"}",
+   "truth": "Official remote MCP (requires paid subscription)",
+   "source": "https://agenticskills.io/mcp/ahrefs"
+  },
+  {
+   "pass": "pass2",
+   "app": "Ahrefs",
+   "field": "buildability",
+   "agent_said": "ready_now",
+   "truth": "ready_with_caveats at best: paid_plan blocker",
+   "source": "https://ahrefs.com/seo-api"
+  },
+  {
+   "pass": "pass1",
+   "app": "Supabase",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://supabase.io/docs/api\", \"rate_limits\": \"Yes",
+   "truth": "REST (PostgREST + Management API), type should not be unclear",
+   "source": "https://supabase.com/docs/guides/getting-started/api-keys"
+  },
+  {
+   "pass": "pass2",
+   "app": "Supabase",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": null, \"rate_limits\": \"unverified\"}",
+   "truth": "REST (PostgREST + Management API), type should not be unclear",
+   "source": "https://supabase.com/docs/guides/getting-started/api-keys"
+  },
+  {
+   "pass": "pass1",
+   "app": "Supabase",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now",
+   "source": "https://supabase.com/pricing"
+  },
+  {
+   "pass": "pass1",
+   "app": "Datadog",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://docs.datadoghq.com/api/v2/\", \"rate_limits\"",
+   "truth": "REST",
+   "source": "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints"
+  },
+  {
+   "pass": "pass1",
+   "app": "Linear",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": null, \"rate_limits\": \"unclear\"}",
+   "truth": "GraphQL",
+   "source": "https://linear.app/developers/graphql"
+  },
+  {
+   "pass": "pass1",
+   "app": "Linear",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": null}",
+   "truth": "Official remote Linear MCP exists; pass 2 said not official",
+   "source": "https://coworker.ai/blog/linear-mcp"
+  },
+  {
+   "pass": "pass2",
+   "app": "Linear",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": true, \"official\": false, \"url\": \"https://github.com/tiovikram/linear-mcp\"}",
+   "truth": "Official remote Linear MCP exists; pass 2 said not official",
+   "source": "https://coworker.ai/blog/linear-mcp"
+  },
+  {
+   "pass": "pass1",
+   "app": "Linear",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now",
+   "source": "https://linear.app/developers/graphql"
+  },
+  {
+   "pass": "pass1",
+   "app": "Monday.com",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "Personal API token + OAuth 2.0 for apps",
+   "source": "https://developer.monday.com/api-reference/docs/getting-started"
+  },
+  {
+   "pass": "pass1",
+   "app": "Monday.com",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://developer.monday.com/docs/\", \"rate_limits\"",
+   "truth": "GraphQL",
+   "source": "https://developer.monday.com/api-reference/docs/getting-started"
+  },
+  {
+   "pass": "pass1",
+   "app": "Monday.com",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now",
+   "source": "https://developer.monday.com/api-reference/docs/developer-sandbox"
+  },
+  {
+   "pass": "pass1",
+   "app": "Smartsheet",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://api.smartsheet.com/2.0/\", \"rate_limits\": \"50 ",
+   "truth": "REST",
+   "source": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Smartsheet",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_with_caveats (trial)",
+   "source": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs"
+  },
+  {
+   "pass": "pass1",
+   "app": "Stripe",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://api.stripe.com/docs/api\", \"rate_limits\": \"",
+   "truth": "REST",
+   "source": "https://docs.stripe.com/stripe-apps/api-authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Xero",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\"]",
+   "truth": "OAuth 2.0 only; no API key",
+   "source": "https://developer.xero.com/faq/getting-started#api-keys"
+  },
+  {
+   "pass": "pass1",
+   "app": "Xero",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"https://developer.xero.com/api-reference/\", \"rate_",
+   "truth": "REST",
+   "source": "https://developer.xero.com/documentation/development-accounts"
+  },
+  {
+   "pass": "pass1",
+   "app": "Fathom",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "API key (Bearer) + OAuth for apps",
+   "source": "https://developers.fathom.ai/faq"
+  },
+  {
+   "pass": "pass1",
+   "app": "Fathom",
+   "field": "self_serve",
+   "agent_said": "unclear",
+   "truth": "API access (keys, webhooks) included on all plans incl. free",
+   "source": "https://developers.fathom.ai/faq"
+  },
+  {
+   "pass": "pass1",
+   "app": "Fathom",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"unclear\", \"breadth\": \"unclear\", \"docs_quality\": \"unclear\", \"openapi_spec_url\": \"unclear\", \"rate_limits\": \"unclear\"}",
+   "truth": "REST (OpenAPI available)",
+   "source": "https://developers.fathom.ai/sdks/authentication"
+  },
+  {
+   "pass": "pass1",
+   "app": "Fathom",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": \"unclear\"}",
+   "truth": "Official MCP (developers.fathom.ai/mcp-docs)",
+   "source": "https://www.lunar.dev/mcp-server-directory/fathom"
+  },
+  {
+   "pass": "pass1",
+   "app": "Fathom",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now",
+   "source": "https://developers.fathom.ai/faq"
+  },
+  {
+   "pass": "pass2",
+   "app": "Mermaid CLI",
+   "field": "auth_methods",
+   "agent_said": "[\"api_key\", \"oauth2\"]",
+   "truth": "No auth: local npm CLI (mermaid-cli). Pass 2 used data-mermaid.org, a different project",
+   "source": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  {
+   "pass": "pass2",
+   "app": "Mermaid CLI",
+   "field": "self_serve",
+   "agent_said": "trial",
+   "truth": "Open source, install via npm; no credentials",
+   "source": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  {
+   "pass": "pass2",
+   "app": "Mermaid CLI",
+   "field": "api_surface",
+   "agent_said": "{\"type\": \"REST\", \"breadth\": \"unclear\", \"docs_quality\": \"good\", \"openapi_spec_url\": \"https://api.datamermaid.org/v1/swagger.json\", \"rate_limi",
+   "truth": "No hosted API; CLI + Node.js API only (type should be none/SDK-only). Pass 2 cited an unrelated REST API",
+   "source": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  {
+   "pass": "pass1",
+   "app": "Mermaid CLI",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_with_caveats as a CLI wrapper; pass 2 right label, wrong reasons",
+   "source": "https://github.com/mermaid-js/mermaid-cli"
+  },
+  {
+   "pass": "pass1",
+   "app": "Grain",
+   "field": "auth_methods",
+   "agent_said": "[\"oauth2\", \"api_key\", \"basic\", \"bearer_token\", \"jwt\", \"other\"]",
+   "truth": "OAuth 2.0 (PKCE) + personal access token (Bearer)",
+   "source": "https://developers.grain.com/authentication.html"
+  },
+  {
+   "pass": "pass1",
+   "app": "Grain",
+   "field": "existing_mcp",
+   "agent_said": "{\"exists\": null, \"official\": null, \"url\": \"unclear\"}",
+   "truth": "Official Grain MCP (developers.grain.com/mcp)",
+   "source": "https://developers.grain.com/mcp"
+  },
+  {
+   "pass": "pass1",
+   "app": "Grain",
+   "field": "buildability",
+   "agent_said": "blocked",
+   "truth": "ready_now",
+   "source": "https://developers.grain.com"
+  }
+ ],
+ "human": {
+  "pass1": {},
+  "pass2": {}
+ },
+ "human_rows_filled": 0,
+ "sample_apps": 28
+}
