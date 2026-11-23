@@ -707,8 +707,8 @@
   "auth_methods": [
    "partial",
    "correct",
-   "Secret/restricted API keys (Bearer or Basic) + OAuth 2.0 for Connect/Apps",
-   "https://docs.stripe.com/stripe-apps/api-authentication"
+   "API keys (secret/restricted) sent via HTTP Basic or Bearer (main API page); OAuth 2.0 only for Connect/Apps (Stripe Apps page)",
+   "https://docs.stripe.com/api/authentication"
   ],
   "self_serve": [
    "correct",

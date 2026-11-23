@@ -47,7 +47,7 @@ def main():
     p1 = jload("stats_pass1.json", {})
     if not apps or not st:
         raise SystemExit("run `python -m agent.analyze --pass 2` first")
-    payload = {"apps": apps, "stats": st, "accuracy": acc, "pass1": p1, "repo": a.repo, "live": a.live}
+    payload = {"apps": apps, "stats": st, "accuracy": acc, "loops": jload("loop_effects.json", {}), "pass1": p1, "repo": a.repo, "live": a.live}
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
     heads = "".join(f"<li>{h}</li>" for h in headlines(st, apps))
     tpl = (SITE / "template.html").read_text(encoding="utf-8")

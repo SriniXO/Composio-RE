@@ -1,0 +1,41 @@
+{
+ "pass1": {
+  "quotes": 122,
+  "verified": 18,
+  "apps_with_verified_evidence": 7
+ },
+ "pass2": {
+  "quotes": 383,
+  "verified": 196,
+  "apps_with_verified_evidence": 75
+ },
+ "pass2_log_events": {
+  "fallback used": 41,
+  "dropped-quote-not-in-page": 181,
+  "cross-source-missing": 195,
+  "verifier-rejected": 6
+ },
+ "pass2_fallbacks_used": {
+  "composio:TAVILY_EXTRACT": 41
+ },
+ "pass2_accuracy_by_evidence": {
+  "has_verified_evidence": {
+   "accuracy": 0.677,
+   "n": 110
+  },
+  "no_verified_evidence": {
+   "accuracy": 0.68,
+   "n": 25
+  }
+ },
+ "pass2_accuracy_by_flag": {
+  "flagged_needs_human": {
+   "accuracy": 0.773,
+   "n": 55
+  },
+  "not_flagged": {
+   "accuracy": 0.613,
+   "n": 80
+  }
+ }
+}

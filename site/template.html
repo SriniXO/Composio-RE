@@ -63,12 +63,12 @@ composio login
 python -m agent.run --pass 2 --app Notion</pre>
 <p>Repo: <a id="repo2" href="{{REPO}}">{{REPO}}</a></p>
 
-<h2 id="verify">6. Verification</h2>
+<h2 id="machine">6. For agents (machine-readable)</h2>
+<p><a href="apps.json">apps.json</a>, <a href="apps.csv">apps.csv</a>, <a href="llms.txt">llms.txt</a>, and schema.org Dataset JSON-LD in this page's head.</p>
+<h2 id="verify">7. Verification: how it was checked, and how accuracy moved</h2>
 <div id="acc"></div>
 <h3>Defeated us (no machine-verified evidence)</h3><p id="defeated"></p>
 
-<h2 id="machine">7. For agents</h2>
-<p><a href="apps.json">apps.json</a>, <a href="apps.csv">apps.csv</a>, <a href="llms.txt">llms.txt</a>, and schema.org Dataset JSON-LD in this page's head.</p>
 </main>
 <script id="data" type="application/json">{{DATA}}</script>
 <script>
@@ -104,8 +104,20 @@ const ac=D.accuracy||{};
 const pc=x=>x?Math.round(x.accuracy*100)+'% <span class="mut">('+Math.round(x.strict*100)+'% strict, n='+x.n+')</span>':'n/a';
 function accTable(src,label){const d=ac[src];if(!d||!d.pass2||!d.pass2.ALL)return'';const f=['auth_methods','self_serve','api_surface','existing_mcp','buildability','ALL'];
 return `<h3>${label}</h3><table><tr><th>Field</th><th>Pass 1 (baseline)</th><th>Pass 2 (verified)</th></tr>${f.map(k=>`<tr><td>${k==='ALL'?'<b>All fields</b>':k}</td><td>${pc(d.pass1&&d.pass1[k])}</td><td>${pc(d.pass2[k])}</td></tr>`).join('')}</table>`}
-let html=`<p>Sample: <b>${ac.sample_apps||28} apps</b> (seed 1512, at least 2 per category), 5 fields each. <i>Accuracy</i> counts a partial answer as half; <i>strict</i> counts only fully correct answers.</p>`;
-html+=accTable('ai_audit','Independent AI audit (Claude read the official docs; not a human)');
+const L=D.loops||{},p1=ac.ai_audit&&ac.ai_audit.pass1&&ac.ai_audit.pass1.ALL,p2=ac.ai_audit&&ac.ai_audit.pass2&&ac.ai_audit.pass2.ALL;
+const bar=(l,v,c)=>v==null?'':`<div class="row" style="grid-template-columns:230px 1fr 70px"><span>${l}</span><div class="bar" style="width:${Math.round(v*100)}%;background:${c}"></div><span>${Math.round(v*100)}%</span></div>`;
+let html=`<h3>How accuracy moved</h3>${bar('Pass 1: snippets, small model',p1&&p1.accuracy,'var(--bad)')}${bar('Pass 2: full docs + checks',p2&&p2.accuracy,'var(--acc)')}<p class="mut">Measured on ${ac.sample_apps||28} sampled apps x 5 fields (AI audit; partial = half credit). Strict (fully correct only): pass 1 ${p1?Math.round(p1.strict*100):'?'}%, pass 2 ${p2?Math.round(p2.strict*100):'?'}%.</p>`;
+if(L.pass2){const v1=L.pass1,v2=L.pass2,e=L.pass2_accuracy_by_evidence,f=L.pass2_accuracy_by_flag,g=L.pass2_log_events||{};
+html+=`<h3>What the verification loops actually did (measured)</h3><table><tr><th>Loop</th><th>Result</th></tr>
+<tr><td>Quote must be verbatim on the fetched page (code check)</td><td>Quotes found on page: pass 1 <b>${v1.verified}/${v1.quotes}</b> (${Math.round(100*v1.verified/v1.quotes)}%) → pass 2 <b>${v2.verified}/${v2.quotes}</b> (${Math.round(100*v2.verified/v2.quotes)}%). Records with at least one verified quote: ${v1.apps_with_verified_evidence} → ${v2.apps_with_verified_evidence}. It dropped ${g['dropped-quote-not-in-page']||0} unsupported quotes.</td></tr>
+<tr><td>Verifier LLM re-reads the cited page</td><td>Rejected only <b>${g['verifier-rejected']||0}</b> quotes: the small local model approves nearly everything, so this loop added little.</td></tr>
+<tr><td>Two-source rule for auth + self-serve</td><td>Triggered ${g['cross-source-missing']||0} times: most records lacked a second verified page, so confidence stayed low.</td></tr>
+<tr><td>Fallback for unreadable pages</td><td>${(L.pass2_fallbacks_used||{})['composio:TAVILY_EXTRACT']||0} pages recovered via Composio Tavily Extract; Playwright was never needed.</td></tr>
+<tr><td>Does a verified quote mean a correct answer?</td><td><b>No.</b> Pass 2 accuracy was ${Math.round(e.has_verified_evidence.accuracy*100)}% with a verified quote vs ${Math.round(e.no_verified_evidence.accuracy*100)}% without: the check proves a source exists, not that the answer is right.</td></tr>
+<tr><td>Does the <code>needs_human</code> flag find the errors?</td><td><b>No.</b> Flagged records were ${Math.round(f.flagged_needs_human.accuracy*100)}% accurate; unflagged were ${Math.round(f.not_flagged.accuracy*100)}%: the flag is not a reliable risk signal yet.</td></tr></table>
+<p class="warn"><b>Honest attribution:</b> the jump from ${p1?Math.round(p1.accuracy*100):'?'}% to ${p2?Math.round(p2.accuracy*100):'?'}% came mainly from pass 2 reading full official docs pages with a stronger model, <b>not</b> from the verification loops: they made answers traceable (more verified sources) but, as measured above, did not by themselves make them more accurate. Pass 2 changed several things at once, so the gain cannot be split cleanly between them. The next step would be loops that <i>correct</i> answers (re-research on failure, stricter rules such as "official MCP only on the vendor's own domain") and re-measure on new apps.</p>`}
+html+=`<p>Sample: <b>${ac.sample_apps||28} apps</b> (seed 1512, at least 2 per category), 5 fields each.</p>`;
+html+=accTable('ai_audit','Independent AI audit (Claude read official docs via search snippets and extracts, not every page in full; not a human; may include details from background knowledge)');
 html+=ac.human_rows_filled?accTable('human',`Human check (${ac.human_rows_filled} rows filled)`):`<p class="warn"><b>Human check: not yet recorded.</b> The sheet <code>verification/sample.csv</code> is waiting for a person's verdicts. The AI audit above can share the agent's blind spots, so treat it as an estimate until a human confirms it.</p>`;
 const wr=ac.ai_audit_wrong_answers||[];
 html+=`<h3>Where it was wrong (${wr.length} wrong answers; showing the audit's findings)</h3><div class="tw"><table><tr><th>App</th><th>Field</th><th>Pass</th><th>Agent said</th><th>Truth per docs</th><th>Source</th></tr>${wr.map(w=>`<tr><td>${esc(w.app)}</td><td>${esc(w.field)}</td><td>${w.pass}</td><td>${esc(w.agent_said)}</td><td>${esc(w.truth)}</td><td><a href="${esc(w.source)}" rel="noopener">link</a></td></tr>`).join('')}</table></div>`;
