@@ -51,6 +51,14 @@ def main():
     res["human"], _ = tally(hitems)
     res["human_rows_filled"] = sum(1 for r in hrows if (r.get("human_verdict_pass1") or r.get("human_verdict_pass2") or "").strip())
     res["sample_apps"] = len({r["id"] for r in hrows})
+    hr = ROOT / "verification" / "human_review.csv"
+    if hr.exists():
+        rr = [r for r in csv.DictReader(open(hr, encoding="utf-8")) if (r.get("YOUR_verdict(correct|wrong|partial)") or r.get("YOUR_verdict(correct|partial|wrong)") or "").strip().lower() in W]
+        key = "YOUR_verdict(correct|partial|wrong)"
+        done = [r for r in rr if r.get(key, "").strip().lower() in W]
+        agree = sum(1 for r in done if r[key].strip().lower() == r["ai_audit_verdict_pass2"].strip().lower())
+        res["human_review"] = {"n": len(done), "agree_with_audit": agree,
+                               "pass2_accuracy_by_human": round(sum(W[r[key].strip().lower()] for r in done) / len(done), 3) if done else None}
     (ROOT / "data").mkdir(exist_ok=True)
     (ROOT / "data" / "accuracy.json").write_text(json.dumps(res, indent=1, ensure_ascii=False), encoding="utf-8")
     for p in ("pass1", "pass2"):

@@ -10,4 +10,3 @@ Data: apps.json, apps.csv. Every field has evidence[] with url + quote; quote_ve
 - 82 apps are ready_now (easy wins); 2 need outreach.
 - Existing MCP found for 93 apps; 2 unverified.
 - 100 of 100 records have at least one quote found verbatim on a fetched page (this shows a source exists, not that the answer is right); 53 are flagged for a human.
-- How far to trust this: on held-out apps the final agent scored 80% (a pure guesser: 41%). Reliable fields: auth_methods, api_surface. Barely better than guessing: self_serve, existing_mcp, buildability, so counts of easy wins, self-serve apps and existing MCPs are upper bounds, not facts.
