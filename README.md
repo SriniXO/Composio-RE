@@ -43,6 +43,6 @@ Pass 1 (snippets, small model) scored below a constant guesser. Pass 2 (full doc
 ## Limitations (read these)
 - Pass 3 results for apps 82-100 were produced after the Composio wallet ran out: their domain-scoped re-research returned nothing. Re-run `python -m agent.pass3 --all` once credits are topped up.
 - Small local models extract worse than frontier models. Code checks (verbatim quotes, schema, dead links) limit damage but cannot make a wrong-but-quoted claim right.
-- Accuracy is measured on a 28-app hand-checked sample, so per-field figures carry wide margins; the page states the sample size.
+- Accuracy is measured on a 28-app sample (plus 13 held-out apps) against an AI audit of official docs, not a human check; `verification/sample.csv` is the sheet for human verdicts and is not yet filled in. Per-field figures carry wide margins.
 - Search/extract via Composio's Tavily tools can miss gated or login-walled docs; those land on the "defeated us" list rather than being guessed.
 - Composio toolkit-existence (`composio_status`) is not yet checked automatically and is `unverified` unless a human fills it.
