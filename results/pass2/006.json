@@ -1,0 +1,80 @@
+{
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_line_description": "Podio is a CRM and Sales platform with a robust API for integration and automation.",
+  "website": "podio.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Podio uses OAuth2 for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.podio.com/openapi",
+    "rate_limits": "Yes, see https://developers.podio.com/faq#rate-limits"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, see https://developers.podio.com/api/app/item/",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "PHP",
+    ".NET",
+    "Ruby",
+    "Java",
+    "Python",
+    "Android",
+    "Objective-C"
+  ],
+  "api_access_pricing": "Yes, see https://www.progress.com/podio/pricing",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developers.podio.com/authentication",
+      "quote_snippet": "The Podio API uses the OAuth2 protocol for authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:52:36",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.progress.com/podio/pricing",
+      "quote_snippet": "API From $23/month billed annually",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T15:52:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+      "quote_snippet": "The Podio MCP Server connects AI assistants — ChatGPT, Microsoft Copilot Studio, Claude Desktop, and any other MCP-compatible platform — directly to your Podio data.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:52:38",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human interaction required for authentication or API access.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: existing_mcp https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

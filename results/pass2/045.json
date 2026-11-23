@@ -1,0 +1,80 @@
+{
+  "id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_line_description": "Magento (Adobe Commerce) is an e-commerce platform with a REST API and an MCP server for AI integration.",
+  "website": "https://developer.adobe.com/commerce",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods including OAuth 2.0, API keys, and bearer tokens.",
+  "self_serve": "trial",
+  "gate_detail": "Trial available for evaluation, requires subscription for full access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.adobe.com/commerce/webapi/rest",
+    "rate_limits": "Yes, per request and per user"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/magendooro/magemcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, supported via REST API",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "Freemium, with licensing costs based on GMV",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/rest",
+      "quote_snippet": "Adobe Commerce REST APIs support multiple authentication methods, including OAuth 1.0a, tokens, and login credentials.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:55:42",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/rest",
+      "quote_snippet": "Endpoints are structured as https://<host>/rest/<store-view-code>/<endpoint>",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:55:42",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/magendooro/magemcp",
+      "quote_snippet": "MageMCP — MCP server connecting AI agents to Magento 2 / Adobe Commerce.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:55:48",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human intervention required for setup or use.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developer.adobe.com/commerce/webapi/rest",
+    "dropped-quote-not-in-page: api_surface https://developer.adobe.com/commerce/webapi/rest",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.linkedin.com/pulse/streamlining-operations-guide-adobe-commerce-api-dasharath-golani-bi5rf']"
+  ]
+}

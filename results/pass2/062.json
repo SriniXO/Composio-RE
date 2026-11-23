@@ -1,0 +1,76 @@
+{
+  "id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Vercel provides a REST API for interacting with its platform, including AI Gateway and access groups.",
+  "website": "https://vercel.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Vercel uses API keys for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "none",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://vercel.com/docs/mcp/vercel-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "quote_snippet": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://vercel.com/docs/accounts/access-tokens",
+      "quote_snippet": "Create and manage them on the [Account Tokens page](https://vercel.com/account/tokens), under the Settings area of your account.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": false
+    },
+    {
+      "url": "https://vercel.com/docs/mcp/vercel-mcp",
+      "quote_snippet": "Vercel's official MCP server gives AI tools secure access to your Vercel projects.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://vercel.com/docs/accounts/access-tokens",
+    "dropped-quote-not-in-page: existing_mcp https://vercel.com/docs/mcp/vercel-mcp",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": 97,
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Higgsfield offers an AI-agent toolkit with a CLI, API, and MCP server.",
+  "website": "https://higgsfield.ai/cli",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key authentication is required for both the CLI and API.",
+  "self_serve": "trial",
+  "gate_detail": "No gate required for trial access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.higgsfield.ai/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://higgsfield.ai/cli",
+      "quote_snippet": "1. Install the CLI: run\n`npm i -g @higgsfield/cli`\n.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:59:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://higgsfield.ai/cli",
+      "quote_snippet": "2. Authenticate: run\n`higgsfield auth login`\nand complete the sign-in in the browser it opens.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T18:59:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apidog.com/blog/higgsfield-api",
+      "quote_snippet": "Developers begin by creating an account on the Higgsfield platform.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T18:59:50",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.higgsfield.ai/docs/authentication",
+      "quote_snippet": "Create and manage API credentials in Higgsfield Console.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:59:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/higgsfield-ai/higgsfield-client",
+      "quote_snippet": "Before using the client, set your API credentials as environment variables.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:59:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://cyberview.digital/higgsfield-api-pricing-review-how-much-does-it-really-cost-plans-credits-api-access-alternatives",
+      "quote_snippet": "$29 per month · $0.10/gen base rate",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:59:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.mcpyet.com/mcp/higgsfield",
+      "quote_snippet": "Yes. Higgsfield maintains an official MCP server, hosted at https://mcp.higgsfield.ai/mcp.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T19:00:01",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: self_serve https://apidog.com/blog/higgsfield-api",
+    "dropped-quote-not-in-page: api_surface https://docs.higgsfield.ai/docs/authentication",
+    "dropped-quote-not-in-page: api_access_pricing https://cyberview.digital/higgsfield-api-pricing-review-how-much-does-it-really-cost-plans-credits-api-access-alternatives",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.makeinfluencer.ai/guides/higgsfield-pricing-explained']"
+  ]
+}

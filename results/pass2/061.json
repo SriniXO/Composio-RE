@@ -1,0 +1,91 @@
+{
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "GitHub provides a REST API for developers to interact with its platform, including authentication methods, API surface, and MCP server capabilities.",
+  "website": "https://github.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "GitHub supports multiple authentication methods including OAuth2, API keys, and bearer tokens.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.github.com/rest",
+    "rate_limits": "Yes, with varying limits based on authentication method."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/github/github-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, pagination is supported in API responses.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Go",
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "Free and paid plans available, with varying rates and features.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.github.com/rest/authentication/authenticating-to-the-rest-api",
+      "quote_snippet": "You can authenticate to the REST API to access more endpoints and have a higher rate limit.",
+      "field_supported": "auth",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "You can authenticate to GitHub, run the following command from your terminal.",
+      "field_supported": "auth",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "The GitHub REST API is fully described in an OpenAPI compliant document.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server?featured_on=talkpython",
+      "quote_snippet": "GitHub's official MCP Server connects AI tools directly to GitHub's platform.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:18:47",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human intervention is required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth https://docs.github.com/rest/authentication/authenticating-to-the-rest-api",
+    "dropped-quote-not-in-page: auth https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+    "dropped-quote-not-in-page: api_surface https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+    "dropped-quote-not-in-page: existing_mcp https://github.com/github/github-mcp-server?featured_on=talkpython",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

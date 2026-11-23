@@ -1,0 +1,114 @@
+{
+  "id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Coda provides a RESTful API and MCP server for AI integration.",
+  "website": "https://coda.io/",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API tokens are required for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://coda.io/apis/v1",
+    "rate_limits": "Yes, see documentation for details."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/orellazri/coda-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "The MCP server is community-built and not officially supported by Coda.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, see documentation for details.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "field_supported": "api_surface.type",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs MCP server is optimized for LLM usage patterns and often exposes more granular methods for accessing and modifying data.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs REST API is designed to be straightforward to use. You can use the language and platform of your choice to make requests.",
+      "field_supported": "api_surface.breadth",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs API uses a base path of https://coda.io/apis/v1.",
+      "field_supported": "api_surface.openapi_spec_url",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "field_supported": "api_surface.docs_quality",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "field_supported": "time_to_first_call",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+      "field_supported": "outreach_needed",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The MCP server is community-built and not officially supported by Coda.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=0ZRO6qkjXHk",
+    "composio:TAVILY_EXTRACT fallback used for https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+    "dropped-quote-not-in-page: existing_mcp.exists https://coda.io/developers",
+    "dropped-quote-not-in-page: api_surface.openapi_spec_url https://coda.io/developers",
+    "verifier-rejected: time_to_first_call https://coda.io/developers",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

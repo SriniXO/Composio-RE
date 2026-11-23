@@ -1,0 +1,69 @@
+{
+  "id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "one_line_description": "FanBasis (now Commas) is a platform for online creators and entrepreneurs to create and sell products, including courses, webinars, and communities. It offers a suite of tools for payments, funnels, courses, and payouts.",
+  "website": "https://fanbasis.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "FanBasis uses OAuth 2.0 for authentication.",
+  "self_serve": "unclear",
+  "gate_detail": "unclear",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.fanvue.com/docs",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "unclear"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "FanBasis does not have a public API for MCP, and there is no official MCP server available.",
+  "suggested_form": "not feasible",
+  "webhooks": true,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://api.fanvue.com/docs",
+      "quote_snippet": "Fanvue has no API keys. A creator or agency admin authorises your app through OAuth 2.0 and you call the API with the access token you receive;",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:03:45",
+      "quote_verified": true
+    },
+    {
+      "url": "https://api.fanvue.com/docs/payments/app-billing/pricing-plans",
+      "quote_snippet": "Pricing plans are the monthly subscriptions creators buy to access your app.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:03:46",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "FanBasis does not have a public API for MCP, and there is no official MCP server available.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.npmjs.com/package/@fanbasis/checkout-sdk', 'https://slashdot.org/software/p/FanBasis', 'https://mcpservers.org/servers/asbloom-py/mcp-servers']"
+  ]
+}

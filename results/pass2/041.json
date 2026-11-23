@@ -1,0 +1,91 @@
+{
+  "id": 41,
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "one_line_description": "Shopify is an ecommerce platform that allows developers to build apps and extend its functionality. It provides an API for authentication and various tools for managing store data.",
+  "website": "https://shopify.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Shopify uses OAuth 2.0 for authentication. Starting April 1, 2026, all public apps will require expiring offline access tokens.",
+  "self_serve": "trial",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "GraphQL",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "query cost throttling"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/geli2001/shopify-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "cursor-based",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "quote_snippet": "To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T16:50:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "quote_snippet": "Shopify uses session tokens - short-lived JWTs - to verify that a request from your app's frontend originates from a valid shop or user.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T16:50:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "quote_snippet": "The GraphQL Admin API is the most common starting point for developers. Accessing it requires the X-Shopify-Access-Token header, with tokens obtained through OAuth or Token Exchange.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:50:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "quote_snippet": "Shopify provides three main API surfaces, each with its own authentication method.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:50:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/geli2001/shopify-mcp",
+      "quote_snippet": "This server provides tools for managing products, customers, orders, and more.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:50:59",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth https://shopify.dev/docs/api/usage/authentication",
+    "dropped-quote-not-in-page: api_surface https://shopify.dev/docs/api/usage/authentication",
+    "dropped-quote-not-in-page: api_surface https://shopify.dev/docs/api/usage/authentication",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

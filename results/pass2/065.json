@@ -1,0 +1,74 @@
+{
+  "id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Supabase is a developer platform that provides a full Postgres database, authentication, storage, and real-time functionality. It supports AI tools and has a CLI for development.",
+  "website": "https://supabase.com",
+  "auth_methods": [
+    "jwt"
+  ],
+  "auth_notes": "Uses JWT for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/mcp-use/supabase-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Flutter",
+    "Python",
+    "C#",
+    "Swift",
+    "Kotlin",
+    "Migrate to Supabase"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://supabase.com/docs/guides/getting-started",
+      "quote_snippet": "Develop with Supabase AI-first using plugins, MCP, and skills.",
+      "field_supported": "suggested_form",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/mcp-use/supabase-mcp-server",
+      "quote_snippet": "A powerful Model Context Protocol (MCP) server for Supabase, built with https://github.com/mcp-use/mcp-use.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:23:01",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human intervention needed based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.jetadmin.io/blog/supabase-pricing-2026-guide-to-plans-limits-and-real-world-costs",
+    "dropped-quote-not-in-page: suggested_form https://supabase.com/docs/guides/getting-started",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

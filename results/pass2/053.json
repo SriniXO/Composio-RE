@@ -1,0 +1,85 @@
+{
+  "id": 53,
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Ahrefs provides an API for data and SEO, with MCP support for AI assistants.",
+  "website": "https://ahrefs.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are required for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "Free test queries available for trial.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.ahrefs.com/docs",
+    "rate_limits": "Yes, with specific limits for free and paid plans."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://ahrefs.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://ahrefs.com/api",
+      "quote_snippet": "To obtain it, please follow steps 1.1 - 1.3.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:06:36",
+      "quote_verified": false
+    },
+    {
+      "url": "https://ahrefs.com/api",
+      "quote_snippet": "Free test queries available for trial.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T17:06:36",
+      "quote_verified": false
+    },
+    {
+      "url": "https://ahrefs.com/api",
+      "quote_snippet": "Full machine-readable spec for every endpoint",
+      "field_supported": "api_surface.docs_quality",
+      "fetched_at": "2026-11-23T17:06:36",
+      "quote_verified": true
+    },
+    {
+      "url": "https://ahrefs.com/api",
+      "quote_snippet": "Connect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T17:06:36",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://ahrefs.com/api",
+    "dropped-quote-not-in-page: self_serve https://ahrefs.com/api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

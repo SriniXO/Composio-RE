@@ -1,0 +1,78 @@
+{
+  "id": 36,
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Klaviyo is a marketing and analytics platform that provides an API for developers to integrate with their services.",
+  "website": "https://www.klaviyo.com/",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Klaviyo uses OAuth 2.0 for authentication. It requires creating an app in Klaviyo and obtaining a client ID and client secret.",
+  "self_serve": "trial",
+  "gate_detail": "Klaviyo offers a free trial for developers to test the API.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/mattcoatsworth/Klaviyo-MCP-Server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "PHP",
+    "Ruby",
+    "Node"
+  ],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "quote_snippet": "On March 31, 2025, Klaviyo started blocking all OAuth token traffic (oauth/token and oauth/revoke) routed through www.klaviyo.com. Ensure that your integration routes token traffic to https://a.klaviyo.com/oauth/token or https://a.klaviyo.com/oauth/revoke to avoid breakages.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:35:19",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2023-01-24/docs/authenticate_",
+      "quote_snippet": "All /api endpoints use API private keys to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an error. A 400 error indicates an invalid or missing API key.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:35:20",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.klaviyo.com/pricing",
+      "quote_snippet": "Klaviyo pricing ranges from $0 for the free plan to $25 for the Marketing plan, depending on the number of active profiles and other features.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:35:23",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developers.klaviyo.com/en/docs/set_up_oauth",
+    "dropped-quote-not-in-page: api_access_pricing https://www.klaviyo.com/pricing",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.moengage.com/blog/klaviyo-pricing']"
+  ]
+}

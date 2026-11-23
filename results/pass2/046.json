@@ -1,0 +1,77 @@
+{
+  "id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "one_line_description": "Squarespace provides a robust API for building custom applications and integrations, including commerce management, website customization, and more.",
+  "website": "https://www.squarespace.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Squarespace uses OAuth 2.0 and API keys for authentication. The authentication method depends on the specific API being used.",
+  "self_serve": "trial",
+  "gate_detail": "Squarespace offers a free trial for developers to explore its API and build applications.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://apis.io/security/squarespace/squarespace-authentication",
+    "rate_limits": "varies by API and credential type"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Squarespace requires partner approval for certain API usage, which may limit the availability of an official MCP server.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript"
+  ],
+  "api_access_pricing": "varies by plan",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote_snippet": "Squarespace Commerce APIs accept two credential types over one wire format.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:55:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/security/squarespace/squarespace-authentication",
+      "quote_snippet": "Squarespace secures its APIs with http and oauth2 across 2 declared security schemes.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T16:55:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+      "quote_snippet": "A comprehensive Model Context Protocol (MCP) server for Squarespace, providing complete integration with the Squarespace platform.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:55:58",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Squarespace requires partner approval for certain API usage, which may limit the availability of an official MCP server.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "dropped-quote-not-in-page: auth_notes https://apis.io/security/squarespace/squarespace-authentication",
+    "dropped-quote-not-in-page: existing_mcp https://github.com/BusyBee3333/squarespace-mcp-2026-complete",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

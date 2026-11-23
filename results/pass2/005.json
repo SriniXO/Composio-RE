@@ -1,0 +1,73 @@
+{
+  "id": 5,
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "one_line_description": "Twenty is an open-source CRM platform with a robust API and SDK for building custom apps and AI agents.",
+  "website": "https://twenty.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Twenty uses OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access.",
+  "self_serve": "trial",
+  "gate_detail": "Free trial available for developers, with a paid plan for production use.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.twenty.com/developers/extend/api",
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/mhenry3164/twenty-crm-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "The official MCP server for Twenty is not yet available, but a community-driven version exists.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Yes, supports cursor pagination",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript"
+  ],
+  "api_access_pricing": "Freemium, with a paid plan for production use",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.twenty.com/developers/extend/oauth",
+      "quote_snippet": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:46:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "quote_snippet": "Both REST and GraphQL support batching up to 60 records per request — create, update, or delete.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:46:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/mhenry3164/twenty-crm-mcp-server",
+      "quote_snippet": "A Model Context Protocol server that connects Twenty CRM with Claude and other AI assistants, enabling natural language interactions with your customer data.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:46:48",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The official MCP server for Twenty is not yet available, and a community-driven version exists.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "one_line_description": "Pumble is a free business communication and team messaging software with an API for integrations and an MCP server for AI agents.",
+  "website": "pumble.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Requires a Pumble API Key for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": null,
+    "rate_limits": "1,000 requests/minute per user"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/infralayers/pumble-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "The existing MCP server requires Pumble app credentials, which may need partner approval.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript"
+  ],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+      "quote_snippet": "You can use Pumble Free account with our core features, or upgrade a to paid plan to access our paid features.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T16:15:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+      "quote_snippet": "The all-in-one team communication app",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:15:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/infralayers/pumble-mcp/blob/main/SPEC.md",
+      "quote_snippet": "Build and maintain a universal, production-grade Model Context Protocol (MCP) server wrapping Pumble's official \"API Key add-on\" REST API.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:15:42",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The existing MCP server requires Pumble app credentials, which may need partner approval.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.saasworthy.com/product/pumble/pricing']"
+  ]
+}

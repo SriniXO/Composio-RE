@@ -1,0 +1,83 @@
+{
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Help Scout is an AI-driven support platform with an API for integrating and automating customer support.",
+  "website": "https://helpscout.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Help Scout uses OAuth2 for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "Free plan has no API access; need Standard, Plus, or Pro plan for API access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/drewburchfield/help-scout-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Need to create an OAuth2 app under Your Profile → My apps and then use the client ID and secret to get an access token.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "HAL pagination",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Node.js"
+  ],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://www.getmacha.com/blog/how-to-use-the-help-scout-api",
+      "quote_snippet": "The Help Scout API authenticates with OAuth2: you exchange an app's client ID and secret for a two-day Bearer token and call https://api.helpscout.net/v2/",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:07:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.getmacha.com/blog/how-to-use-the-help-scout-api",
+      "quote_snippet": "Help Scout's API rate limit is shared per account: up to 200 calls a minute on Standard, 400 on Plus and 800 on Pro, and the Free plan has no API access.",
+      "field_supported": "api_surface.rate_limits",
+      "fetched_at": "2026-11-23T16:07:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.helpscout.com/docs-api",
+      "quote_snippet": "Your API Key Each User has a Docs API key. To generate, view, or regenerate the API key, click your avatar in the top right of your account, then click Your Profile.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:07:55",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+      "quote_snippet": "MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents, plus opt-in writes for drafting replies and triage",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T16:07:58",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The API requires OAuth2 authentication and the Free plan has no API access, which may require additional setup and approval.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_access_pricing https://developer.helpscout.com/docs-api",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

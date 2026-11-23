@@ -1,0 +1,112 @@
+{
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Meta Ads is a comprehensive marketing platform that allows developers to automate and manage ad campaigns across Meta products using the Marketing API.",
+  "website": "https://developers.facebook.com/docs/marketing-apis",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Access tokens are required for all API calls. OAuth 2.0 Client Credentials flow is used for server-to-server integrations.",
+  "self_serve": "trial",
+  "gate_detail": "App Review is required for Standard Access, which provides more quota capacity.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Yes, with Development Access limited to 60 points and Standard Access requiring App Review."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/pipeboard-co/meta-ads-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Standard Access requires App Review approval, which can take 3-7 business days.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, supported for large datasets.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java",
+    "PHP",
+    "Ruby"
+  ],
+  "api_access_pricing": "Free for Development Access, Standard Access requires App Review approval.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/docs/marketing-apis",
+      "quote_snippet": "Before advertising on Facebook, Instagram, Messenger, and WhatsApp, we recommend you learn about Meta's ad campaign structure to understand the objects you're working with and how they relate to each other.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:24:46",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+      "quote_snippet": "Every Marketing API call requires an access token as a parameter.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:24:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://prismatic.io/docs/components/facebook-marketing",
+      "quote_snippet": "This connection uses an access token to authenticate with the Meta Ads Conversions API.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:24:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://windsor.ai/guide-to-facebook-meta-ads-api",
+      "quote_snippet": "The Marketing API is a set of Graph API endpoints that allow developers and marketers to interact programmatically with Meta’s advertising infrastructure.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:24:54",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.blotato.com/blog/facebook-api-pricing",
+      "quote_snippet": "The Graph API, Marketing API, and Pages API carry no per-call fee.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:24:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.get-ryze.ai/blog/meta-marketing-api-free-tier-limitations-and-quotas",
+      "quote_snippet": "Development Access costs 1 point per read, 3 per write.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:24:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://adsap.ai/blog/what-is-the-meta-ads-api",
+      "quote_snippet": "Meta's own interfaces. They cover everything, one ad at a time.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:24:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/pipeboard-co/meta-ads-mcp",
+      "quote_snippet": "Meta Ads (Facebook/Instagram) MCP server for Claude, ChatGPT, Perplexity & Cursor — the Meta node of Pipeboard’s 5-platform family (+ Google, TikTok, Snap, Reddit).",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:24:57",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Standard Access requires App Review approval, which can take 3-7 business days.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://windsor.ai/guide-to-facebook-meta-ads-api",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": 13,
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Freshdesk offers AI-powered customer service with a REST API and MCP server for integrating with AI agents.",
+  "website": "freshdesk.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key-based authentication is used for accessing the API and MCP server.",
+  "self_serve": "trial",
+  "gate_detail": "A 14-day free trial is available for new accounts.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "varies by plan"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "freshdesk-mcp.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "TypeScript",
+    "cURL"
+  ],
+  "api_access_pricing": "free with trial, pay-as-you-go for higher usage",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Get a demo",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk offers flexible pricing plans designed to scale with your business as it grows.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": false
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "main_blocker",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "webhooks",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "pagination",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "sdk_languages",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://freshdesk.com",
+      "quote_snippet": "Freshdesk brings ready-to-use AI, people, and workflows together, with a guided path to AI adoption, so service improves from day one and becomes increasingly AI-powered over time.",
+      "field_supported": "time_to_first_call",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human intervention is required based on the provided information.model output violated schema; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_access_pricing https://freshdesk.com",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: ['https://tavily.com/knowledge/company/01XlDF2rOcto']"
+  ]
+}

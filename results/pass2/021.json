@@ -1,0 +1,52 @@
+{
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "one_line_description": "Slack is an AI work platform and productivity tool that integrates with various apps and agents.",
+  "website": "https://slack.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Slack uses OAuth 2.0 for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "Users can sign up for a free trial to use Slack.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/jtalk22/slack-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "nodejs"
+  ],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://api.slack.com/developer-program",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

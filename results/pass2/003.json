@@ -1,0 +1,99 @@
+{
+  "id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_line_description": "Pipedrive is a CRM and Sales tool with a REST API and OAuth 2.0 authentication. It offers a free API access with all plans and has a sandbox environment for testing.",
+  "website": "https://pipedrive.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "API token and OAuth 2.0 authorization code flow are supported. The API token must be provided in the x-api-token header for all requests.",
+  "self_serve": "trial",
+  "gate_detail": "No gate required. Free trial available.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "rate_limits": "Token-based daily budget: 30,000 base tokens x plan multiplier x seat count"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.so/servers/pipedrive-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "unclear",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Node.js",
+    "PHP"
+  ],
+  "api_access_pricing": "free with all plans",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.partnerstack.com/docs/pipedrive-authentication",
+      "quote_snippet": "Authenticate your Pipedrive account",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:48:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "quote_snippet": "All requests to our API need authentication.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": false
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "quote_snippet": "You can find our step-by-step guide to getting OAuth 2.0 implemented in your app in OAuth authorization.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": false
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "quote_snippet": "The API token must be provided in the x-api-token header for all requests, for example:",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "quote_snippet": "Free API access with every plan",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mcp.so/servers/pipedrive-mcp-server",
+      "quote_snippet": "A Model Context Protocol (MCP) server that connects to Pipedrive CRM using the official Pipedrive API v2 Node.js client.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:48:54",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=7hFpCTgfXNg",
+    "dropped-quote-not-in-page: auth_notes https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "dropped-quote-not-in-page: auth_methods https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "dropped-quote-not-in-page: api_access_pricing https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

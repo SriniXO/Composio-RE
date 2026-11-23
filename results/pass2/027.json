@@ -1,0 +1,80 @@
+{
+  "id": 27,
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "one_line_description": "Telegram offers multiple APIs for developers, including Bot API, Telegram API, and Gateway API. The Bot API is free and suitable for building bots, while the Telegram API and Gateway API require registration and are open for customization.",
+  "website": "https://core.telegram.org",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are required for accessing the Telegram API and Gateway API. These keys are obtained from my.telegram.org/apps.",
+  "self_serve": "yes",
+  "gate_detail": "API keys are required for accessing the Telegram API and Gateway API. These keys are obtained from my.telegram.org/apps.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "varies by API"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/dryeab/mcp-telegram"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "JavaScript",
+    "Go",
+    "Java"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "minutes",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://core.telegram.org/bots#botfather",
+      "quote_snippet": "To use this, you don't need to know anything about how our MTProto encryption protocol works — our intermediary server will handle all encryption and communication with the Telegram API for you.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://core.telegram.org/bots#botfather",
+      "quote_snippet": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/dryeab/mcp-telegram",
+      "quote_snippet": "Built with Telethon, this server allows AI agents to interact with Telegram, enabling features like sending/editing/deleting messages, searching chats, managing drafts, downloading media, and more using the MTProto.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T16:19:16",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=QkO7WSQbFbo",
+    "dropped-quote-not-in-page: auth_methods https://core.telegram.org/bots#botfather",
+    "dropped-quote-not-in-page: api_surface https://core.telegram.org/bots#botfather",
+    "dropped-quote-not-in-page: suggested_form https://github.com/dryeab/mcp-telegram",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

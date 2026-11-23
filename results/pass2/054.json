@@ -1,0 +1,72 @@
+{
+  "id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "MrScraper is a web scraping platform that offers an API for programmatically accessing its services, including scraping HTML, Markdown, screenshots, and web search. It supports authentication via API tokens and offers an MCP server for AI agents.",
+  "website": "https://mrscraper.com",
+  "auth_methods": [],
+  "auth_notes": "API tokens are managed directly from the MrScraper dashboard and must be included in the HTTP request headers.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://artifacts.apis.io/mrscraper/openapi/mrscraper-proxies-api-openapi.yml",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://glama.ai/mcp/servers/mrscraper-com/mrscraper-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript",
+    "Python"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote_snippet": "The MrScraper API uses API token authentication to secure all endpoints.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:10:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote_snippet": "Include your API token in the x-api-token HTTP header on every request:",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:10:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://glama.ai/mcp/servers/mrscraper-com/mrscraper-mcp",
+      "quote_snippet": "This server exposes MCP tools for page scraping, Google search, and MrScraper account status.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:10:44",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human intervention is required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

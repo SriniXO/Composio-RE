@@ -1,0 +1,82 @@
+{
+  "id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Zendesk is a support and helpdesk platform with AI capabilities, including AI agents and Copilot.",
+  "website": "https://zendesk.com",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "auth_notes": "API keys and OAuth2 tokens are used for authentication.",
+  "self_serve": "trial",
+  "gate_detail": "No specific gate detail provided.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.zendesk.com/api-reference/ticketing/introduction",
+    "rate_limits": "details vary by plan and feature"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/fruggr/zendesk-mcp-server/issues/72"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "The server is not listed in the official MCP registry, which may limit its discoverability.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "details vary by plan and feature",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication",
+      "quote_snippet": "The Sunshine Conversations API supports two authentication types: basic authentication and bearer tokens (via JWT).",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:59:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.zendesk.com/api-reference/ticketing/introduction",
+      "quote_snippet": "The Zendesk Support API is also known as the Ticketing API.",
+      "field_supported": "api_surface.type",
+      "fetched_at": "2026-11-23T15:59:51",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.helpdesk.com/blog/zendesk-pricing",
+      "quote_snippet": "Zendesk Suite starts at $55 per agent per month billed annually.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T15:59:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/fruggr/zendesk-mcp-server/issues/72",
+      "quote_snippet": "The server is currently discoverable only through npm and this GitHub repo.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The server is not listed in the official MCP registry, which may limit its discoverability.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface.type https://developer.zendesk.com/api-reference/ticketing/introduction",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://stackoverflow.com/questions/69343685/zendesk-anyone-knows-how-to-authenticate-in-zendesk-api']"
+  ]
+}

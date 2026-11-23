@@ -1,0 +1,88 @@
+{
+  "id": 4,
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "one_line_description": "Attio is a CRM platform for sales and revenue teams, offering a REST API, App SDK, and MCP server for integration and automation.",
+  "website": "https://attio.com",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "auth_notes": "Attio supports API keys for single-workspace integrations and OAuth 2.0 for multi-workspace apps.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://attio.com/platform/developers",
+    "rate_limits": "Not specified in the sources"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/kesslerio/attio-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "javascript",
+    "python",
+    "go",
+    "java",
+    "ruby"
+  ],
+  "api_access_pricing": "Freemium",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://attio.com/platform/developers",
+      "quote_snippet": "Attio publishes 17 API contracts indexed on the APIs.io network, including Attributes API, Call Recordings API, Comments API, and 14 more.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://attio.com/platform/developers",
+      "quote_snippet": "Attio supports API keys for single-workspace integrations and OAuth 2.0 for multi-workspace apps.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://attio.com/startups",
+      "quote_snippet": "Does Attio have an API or MCP server? Yes to both.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:52:30",
+      "quote_verified": true
+    },
+    {
+      "url": "https://attio.com/pricing",
+      "quote_snippet": "Free to try",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T15:52:29",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human interaction required for setup or use.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://attio.com/platform/developers",
+    "dropped-quote-not-in-page: auth_methods https://attio.com/platform/developers",
+    "dropped-quote-not-in-page: self_serve https://attio.com/pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

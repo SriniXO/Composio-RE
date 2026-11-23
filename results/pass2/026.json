@@ -1,0 +1,70 @@
+{
+  "id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_line_description": "Discord is a communication platform with a robust API for bots and companion apps.",
+  "website": "https://discord.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Discord uses OAuth2 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "none",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://discord.com/developers/docs/reference",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/SaseQ/discord-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "none",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Java",
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://discord.com/developers/docs/reference",
+      "quote_snippet": "Discord uses OAuth2 for authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/SaseQ/discord-mcp",
+      "quote_snippet": "A MCP server for the Discord integration.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:19:11",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No human intervention required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=xh-EaV2DyAM",
+    "dropped-quote-not-in-page: auth_methods https://discord.com/developers/docs/reference",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}
