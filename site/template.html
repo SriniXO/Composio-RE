@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>100 apps: which can become agent toolkits? A research-agent case study</title>
+<meta name="description" content="Auth, self-serve vs gated, API surface, MCP and buildability for 100 apps, researched by an evidence-first agent and verified by hand.">
+<script type="application/ld+json">{{JSONLD}}</script>
+<style>
+:root{--bg:#fff;--fg:#14171a;--mut:#5b6670;--line:#dfe3e8;--card:#f6f8fa;--acc:#1f5eff;--ok:#1a7f4b;--warn:#a15c00;--bad:#b3261e}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1317;--fg:#e8ecef;--mut:#9aa6b0;--line:#2a323a;--card:#171d23;--acc:#7aa2ff;--ok:#4cc38a;--warn:#e0a24a;--bad:#ff8a80}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,Segoe UI,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 80px}h1{font-size:1.9rem;margin:.2em 0}h2{margin-top:2.4em;border-top:1px solid var(--line);padding-top:1em}
+.mut{color:var(--mut)}code{background:var(--card);padding:1px 5px;border-radius:4px}a{color:var(--acc)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}.tile b{font-size:1.6rem;display:block}
+ul.heads{padding-left:1.2em}ul.heads li{margin:.4em 0}
+.warn{background:var(--card);border-left:4px solid var(--warn);padding:10px 14px;border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.88rem}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{cursor:pointer;position:sticky;top:0;background:var(--bg);user-select:none}
+.pill{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;border:1px solid var(--line)}.ready_now{color:var(--ok)}.ready_with_caveats{color:var(--warn)}.blocked{color:var(--bad)}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}input,select{padding:6px 8px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px}
+.tw{overflow-x:auto;max-height:620px;overflow-y:auto;border:1px solid var(--line);border-radius:8px}
+.bar{height:14px;background:var(--acc);border-radius:3px}.row{display:grid;grid-template-columns:150px 1fr 60px;gap:8px;align-items:center;margin:4px 0;font-size:.9rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}@media(max-width:720px){.cols{grid-template-columns:1fr}}
+pre{background:var(--card);padding:12px;border-radius:8px;overflow:auto}details summary{cursor:pointer}
+</style>
+</head>
+<body><main>
+<header>
+<h1>Which of 100 apps can become an agent toolkit?</h1>
+<p class="mut">An evidence-first research agent (Composio search + local LLM) researched auth, access, API surface, MCP and buildability. Every claim links to a fetched source; quotes are machine-checked against the page text. <a id="repo" href="{{REPO}}">Source repo</a> · <a href="apps.json">apps.json</a> · <a href="apps.csv">apps.csv</a> · <a href="llms.txt">llms.txt</a></p>
+</header>
+
+<h2 id="patterns">1. Headline patterns</h2>
+<div class="tiles" id="tiles"></div>
+<ul class="heads">{{HEADLINES}}</ul>
+<p class="warn" id="trust"></p>
+
+<h2 id="matrix">2. Easy wins vs needs outreach</h2>
+<div class="cols"><div><h3>Easy wins (<code>ready_now</code>)</h3><div id="easy"></div></div><div><h3>Needs outreach or approval</h3><div id="outreach"></div></div></div>
+<h3>Buildability by category</h3><div id="bycat"></div>
+<h3>Auth methods</h3><div id="auth"></div>
+
+<h2 id="table">3. All 100 apps</h2>
+<div class="controls"><input id="q" placeholder="Filter apps…" aria-label="Filter apps"><select id="fcat"><option value="">All categories</option></select><select id="fbuild"><option value="">Any verdict</option><option>ready_now</option><option>ready_with_caveats</option><option>blocked</option><option>unverified</option></select></div>
+<div class="tw"><table id="tbl"><thead><tr></tr></thead><tbody></tbody></table></div>
+<p class="mut">Click a row for evidence. Click a header to sort. Rows marked <code>needs human</code> were flagged by the agent as uncertain.</p>
+
+<h2 id="agent">4. The agent</h2>
+<pre>seed list → search (Composio TAVILY_SEARCH) → fetch docs/pricing/MCP pages
+  → [JS page? Composio TAVILY_EXTRACT → Playwright] → LLM extracts to fixed schema
+  → CODE checks each quote is verbatim in the page → verifier LLM re-reads cited page
+  → needs 2 independent pages for auth + self-serve → rule checks (dead links, contradictions)
+  → low confidence / conflict ⇒ needs_human</pre>
+<ul>
+<li><b>Composio used:</b> CLI-executed <code>TAVILY_SEARCH</code> and <code>TAVILY_EXTRACT</code> tools (logged-in CLI, no key in repo).</li>
+<li><b>LLM:</b> local Ollama (llama3.2 for pass 1, qwen2.5-coder:7b for pass 2): small models on purpose-constrained by code checks.</li>
+<li><b>Where a human was needed:</b> see <a href="HUMAN_INTERVENTIONS.md">HUMAN_INTERVENTIONS.md</a>; count: <span id="nh"></span> flagged records.</li>
+</ul>
+
+<h2 id="proof">5. Proof: run it yourself</h2>
+<pre>pip install -r requirements.txt
+composio login
+python -m agent.run --pass 2 --app Notion</pre>
+<p>Repo: <a id="repo2" href="{{REPO}}">{{REPO}}</a></p>
+
+<h2 id="verify">6. Verification</h2>
+<div id="acc"></div>
+<h3>Defeated us (no machine-verified evidence)</h3><p id="defeated"></p>
+
+<h2 id="machine">7. For agents</h2>
+<p><a href="apps.json">apps.json</a>, <a href="apps.csv">apps.csv</a>, <a href="llms.txt">llms.txt</a>, and schema.org Dataset JSON-LD in this page's head.</p>
+</main>
+<script id="data" type="application/json">{{DATA}}</script>
+<script>
+const D=JSON.parse(document.getElementById('data').textContent),A=D.apps,S=D.stats;
+const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ver=a=>a.evidence.some(e=>e.quote_verified);
+const tiles=[['Apps',A.length],['ready_now',S.easy_wins.length],['Need outreach',S.needs_outreach.length],['Existing MCP',S.existing_mcp_exists],['Verified-evidence records',S.with_verified_evidence],['Flagged for human',S.needs_human.length]];
+$('#tiles').innerHTML=tiles.map(t=>`<div class="tile"><b>${t[1]}</b>${t[0]}</div>`).join('');
+$('#trust').innerHTML=`<b>Read with care:</b> this data was produced by small local models and is only as good as its checks. Accuracy against a hand-checked sample is in section 6; until that is filled in, treat every row as <i>unverified</i> unless its evidence quote is marked verified.`;
+$('#nh').textContent=S.needs_human.length;
+$('#repo2').textContent=D.repo||'(pending)';
+const list=(id,arr)=>$(id).innerHTML=arr.length?arr.map(a=>`<span class="pill">${esc(a)}</span> `).join(''):'<span class="mut">none yet</span>';
+list('#easy',S.easy_wins);list('#outreach',S.needs_outreach);
+function bars(id,pairs){const m=Math.max(1,...pairs.map(p=>p[1]));$(id).innerHTML=pairs.map(p=>`<div class="row"><span>${esc(p[0])}</span><div class="bar" style="width:${100*p[1]/m}%"></div><span>${p[1]}</span></div>`).join('')}
+bars('#auth',S.auth_overall);
+$('#bycat').innerHTML=Object.entries(S.buildability_by_category).map(([c,v])=>`<div class="row" style="grid-template-columns:260px 1fr"><span>${esc(c)}</span><span>${v.map(x=>`<span class="pill ${x[0]}">${x[0]} ${x[1]}</span>`).join(' ')}</span></div>`).join('');
+const cats=[...new Set(A.map(a=>a.category))];$('#fcat').innerHTML+=cats.map(c=>`<option>${esc(c)}</option>`).join('');
+const cols=[['id','#'],['app','App'],['category','Category'],['auth','Auth'],['self_serve','Self-serve'],['api','API'],['mcp','MCP'],['buildability','Verdict'],['main_blocker','Blocker'],['ev','Evidence']];
+$('#tbl thead tr').innerHTML=cols.map(c=>`<th data-k="${c[0]}">${c[1]}</th>`).join('');
+const val=(a,k)=>({auth:a.auth_methods.join(', '),api:a.api_surface.type+'/'+a.api_surface.breadth,mcp:a.existing_mcp.exists===null?'?':a.existing_mcp.exists?'yes':'no',ev:a.evidence.filter(e=>e.quote_verified).length})[k]??a[k];
+let sk='id',sd=1;
+function render(){const q=$('#q').value.toLowerCase(),fc=$('#fcat').value,fb=$('#fbuild').value;
+let rows=A.filter(a=>(!fc||a.category==fc)&&(!fb||a.buildability==fb)&&(!q||JSON.stringify([a.app,a.one_line_description,a.category]).toLowerCase().includes(q)));
+rows.sort((x,y)=>{const a=val(x,sk),b=val(y,sk);return(a>b?1:a<b?-1:0)*sd});
+$('#tbl tbody').innerHTML=rows.map(a=>`<tr data-id="${a.id}"><td>${a.id}</td><td><b>${esc(a.app)}</b><br><span class="mut">${esc(a.one_line_description)}</span></td><td>${esc(a.category)}</td><td>${esc(val(a,'auth'))||'?'}</td><td>${esc(a.self_serve)}</td><td>${esc(val(a,'api'))}</td><td>${val(a,'mcp')}</td><td><span class="pill ${a.buildability}">${a.buildability}</span>${a.needs_human.flag?' <span class="pill">needs human</span>':''}</td><td>${esc(a.main_blocker)}</td><td>${val(a,'ev')}</td></tr>`).join('')}
+$('#tbl thead').onclick=e=>{const k=e.target.dataset.k;if(!k)return;sd=sk==k?-sd:1;sk=k;render()};
+['#q','#fcat','#fbuild'].forEach(s=>$(s).oninput=render);
+$('#tbl tbody').onclick=e=>{const tr=e.target.closest('tr');if(!tr)return;const nx=tr.nextElementSibling;if(nx&&nx.classList.contains('ev')){nx.remove();return}
+const a=A.find(x=>x.id==tr.dataset.id);const h=a.evidence.map(v=>`<li><a href="${esc(v.url)}" rel="noopener">${esc(v.url)}</a> <i>(${esc(v.field_supported)}, ${v.quote_verified?'quote verified':'quote NOT found in page'})</i><br>“${esc(v.quote_snippet)}”</li>`).join('')||'<li>no evidence captured</li>';
+tr.insertAdjacentHTML('afterend',`<tr class="ev"><td colspan="10"><ul>${h}</ul><div class="mut">${esc(a.gate_detail)} ${esc(a.blocker_detail)}</div><details><summary>verification log</summary><pre>${esc(a.verification_log.join('\n'))}</pre></details></td></tr>`)};
+render();
+const ac=D.accuracy||{};
+if(ac.pass2&&ac.pass2.ALL){const f=Object.keys(ac.pass2);$('#acc').innerHTML=`<table><tr><th>Field</th><th>Pass 1</th><th>Pass 2</th></tr>${f.map(k=>`<tr><td>${esc(k)}</td><td>${ac.pass1&&ac.pass1[k]?Math.round(ac.pass1[k].accuracy*100)+'% (n='+ac.pass1[k].n+')':'n/a'}</td><td>${Math.round(ac.pass2[k].accuracy*100)+'% (n='+ac.pass2[k].n+')'}</td></tr>`).join('')}</table>
+<h3>Wrong answers</h3><table><tr><th>App</th><th>Field</th><th>Agent said</th><th>Truth</th><th>Pass</th></tr>${(ac.wrong_answers||[]).map(w=>`<tr><td>${esc(w.app)}</td><td>${esc(w.field)}</td><td>${esc(w.agent_said)}</td><td>${esc(w.truth)}</td><td>${w.pass}</td></tr>`).join('')}</table>`}
+else $('#acc').innerHTML='<p class="warn"><b>Accuracy not yet measured.</b> It requires hand-checked verdicts on the stratified sample (<code>verification/sample.csv</code>). No accuracy figure is claimed until that exists.</p>';
+$('#defeated').textContent=S.defeated.length?S.defeated.join(', '):'none';
+</script>
+</body></html>
