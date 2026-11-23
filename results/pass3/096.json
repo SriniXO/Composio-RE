@@ -1,0 +1,91 @@
+{
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Devin is an AI software engineer that can handle most tasks, excluding extremely difficult tasks. It can be integrated with an MCP server or used as agent skills.",
+  "website": "https://docs.devin.ai",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Devin uses a principal + token model. A Service User API Key authenticates as the service user, and a Personal Access Token authenticates as the human user.",
+  "self_serve": "yes",
+  "gate_detail": "Devin offers a free trial, but for full access, users need to sign up and may need to choose a paid plan.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/desertaxle/devin-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "yes",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "quote_snippet": "The Devin API uses a principal + token model.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:59:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+      "quote_snippet": "Enterprise customers can create service users at two levels.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:59:39",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/desertaxle/devin-mcp",
+      "quote_snippet": "MCP server for delegating tasks to Devin AI",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:59:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "quote_snippet": "als & tokens Principal Token Description Service User (non-human) Service User API Key For automated integrations and CI/CD pipelines User (human) Personal",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:59:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.usagepricing.com/blueprint/cognition",
+      "quote_snippet": "es, scaling with the inference used and the model selected. Since June 2026 the Free plan is a Devin Desktop download with",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:59:40",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: existing_mcp https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R2 api type unclear -> REST (rest=4, graphql=0)",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://github.com/desertaxle/devin-mcp",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

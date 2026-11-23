@@ -1,0 +1,107 @@
+{
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "systeme.io is a marketing and email automation platform that offers an API for integration and automation.",
+  "website": "https://systeme.io",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are used for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Free trial available for new users.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The custom connector flow needs to be modified to skip OAuth negotiation for servers that authenticate via URL query parameter / API key.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "unverified"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "quote_snippet": "API keys are unique identifiers that authenticate requests to our public API.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:36:11",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "quote_snippet": "To connect an external integration, you first need to generate a secure API key.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T16:36:11",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "quote_snippet": "Our API exposes a carefully selected set of features, enabling developers to interact with our platform transparently and efficiently.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:36:11",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mcp.systeme.io/mcp?mcpKey=YOUR_KEY",
+      "quote_snippet": "Automatic client registration is not supported by systeme.io. Modify the connector and add an OAuth Client ID.",
+      "field_supported": "buildability",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apps.make.com/systeme-io",
+      "quote_snippet": "o services to communicate. To create the connection, you need to: 1 ﻿ Obtain an API key in your Systeme IO account.",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:36:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "quote_snippet": "## 2. How the systeme.io MCP server works The systeme.io MCP server allows AI applications to access specific contact-management tools within your",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://systeme.io",
+      "quote_snippet": "selling online blogging sales funnels Powering 500,000+ entrepreneurs Get your free account now! Click here Free forever No credit card required Doris",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:35:37",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "dropped-quote-not-in-page: buildability https://mcp.systeme.io/mcp?mcpKey=YOUR_KEY",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/snzeeee/mcp-server-systemeio', 'https://mcpservers.org/servers/softreviewed/systeme-extra-mcp']",
+    "pass3 R2 api type unclear -> REST (rest=2, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "id": 55,
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Apify is a platform for building and running web scraping and automation tools, with an MCP server for AI agents.",
+  "website": "https://apify.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Apify uses OAuth2 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://artifacts.apis.io/apify/openapi/apify-actors-api-openapi.yml",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.apify.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.apify.com/api/v2#authentication",
+      "quote_snippet": "Authentication API accepts JWT (Bearer) token for authorization.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.apify.com/api/v2",
+      "quote_snippet": "The full reference of the Apify platform.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mcp.apify.com",
+      "quote_snippet": "The official Apify Model Context Protocol (MCP) server gives AI agents web scraping, data extraction, and browser automation through thousands of ready-made Actors from Apify Store.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://buddy.works/docs/api/getting-started",
+      "quote_snippet": "started with Buddy's API. Learn how to use auth token and execute API methods. OAuth 2.0 Learn more about OAuth2 tokens and",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:15:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.apify.com/mcp",
+      "quote_snippet": "## Tool selection By default, the MCP server loads the `actors` and `docs` tool categories, the `apify/web-search` and `apify/web-fetch` Actors, and `report-problem`.",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/apis/apify/apify-actors-api",
+      "quote_snippet": "-Key need no key. Calls with it need a paid plan — get a key . Get an API key Free tier,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:10:46",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://docs.apify.com/api/v2#authentication",
+    "dropped-quote-not-in-page: api_surface https://docs.apify.com/api/v2",
+    "dropped-quote-not-in-page: existing_mcp https://mcp.apify.com",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://docs.apify.com/mcp"
+  ]
+}

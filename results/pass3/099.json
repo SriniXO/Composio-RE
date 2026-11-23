@@ -1,0 +1,114 @@
+{
+  "id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "YouTube Transcript API provides programmatic access to extract and process transcripts from YouTube videos.",
+  "website": "https://transcriptapi.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "API key required for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Free tier available with limited requests.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "49ms median response time, 500K+ Transcripts Processed Daily"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://transcriptapi.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "Free tier of 100 requests a month, paid plans available",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "YouTube Transcript API That Just Works",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "500K+ Transcripts Processed Daily",
+      "field_supported": "api_surface.rate_limits",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "Free tier available with limited requests.",
+      "field_supported": "gate_detail",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": false
+    },
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "Extract transcripts from any YouTube video — with or without timestamps.",
+      "field_supported": "api_surface.breadth",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "Authorization: Bearer API_KEY",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "quota? No. You sign in with your own TranscriptAPI credentials: an API key, or OAuth for some MCP clients. You do not",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://transcriptapi.com",
+      "quote_snippet": "to any application. Use with n8n, Make, Zapier, or your own code. 1 Get a free API key at transcriptapi.com/signup 2 Make",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T19:03:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://tubealfred.com/youtube-transcript-api",
+      "quote_snippet": "is the managed endpoint. You handle a token, we handle reliability. Is there a free tier? + Yes. Free accounts receive 50",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T19:03:03",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth_unknown, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: gate_detail https://transcriptapi.com",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth [] -> ['oauth2', 'api_key']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://transcriptapi.com",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "GoHighLevel is a CRM platform with an API for integrations and automation. It supports OAuth 2.0 and Private Integration Tokens for authentication.",
+  "website": "https://www.gohighlevel.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "OAuth 2.0 is recommended for Marketplace apps, while Private Integration Tokens are for internal tools.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://marketplace.gohighlevel.com/docs/api",
+    "rate_limits": "Yes, details vary by endpoint and plan."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://ideas.gohighlevel.com/ad-reporting-and-attribution/p/mcp-server-for-gohighlevel-connect-to-llms-actions"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Yes, supported for some endpoints.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://dev.to/autogencrm/getting-started-with-the-gohighlevel-api-auth-webhooks-and-common-gotchas-5fo3",
+      "quote_snippet": "HighLevel's current API (V2 and the newer v3 version) supports two ways to authenticate.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:30:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/api",
+      "quote_snippet": "The API gives you secure, programmatic access to core platform resources, including Contacts, Conversations & Messaging, Calendars & Appointments, Payments, and Webhooks.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/drausal/gohighlevel-mcp",
+      "quote_snippet": "A Model Context Protocol (MCP) server providing access to the complete GoHighLevel API.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:30:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dev.to/autogencrm/getting-started-with-the-gohighlevel-api-auth-webhooks-and-common-gotchas-5fo3",
+      "quote_snippet": "is missing, HighLevel's docs say to check that the feature is enabled in Labs. OAuth 2.0. Required when you're building a Marketplace",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:30:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dev.to/autogencrm/getting-started-with-the-gohighlevel-api-auth-webhooks-and-common-gotchas-5fo3",
+      "quote_snippet": "I (V2 and the newer v3 version) supports two ways to authenticate. The old V1 API keys reached end of support on",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:30:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://ideas.gohighlevel.com/ad-reporting-and-attribution/p/mcp-server-for-gohighlevel-connect-to-llms-actions",
+      "quote_snippet": "Shaun Clark I've continued down the road of MCP integrations within GHL and after countless hours of exploring, we've build an integration",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://basecloudglobal.com/gohighlevel-pricing",
+      "quote_snippet": "pays about $120 to $300 a month in total. Is GoHighLevel free? No. There is no free plan. HighLevel offers a 14-day",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:30:54",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://marketplace.gohighlevel.com/docs/api",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://ideas.gohighlevel.com/ad-reporting-and-attribution/p/mcp-server-for-gohighlevel-connect-to-llms-actions",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

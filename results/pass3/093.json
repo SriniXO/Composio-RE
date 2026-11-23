@@ -1,0 +1,140 @@
+{
+  "id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Fathom is an AI-powered note-taking service that captures, transcribes, and summarizes Zoom, Google Meet, and Microsoft Teams calls. It offers a free tier for individuals and paid plans for teams with CRM integration, delivering searchable, editable meeting notes and actionable insights.",
+  "website": "https://fathom.video",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys and bearer tokens are used for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.fathom.ai/external/v1/openapi.json",
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://developers.fathom.ai/mcp-docs"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript",
+    "Python"
+  ],
+  "api_access_pricing": "Freemium",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://fathom.video",
+      "quote_snippet": "Fathom is now part of Superhuman.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T18:54:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.fathom.ai/sdks/authentication",
+      "quote_snippet": "Authenticate with the Fathom SDKs using API keys",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:54:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.fathom.ai/quickstart",
+      "quote_snippet": "Generate an API key and make your first call",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T18:54:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.fathom.ai/api-overview",
+      "quote_snippet": "All REST API resources are authenticated with API keys generated via the Fathom website’s settings area.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:54:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/fathom-ai",
+      "quote_snippet": "Fathom AI provides an AI‑powered note‑taking service that captures, transcribes, and summarizes Zoom, Google Meet, and Microsoft Teams calls.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T18:54:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/fathom",
+      "quote_snippet": "Fathom Analytics is a privacy-first website analytics platform that provides GDPR-compliant, cookie-free analytics as an alternative to Google Analytics.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T18:54:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.xpay.sh/saas-pricing/fathom-analytics",
+      "quote_snippet": "Fathom Analytics pricing starts at $15/mo (or $12.5/mo billed annually) for the Up to 100,000 pageviews plan.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:54:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/Dot-Fun/fathom-mcp",
+      "quote_snippet": "A Model Context Protocol server for interacting with the Fathom AI API.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:54:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/matthewbergvinson/fathom-mcp",
+      "quote_snippet": "MCP server for Fathom.video - Access AI meeting transcripts, summaries, and action items from Cursor IDE",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:54:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/agencyenterprise/fathom-mcp-server",
+      "quote_snippet": "An mcp server built for fathom and works in claude.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:54:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.fathom.ai/sdks/authentication",
+      "quote_snippet": "elog Installation & Auth Authentication Authenticate with the Fathom SDKs using API keys API Key Authentication TypeScript Python import { Fathom }",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:54:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://fathom.video",
+      "quote_snippet": "gs so you can focus on the conversation. Now available bot-free. Get started - free forever SOC 2 Type II | GDPR",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:54:47",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: suggested_form https://github.com/Dot-Fun/fathom-mcp",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth ['api_key', 'bearer_token'] -> ['api_key']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://developers.fathom.ai/mcp-docs"
+  ]
+}

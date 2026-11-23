@@ -1,0 +1,104 @@
+{
+  "id": 52,
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "SE Ranking provides an API for SEO and data analysis, with authentication via API key and a public API surface.",
+  "website": "https://seranking.com/",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Generate an API key from the API Dashboard.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://seranking.com/api/openapi",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://seranking.com/mcp.html"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "pay_as_you_go",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://seranking.com/api/data/getting-started",
+      "quote_snippet": "All requests to the Data API must be authenticated.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:06:32",
+      "quote_verified": true
+    },
+    {
+      "url": "https://seranking.com/api/data/getting-started",
+      "quote_snippet": "You can test your key by fetching your subscription details.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T17:06:32",
+      "quote_verified": true
+    },
+    {
+      "url": "https://seranking.com/api/data/getting-started",
+      "quote_snippet": "The base URL for all endpoints is: https://api.seranking.com",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:06:32",
+      "quote_verified": false
+    },
+    {
+      "url": "https://seranking.com/api.html",
+      "quote_snippet": "API access is included in every SE Ranking plan",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T17:06:35",
+      "quote_verified": true
+    },
+    {
+      "url": "https://seranking.com/api/data/getting-started",
+      "quote_snippet": "he base URL for all endpoints is: Copy https://api.seranking.com 1. Obtain your API key First, you’ll need to generate a unique API",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T17:06:32",
+      "quote_verified": true
+    },
+    {
+      "url": "https://seranking.com/mcp.html",
+      "quote_snippet": "SE Ranking MCP brings keyword, backlink, and domain data into one workflow. Research rankings, competitors, and site performance across your favorite AI",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/seranking/seo-skills",
+      "quote_snippet": "/install.sh The script verifies Node 20+, prompts for your FIRECRAWL_API_KEY (free tier is 500 credits/month at https://firecrawl.dev ), and idempotently merges the",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:06:38",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://seranking.com/api/data/getting-started",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: ['https://seranking.com/api']",
+    "pass3 R3 official MCP found on vendor domain: https://seranking.com/mcp.html"
+  ]
+}

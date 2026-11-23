@@ -1,0 +1,100 @@
+{
+  "id": 16,
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_line_description": "LiveAgent is a help desk and live chat software with AI agents and live chat, offering a platform for AI agents, customer support experts, answer assistants, and human handovers.",
+  "website": "https://liveagent.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key obtained from the LiveAgent admin panel.",
+  "self_serve": "yes",
+  "gate_detail": "No gate required for trial.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "cursor-based",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "TypeScript",
+    "cURL"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://www.liveagent.com/pricing",
+      "quote_snippet": "LiveAgent has four main paid plans: Small, Medium, Large, and Enterprise.",
+      "field_supported": "pricing",
+      "fetched_at": "2026-11-23T16:05:51",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.liveagent.com/features/api",
+      "quote_snippet": "LiveAgent’s API enables seamless software communication, supporting actions like company retrieval and conversation creation.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:05:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.liveagent.com/pricing",
+      "quote_snippet": "The starting point for small business",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T16:05:51",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apps.make.com/liveagent",
+      "quote_snippet": "iveAgent and Make ﻿ , allowing the two services to communicate. 1 Obtain your API Key in your LiveAgent account 2 Create",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:05:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+      "quote_snippet": "LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools, such as ChatGPT, Claude Desktop, Cursor,",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://liveagent.com",
+      "quote_snippet": "th a 30-day free trial with all features and without a credit card. There is no free plan. Start your free trial",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:05:44",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: pricing https://www.liveagent.com/pricing",
+    "dropped-quote-not-in-page: self_serve https://www.liveagent.com/pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://support.liveagent.com/647358-MCP-Integration-for-Agents",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

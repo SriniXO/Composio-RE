@@ -28,6 +28,11 @@ def main():
             w.writerow([r["id"], r["app"], r["category"], r["one_line_description"], ";".join(r["auth_methods"]), r["self_serve"],
                         r["buildability"], r["main_blocker"], r["suggested_form"], r["existing_mcp"]["exists"], r["outreach_needed"],
                         r["confidence"], r["needs_human"]["flag"], ";".join(e["url"] for e in r["evidence"] if e["quote_verified"])])
+    audit = ROOT / "verification" / "ai_audit.json"
+    unresolved = set()
+    if audit.exists():
+        ids = {str(k) for k, v in json.loads(audit.read_text(encoding="utf-8")).items() if any(x[0] == "unverifiable" or x[1] == "unverifiable" for x in v.values())}
+        unresolved = {r["app"] for r in recs if str(r["id"]) in ids}
     verified = lambda r: any(e["quote_verified"] for e in r["evidence"])
     cat = defaultdict(list)
     for r in recs:
@@ -43,13 +48,13 @@ def main():
         "buildability_by_category": {c: Counter(r["buildability"] for r in rs).most_common() for c, rs in cat.items()},
         "blockers": Counter(r["main_blocker"] for r in recs if r["buildability"] != "ready_now").most_common(),
         "easy_wins": [r["app"] for r in recs if r["buildability"] == "ready_now"],
-        "needs_outreach": [r["app"] for r in recs if r["outreach_needed"] or r["main_blocker"] in ("partner_approval", "enterprise_only")],
+        "needs_outreach": [r["app"] for r in recs if r["self_serve"] in ("admin_approval", "partner_gated", "contact_sales") or r["main_blocker"] in ("partner_approval", "enterprise_only", "review_process")],
         "existing_mcp_exists": sum(1 for r in recs if r["existing_mcp"]["exists"]),
         "existing_mcp_unverified": sum(1 for r in recs if r["existing_mcp"]["exists"] is None),
         "with_verified_evidence": sum(1 for r in recs if verified(r)),
         "needs_human": [r["app"] for r in recs if r["needs_human"]["flag"]],
         "confidence": Counter(r["confidence"] for r in recs).most_common(),
-        "defeated": [r["app"] for r in recs if not verified(r)],
+        "defeated": sorted({r["app"] for r in recs if not verified(r)} | unresolved),
     }
     (ROOT / "data" / "stats.json").write_text(json.dumps(stats, indent=1, ensure_ascii=False), encoding="utf-8")
     print(f"{n} records from {d.name}; verified-evidence apps: {stats['with_verified_evidence']}; ready_now: {len(stats['easy_wins'])}")

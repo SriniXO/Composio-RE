@@ -1,0 +1,120 @@
+{
+  "id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Gladly is an AI-powered support and helpdesk platform that can be integrated with an AI-agent toolkit using its REST API.",
+  "website": "https://gladly.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key authentication is used for accessing the Gladly API.",
+  "self_serve": "yes",
+  "gate_detail": "A free trial is available for testing the Gladly API.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.gladly.com/rest",
+    "rate_limits": "10 requests per second per HTTP method, with a default rate limit of 10 requests per second for each HTTP method across the whole organization"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://help.gladly.com/docs/what-are-mcp-connections"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The Gladly API requires API User permission and a specific API token for authentication.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "not specified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "node.js"
+  ],
+  "api_access_pricing": "not disclosed",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://gladly.com",
+      "quote_snippet": "Gladly is the only retail-trained AI Commerce solution for the modern customer journey.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T16:11:23",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.getmacha.com/blog/gladly-api-explained",
+      "quote_snippet": "The Gladly REST API uses Basic authentication with a user's email and an API token, and only users with the API User permission can create tokens.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:11:24",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.getmacha.com/blog/gladly-api-explained",
+      "quote_snippet": "A Gladly webhook that fails to answer within 15 seconds is retried four times, at 30 seconds, 5 minutes, 30 minutes and 1 hour, then deactivated.",
+      "field_supported": "webhooks",
+      "fetched_at": "2026-11-23T16:11:24",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.gladly.com/rest",
+      "quote_snippet": "The Gladly REST API uses Basic authentication with a user's email and an API token, and only users with the API User permission can create tokens.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:11:25",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.gladly.com/rest",
+      "quote_snippet": "Gladly's default rate limit is 10 requests per second for each HTTP method across the whole organization, and the Reports API is limited to 10 requests per minute with 2 concurrent.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:11:25",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/gladly/rest-api-examples",
+      "quote_snippet": "Please follow these instructions to create an API token.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T16:11:27",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.getmacha.com/blog/gladly-api-explained",
+      "quote_snippet": "Basic auth: the email of a Gladly user who has the API User permission, plus an API token that user creates. By",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:11:24",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+      "quote_snippet": "Instead of building a custom App Platform integration for every external system, you register an MCP server once. Gladly discovers the tools",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.open.cx/compare/helpdesk/open-vs-gladly",
+      "quote_snippet": "Per agent/mo, annual; usage fees for voice, SMS, and AI; not published on site. Free plan Open No Gladly No ( 3rd-party",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:11:28",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "dropped-quote-not-in-page: auth_methods https://developer.gladly.com/rest",
+    "dropped-quote-not-in-page: api_surface https://developer.gladly.com/rest",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://medium.com/@caring_smitten_gerbil_914/automate-github-like-a-pro-how-the-github-mcp-server-transforms-devops-with-ai-0c73e4edd6de']",
+    "pass3 R3 official MCP found on vendor domain: https://help.gladly.com/docs/what-are-mcp-connections",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": 57,
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Bright Data offers an AI-agent toolkit through its MCP server and API, providing web data access and scraping capabilities.",
+  "website": "https://brightdata.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are used for authentication, and they are managed through the Bright Data platform.",
+  "self_serve": "yes",
+  "gate_detail": "Users can start with a free trial, but for full access, they need to sign up and manage their API keys through the Bright Data dashboard.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.brightdata.com/products/mcp-server/overview"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://brightdata.com/SKILL.md",
+      "quote_snippet": "Set up Bright Data for web data: scraping, search, unblocking pages, and browser automation.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.brightdata.com/api-reference/proxy/proxy_api_auth",
+      "quote_snippet": "Authenticate Bright Data proxy network requests using username and password credentials or an API key.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:13:08",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mcpyet.com/mcp/bright-data",
+      "quote_snippet": "Bright Data maintains an official MCP server.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:13:11",
+      "quote_verified": true
+    },
+    {
+      "url": "https://brightdata.com",
+      "quote_snippet": "and don't run login again. 4. Hard rules: - Never ask the user to paste an API key into chat, and never",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T17:13:06",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.brightdata.com/products/mcp-server/overview",
+      "quote_snippet": "Bright Data MCP servergives AI agents and assistants real-time access to public web data through the Model Context Protocol (MCP). Connect it",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/bright-data/bright-data-plans-pricing",
+      "quote_snippet": "Plan Price Includes Overage Unlocker API Starts from $1/1k req per 1k requests FREE TIER — Crawl API Starts from $1/1k req",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:13:08",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://brightdata.com/SKILL.md",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.saasworthy.com/product/bright-data/pricing']",
+    "pass3 R3 official MCP found on vendor domain: https://docs.brightdata.com/products/mcp-server/overview",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

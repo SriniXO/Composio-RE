@@ -1,0 +1,86 @@
+{
+  "id": 89,
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "one_line_description": "Ramp is a finance automation platform with a developer API for accessing and managing account data, building applications, and automating financial workflows.",
+  "website": "https://ramp.com/",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Authentication is handled through Ramp OAuth sign-in with exact redirect URI allowlisting required for custom MCP clients and gateways.",
+  "self_serve": "trial",
+  "gate_detail": "Admin access is required to create a developer app and obtain API credentials.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.ramp.com/v1/public/api-feedback/llm?feedback=...",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://mcp.ramp.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "The Ramp MCP server requires custom setup and approval from Ramp.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "unverified"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "quote_snippet": "Authentication and permission requirements have not been reviewed here. Check the provider documentation for the required keys, OAuth scopes and account access before sending a request.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:48:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "quote_snippet": "Server URL: https://mcp.ramp.com/mcp",
+      "field_supported": "existing_mcp.url",
+      "fetched_at": "2026-11-23T18:48:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "quote_snippet": "Authentication: Ramp OAuth sign-in; exact redirect URI allowlisting required for custom MCP clients and gateways.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T18:48:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apitracker.io/a/ramp",
+      "quote_snippet": "not been reviewed here. Check the provider documentation for the required keys, OAuth scopes and account access before sending a request. Can",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:48:47",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://docs.ramp.com/developer-api/v1/authorization",
+    "dropped-quote-not-in-page: existing_mcp.url https://docs.ramp.com/developer-api/v1/authorization",
+    "dropped-quote-not-in-page: auth_notes https://docs.ramp.com/developer-api/v1/authorization",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/ramp-public/ramp-mcp']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://mcp.ramp.com/mcp",
+    "pass3 R4 conflicting signals (approval language AND free plan): kept model value",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_with_caveats/paid_plan"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": 40,
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "SendGrid is a marketing and email service provider owned by Twilio, offering an API for email delivery and a Marketing Campaigns editor for opt-in lists.",
+  "website": "https://sendgrid.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are used for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "60-day trial at 100 emails a day, no card required.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Yes, see Twilio's SendGrid API rate limits."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/deyikong/sendgrid-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The official SendGrid MCP is not available, but third-party MCP servers are available.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, see Twilio's SendGrid API documentation for details.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Node.js",
+    "Java",
+    "C#",
+    "Go",
+    "Ruby"
+  ],
+  "api_access_pricing": "Yes, see Twilio's SendGrid API pricing page.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "An API Key must be included in the Authorization header.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "Create an API Key in the SendGrid dashboard.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "The host for Web API v3 requests is always https://api.sendgrid.com/v3/",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "The total message size should not exceed 20MB.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "To send an email using the SendGrid API, follow these steps.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "The Essentials plan sends from shared IP addresses with one teammate.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "The Pro plan adds one dedicated IP with automated IP warmup, subusers, SSO, up to 1,000 teammates and 2,500 address validations.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "The Marketing Campaigns editor is a separate subscription.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+      "quote_snippet": "the API, you need to do the following: Create a SendGrid account . Create an API Key . Make sure you have",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:13:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.buildmvpfast.com/tools/api-pricing-estimator/sendgrid",
+      "quote_snippet": "CD Add Custom Email 9 service s SendGrid 100 emails/day (60-day trial) Popular Free tier is 60-day trial only. Essentials $19.95/mo (up",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:39:33",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: self_serve https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+    "dropped-quote-not-in-page: api_surface https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+    "dropped-quote-not-in-page: api_access_pricing https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+    "dropped-quote-not-in-page: api_access_pricing https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+    "dropped-quote-not-in-page: api_access_pricing https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://github.com/deyikong/sendgrid-mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

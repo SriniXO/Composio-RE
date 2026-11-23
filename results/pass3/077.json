@@ -1,0 +1,107 @@
+{
+  "id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_line_description": "ClickUp offers an API for integrating with AI agents through MCP servers or agent skills.",
+  "website": "https://clickup.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Personal tokens and OAuth flow are supported for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "No specific gate detail provided.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.clickup.com/api",
+    "rate_limits": "varies by plan"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://clickup.com/blog/how-to-use-clickup-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote_snippet": "To use the ClickUp API, you must authenticate every request.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T18:32:26",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.clickup.com/docs/Getting%20Started",
+      "quote_snippet": "The ClickUp API enforces request rate limits per token.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:32:26",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/taazkareem/clickup-mcp-server",
+      "quote_snippet": "ClickUp MCP Server - Integrate ClickUp project management with AI through Model Context Protocol",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:32:34",
+      "quote_verified": true
+    },
+    {
+      "url": "https://clickup.com/api",
+      "quote_snippet": "right from your AI assistant. Webhooks Trigger workflows from ClickUp events. OAuth Let people sign into their ClickUp account. Get started with",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:32:26",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote_snippet": "authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:32:26",
+      "quote_verified": true
+    },
+    {
+      "url": "https://clickup.com/blog/how-to-use-clickup-mcp-server",
+      "quote_snippet": "In Cursor, the fastest route is the official ClickUp Cursor Plugins, which is verified by Cursor and handles the connection in one",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://clickup.com/blog/clickup-api",
+      "quote_snippet": "ClickUp data without authenticating. If you don’t have an account yet, you can sign up for free and create your first Workspace!",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:32:27",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R2 api type unclear -> REST (rest=3, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://clickup.com/blog/how-to-use-clickup-mcp-server",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

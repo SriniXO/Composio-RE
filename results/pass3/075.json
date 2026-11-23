@@ -1,0 +1,77 @@
+{
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_line_description": "",
+  "website": "",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "",
+  "self_serve": "unclear",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "unverified",
+  "main_blocker": "other",
+  "blocker_detail": "",
+  "suggested_form": "unverified",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://forum.asana.com/t/oauth-personal-access-token-api-key-how-to-get-connected-to-asana-through-our-api/814",
+      "quote_snippet": "OAuth? Personal Access Token? API Key? How to get connected to Asana through our API - API & Developers - Asana Community",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:19:46",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PHqjLID7WAg",
+      "quote_snippet": "How To Set Up And Create Api Key In Asana (Tutorial 2025) - YouTube About Press Copyright Contact us Creator Advertise Developers",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:19:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server",
+      "quote_snippet": "## Claude Code You can connect Claude Code to Asana's V2 MCP server natively thanks to its support for OAuth pre-registration. ###",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=PHqjLID7WAg",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth [] -> ['oauth2', 'api_key']",
+    "pass3 R2 api type unclear -> REST (rest=14, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://developers.asana.com/docs/connecting-mcp-clients-to-asanas-v2-server",
+    "pass3 R4 conflicting signals (approval language AND free plan): kept model value"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_line_description": "Zoho CRM offers an official MCP server for AI agents, using OAuth 2.0 authentication.",
+  "website": "https://zoho.com/crm",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Uses OAuth 2.0 for authentication, with client ID, client secret, and refresh token.",
+  "self_serve": "yes",
+  "gate_detail": "No gate required for self-serve access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "credit-based daily pool"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "unverified",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Java",
+    "Python",
+    "Node.js",
+    "PHP",
+    "C#"
+  ],
+  "api_access_pricing": "included on all plans",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "quote_snippet": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:52:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/dev-edition.html",
+      "quote_snippet": "The Developer Edition of Zoho CRM is the ideal training ground for developers to play around with the CRM account and test robust CRM implementations.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T15:52:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+      "quote_snippet": "Included on all plans, including Free (3 users, 5,000 credits/day); no separate API tier",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T15:52:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://top-mcps.com/mcp/zoho-crm",
+      "quote_snippet": "Create records, update deals, and run Zoho CRM actions from an AI agent — official Zoho MCP.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:52:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "quote_snippet": "OAuth 2.0 Authentication | Zoho CRM API | V8 OAuth 2.0 for V8 APIs - An Overview The Zoho CRM API uses",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T15:52:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+      "quote_snippet": "## Overview Zoho CRM MCP servers connect your AI tools to Zoho CRM using the Model Context Protocol (MCP). They expose CRM",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://zoho.com/crm",
+      "quote_snippet": "Zoho CRM can be customized to meet your business needs. Does Zoho CRM have a free plan? Zoho CRM's freemium edition supports",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T15:52:40",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=WuDDfEgVI_8",
+    "dropped-quote-not-in-page: self_serve https://www.zoho.com/crm/developer/docs/dev-edition.html",
+    "dropped-quote-not-in-page: api_access_pricing https://www.zoho.com/en-us/crm/zohocrm-pricing.html",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+  ]
+}

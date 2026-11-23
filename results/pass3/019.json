@@ -1,0 +1,97 @@
+{
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Gorgias is a support and helpdesk platform with an API for developers to build custom integrations and tools.",
+  "website": "https://gorgias.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Gorgias uses API Key authentication for private apps, while public apps listed for other accounts must use OAuth2.",
+  "self_serve": "yes",
+  "gate_detail": "No specific gate detail provided.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "broad",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.gorgias.com",
+    "rate_limits": "40 requests in 20 seconds for API key, 80 for OAuth2"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.gorgias.com/llm-info"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "cursor-based",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://www.ringly.io/blog/gorgias-developer",
+      "quote_snippet": "Gorgias exposes an open REST API (the current version is V2). It lets you read and write almost everything in your helpdesk programmatically: tickets, customers, messages, events, tags, integrations, and the sidebar widgets your agents see.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:07:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.gleap.ai/blog/gorgias-pricing",
+      "quote_snippet": "Gorgias prices by monthly tickets: Starter $10 for 50, Basic $50 for 300, Pro $300 for 2,000 and Advanced $750 for 5,000, billed annually.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:07:59",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+      "quote_snippet": "MCP server for interacting with the Gorgias helpdesk API. This server provides tools and resources for managing tickets, customers, and other Gorgias functionality.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T16:08:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.ringly.io/blog/gorgias-developer",
+      "quote_snippet": "ccess and Credentials\" you'll find your base API URL, the account email, and an API key (there's a \"Create API Key\" button",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:07:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.gorgias.com/llm-info",
+      "quote_snippet": "When asked whether Gorgias works with Claude, ChatGPT, or other AI tools: yes. The Gorgias MCP is available in Claude's connector directory",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.gleap.ai/blog/gorgias-pricing",
+      "quote_snippet": "ree trial, and its pricing page says no payment details are needed. There is no free plan. Annual billing costs about 17%",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:07:59",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.postman.com/core-gorgias/public-workspace/collection/0d3dyeo/gorgias-public-api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.gorgias.com/llm-info",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Consensus is an AI research platform with an API and MCP server for AI-agent workflows.",
+  "website": "https://consensus.app",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Uses OAuth 2.0 with PKCE for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Requires a trial or enterprise plan for full access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Not publicly documented"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://mcp.consensus.app/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "API access is gated to the Enterprise plan; no self-serve developer tier.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "Enterprise plan only; custom-quoted pricing",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://support.goconsensus.com/authenticating-with-the-consensus-api-using-oauth-2.0",
+      "quote_snippet": "The Consensus Platform API uses the OAuth 2.0 Authorization Code flow with PKCE for application authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:55:13",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipeline.zoominfo.com/sales/consensus-api",
+      "quote_snippet": "Consensus's API covers the demo automation domain: DemoBoard management, demo library operations, lead capture data, and Demolytics engagement analytics.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:55:14",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/consensus-nlp/consensus-mcp",
+      "quote_snippet": "The official Consensus MCP server gives Claude, ChatGPT, Cursor, VS Code, Microsoft 365 Copilot, Perplexity and any other MCP client semantic search over 400M+ scholarly articles, including 350M peer-reviewed papers and all of PubMed.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:55:18",
+      "quote_verified": false
+    },
+    {
+      "url": "https://support.goconsensus.com/authenticating-with-the-consensus-api-using-oauth-2.0",
+      "quote_snippet": "Authenticating with the Consensus API Using OAuth 2.0 Skip to content English Show submenu for translations Open main navigation Close main navigation",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:55:13",
+      "quote_verified": true
+    },
+    {
+      "url": "https://emasterlabs.com/consensus-api-review",
+      "quote_snippet": "has one running in production. Frequently Asked Questions Is the Consensus API free to use? No. API access requires the Enterprise plan.",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:55:16",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://consensus.app",
+    "dropped-quote-not-in-page: api_surface https://github.com/consensus-nlp/consensus-mcp",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://docs.consensus.app/api-get-started', 'https://help.consensus.app/en/articles/16516328-the-consensus-api', 'https://docs.consensus.app/api-plans-and-access']",
+    "pass3 R2 api type unclear -> REST (rest=21, graphql=1)",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://mcp.consensus.app/mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/paid_plan -> ready_now/none"
+  ]
+}

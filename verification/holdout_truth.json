@@ -1,0 +1,238 @@
+{
+ "7": {
+  "auth": [
+   "oauth2"
+  ],
+  "ss": [
+   "yes",
+   "trial"
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "ready_with_caveats",
+  "src": "https://www.zoho.com/crm/developer/docs/api/v8/register-client.html | https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+ },
+ "19": {
+  "auth": [
+   "api_key",
+   "basic",
+   "oauth2"
+  ],
+  "ss": null,
+  "api": "REST",
+  "mcp": null,
+  "bu": null,
+  "src": "https://developers.gorgias.com/reference/authentication (access terms + MCP official status not verified from first-party pages)"
+ },
+ "22": {
+  "auth": [
+   "api_key",
+   "basic"
+  ],
+  "ss": [
+   "trial",
+   "yes"
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "ready_with_caveats",
+  "src": "https://www.twilio.com/docs/usage/requests-to-twilio | https://www.twilio.com/docs/mcp"
+ },
+ "39": {
+  "auth": [
+   "oauth2"
+  ],
+  "ss": [
+   "gated",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   false
+  ],
+  "bu": "blocked",
+  "src": "https://developers.facebook.com/documentation/threads/get-started | App Review requirement"
+ },
+ "44": {
+  "auth": [
+   "oauth2"
+  ],
+  "ss": [
+   "gated",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "blocked",
+  "src": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html (Account Manager client + realm/sandbox roles; sales-led) | https://salesforcecommercecloud.github.io/b2c-developer-tooling/dev/mcp (official, developer preview)"
+ },
+ "47": {
+  "auth": [
+   "api_key",
+   "oauth2"
+  ],
+  "ss": [
+   "paid",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   false
+  ],
+  "bu": "ready_with_caveats",
+  "src": "https://api-docs.ecwid.com/reference/get-started-with-rest-api (API needs paid plan; free test store exception for developers)"
+ },
+ "54": {
+  "auth": [
+   "api_key"
+  ],
+  "ss": [
+   "yes",
+   "trial"
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "ready_now",
+  "src": "https://docs.mrscraper.com/docs/api/authentication | https://docs.mrscraper.com/docs/getting-started/mcp-server (LOW CONFIDENCE on free-tier terms)"
+ },
+ "55": {
+  "auth": [
+   "api_key",
+   "oauth2"
+  ],
+  "ss": [
+   "yes",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "ready_now",
+  "src": "https://docs.apify.com/api/v2/getting-started | https://docs.apify.com/mcp | https://apify.com/pricing.md"
+ },
+ "61": {
+  "auth": [
+   "api_key",
+   "oauth2",
+   "jwt"
+  ],
+  "ss": [
+   "yes",
+   ""
+  ],
+  "api": "REST+GraphQL",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "ready_now",
+  "src": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api | https://github.com/github/github-mcp-server (GraphQL + Apps JWT from background knowledge: LOW CONFIDENCE on those two)"
+ },
+ "68": {
+  "auth": [
+   "oauth2",
+   "api_key"
+  ],
+  "ss": null,
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": null,
+  "src": "https://www.mongodb.com/docs/atlas/api/api-authentication/ | https://www.mongodb.com/docs/mcp-server/overview/ (free-tier terms not verified)"
+ },
+ "77": {
+  "auth": [
+   "api_key",
+   "oauth2"
+  ],
+  "ss": [
+   "yes",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "ready_now",
+  "src": "https://developer.clickup.com/docs/authentication | https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server"
+ },
+ "78": {
+  "auth": [
+   "api_key"
+  ],
+  "ss": [
+   "yes",
+   ""
+  ],
+  "api": null,
+  "mcp": null,
+  "bu": "ready_now",
+  "src": "https://coda.io/developers (free workspaces; official MCP status conflicting, API style not stated in results)"
+ },
+ "80": {
+  "auth": [
+   "api_key",
+   "oauth2"
+  ],
+  "ss": null,
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": null,
+  "src": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/ | https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP (free/trial terms not verified)"
+ },
+ "88": {
+  "auth": [
+   "api_key",
+   "oauth2"
+  ],
+  "ss": [
+   "gated",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   true
+  ],
+  "bu": "blocked",
+  "src": "https://developer.brex.com/guides/authentication (user token needs a Brex account admin; partner OAuth needs Brex-issued client id) | https://developer.brex.com/docs/mcp"
+ },
+ "91": {
+  "auth": [
+   "oauth2"
+  ],
+  "ss": [
+   "paid",
+   ""
+  ],
+  "api": "REST",
+  "mcp": [
+   true,
+   false
+  ],
+  "bu": "blocked",
+  "src": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm (license + billing required) | no official MCP found"
+ }
+}

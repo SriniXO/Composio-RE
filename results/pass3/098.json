@@ -1,0 +1,92 @@
+{
+  "id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Mermaid CLI is a command-line tool for generating diagrams from Mermaid code. It can be used to create SVG, PNG, and PDF files. The Mermaid API provides programmatic access to its dataset, and there are MCP servers available for AI agents.",
+  "website": "https://mermaid-js.github.io/mermaid-cli/",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Authentication is required for accessing the Mermaid API and MCP servers.",
+  "self_serve": "paid_required",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://api.datamermaid.org/v1/swagger.json",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/andrewginns/mermaid-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "The Mermaid CLI and MCP servers require Node.js to be installed, which may not be available on all platforms.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "quote_snippet": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T19:02:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.icepanel.io/api-reference/flows/export/mermaid",
+      "quote_snippet": "Authentication\nX-API-Key\nstring\nAPI key authentication\nOR\nAuthorization\nBearer\nBearer token authentication",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T19:02:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/andrewginns/mermaid-mcp-server",
+      "quote_snippet": "Python MCP Server abstracting the official mermaid-cli for ease of use",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T19:02:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.icepanel.io/api-reference/flows/export/mermaid",
+      "quote_snippet": "sdk \" ; async function main () { const client = new IcePanelClient ( { apiKey : \" YOUR_API_KEY_HERE \" , }",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T19:02:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mermaid.ai/pricing",
+      "quote_snippet": "terprise, we also support invoicing and purchase orders. What’s included in the Enterprise plan? Enterprise includes everything in Premium, plus SSO, dedicated",
+      "field_supported": "self_serve:paid_required",
+      "fetched_at": "2026-11-23T19:02:54",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/narasimhaponnada/mermaid-mcp.git']",
+    "pass3 R1 auth ['api_key', 'oauth2'] -> ['api_key']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://github.com/andrewginns/mermaid-mcp-server",
+    "pass3 R4 self_serve trial -> paid_required",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_with_caveats/paid_plan"
+  ]
+}

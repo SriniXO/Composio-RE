@@ -1,0 +1,99 @@
+{
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Notion is a productivity and project management tool with a robust API for building tools and automations.",
+  "website": "https://www.notion.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Personal access tokens (PATs) are used for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.notion.com/blog/notions-hosted-mcp-server-an-inside-look"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "TypeScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.notion.com/guides/notion-api/quick-start",
+      "quote_snippet": "A personal access token (PAT) lets you authenticate API requests as yourself without setting up a connection or completing an OAuth flow.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:42:16",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.notion.com/guides/notion-api/quick-start",
+      "quote_snippet": "You need a Notion account and a terminal.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T15:42:16",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.notion.com/guides/notion-api/quick-start",
+      "quote_snippet": "Build tools and automations that create pages, organize data, and share feedback in Notion.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:42:16",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.notion.com",
+      "quote_snippet": "PI Quickstart Copy page Copy page Create a page in your Notion workspace with a personal access token and a single API",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T15:11:08",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.notion.com/blog/notions-hosted-mcp-server-an-inside-look",
+      "quote_snippet": "We started by releasing a downloadable notion-mcp-server in early April. It could be installed in Cursor or Claude Desktop (though it required",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.notion.com/releases/2020-05-19",
+      "quote_snippet": "for free) + Unlimited guest collaborators on any page (the limit is 5 on the free plan) + Version history up to",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=fzCgCCvzs6c",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R2 api type unclear -> REST (rest=7, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://www.notion.com/blog/notions-hosted-mcp-server-an-inside-look"
+  ]
+}

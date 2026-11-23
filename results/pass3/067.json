@@ -1,0 +1,126 @@
+{
+  "id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Snowflake is a data platform that can be used to build AI agents through its API and MCP server.",
+  "website": "https://www.snowflake.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "jwt"
+  ],
+  "auth_notes": "Snowflake supports multiple authentication methods including OAuth, API keys, and JWT tokens.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/api",
+    "rate_limits": "Yes, see documentation for details"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "Node.js"
+  ],
+  "api_access_pricing": "Yes, see https://apis.io/plans/snowflake/snowflake-plans-pricing",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote_snippet": "When you send a request, the request must include authentication information using either of the following:",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:25:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/snowflake/snowflake-plans-pricing",
+      "quote_snippet": "Every figure transcribed verbatim from the provider’s own pricing page on 2026-10-28.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T17:25:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/mcp",
+      "quote_snippet": "One button, every client — Claude, Cursor, VS Code and the rest.",
+      "field_supported": "suggested_form",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote_snippet": "information using either of the following: Using key pair authentication Using OAuth Using a programmatic access token (PAT) Using workload identity federation",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T17:25:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote_snippet": "f the following: Using key pair authentication Using OAuth Using a programmatic access token (PAT) Using workload identity federation Using key pair",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T17:25:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+      "quote_snippet": "al API authentication and secrets | Snowflake Documentation. Snowflake supports basic authentication (i.e. username and password) in the API request header as",
+      "field_supported": "auth:basic",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote_snippet": "need to complete the following tasks: Set up key pair authentication Generate a JWT token Set up key pair authentication ¶ To",
+      "field_supported": "auth:jwt",
+      "fetched_at": "2026-11-23T17:25:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+      "quote_snippet": "Snowflake’s MCP server implements the open MCP specification as a server that surfaces available tools. Customers create an MCP server object and",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/snowflake/snowflake-plans-pricing",
+      "quote_snippet": "-Key need no key. Calls with it need a paid plan — get a key . Get an API key Free tier,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:25:56",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://apis.io/plans/chartmetric/chartmetric-plans-pricing",
+    "dropped-quote-not-in-page: suggested_form https://apis.io/mcp",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth ['oauth2', 'api_key', 'basic', 'bearer_token', 'jwt', 'other'] -> ['oauth2', 'api_key', 'basic', 'jwt']",
+    "pass3 R2 api type unclear -> REST (rest=10, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://www.snowflake.com/en/blog/managed-mcp-servers-secure-data-agents",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

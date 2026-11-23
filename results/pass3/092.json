@@ -1,0 +1,90 @@
+{
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Otter AI offers an API for transcription and conversation intelligence, with a public API and an MCP server available.",
+  "website": "https://otter.ai/",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key authentication is required. The key can be generated in the Developer settings of your Otter account.",
+  "self_serve": "yes",
+  "gate_detail": "The API key generation feature is available for Enterprise workspaces. Contact your Otter account manager for access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/DarrenZal/otter-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The MCP server is available but requires partner approval for use with Claude and other agents.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://integrations.sh/otter.ai/otter-public-api",
+      "quote_snippet": "Otter Public API — REST",
+      "field_supported": "api_surface.type",
+      "fetched_at": "2026-11-23T18:52:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://integrations.sh/otter.ai/otter-public-api",
+      "quote_snippet": "Authorization: Bearer <credential>",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:52:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/DarrenZal/otter-mcp",
+      "quote_snippet": "MCP server for Otter.ai transcript search and retrieval",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T18:52:58",
+      "quote_verified": true
+    },
+    {
+      "url": "https://integrations.sh/otter.ai/otter-public-api",
+      "quote_snippet": "er.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API Authentication Otter API key bearer discovered Get token ↗ Authorization: Bearer <credential> Sign in to your Otter account, open Developer settin",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:52:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://spokenly.app/blog/otter-ai-pricing",
+      "quote_snippet": "Otter.ai Pricing 2026: Plans, Free Tier, and Alternatives Black Friday 40% off Pro yearly Spokenly Pricing Breakdown Otter.ai Pricing 2026: Plans, Free",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:52:55",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://help.otter.ai', 'https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://github.com/DarrenZal/otter-mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

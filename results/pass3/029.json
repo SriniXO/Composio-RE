@@ -1,0 +1,91 @@
+{
+  "id": 29,
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "one_line_description": "Aircall is a cloud-based contact center platform with an AI-powered customer communications platform, offering both team-led and AI-led customer conversations.",
+  "website": "https://aircall.io",
+  "auth_methods": [
+    "basic"
+  ],
+  "auth_notes": "API keys are used for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "60 requests per minute per token"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://support.aircall.io/en-gb/articles/39677926959517"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "Aircall does not offer an MCP server but may consider it in the future.",
+  "suggested_form": "not feasible",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer.aircall.io/docs/basic-authentication",
+      "quote_snippet": "Authenticate with API Keys",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:21:30",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.aircall.io/docs/mcp-faqs",
+      "quote_snippet": "As of this writting we don't offer an MCP servier but stay tuned.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:21:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dlthub.com/context/source/aircall",
+      "quote_snippet": "The REST API base URL is https://api.aircall.io/v1 and all requests require a Basic Authentication header. dlt is an open-source Python library that",
+      "field_supported": "auth:basic",
+      "fetched_at": "2026-11-23T16:21:32",
+      "quote_verified": true
+    },
+    {
+      "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+      "quote_snippet": "## Setting up Aircall MCP ### Claude Desktop 1. Go to Settings → MCP servers → Add → Custom, Web → Add.",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/aircall/aircall-plans-pricing",
+      "quote_snippet": "-Key need no key. Calls with it need a paid plan — get a key . Get an API key Free tier,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:21:35",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.postman.com/aircall-tech-partnerships-team/aircall-api/overview",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.ox.security/ox-radar/mcp/io-usefulapi-aircall']",
+    "pass3 R3 official MCP found on vendor domain: https://support.aircall.io/en-gb/articles/39677926959517",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

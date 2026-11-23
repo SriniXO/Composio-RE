@@ -1,0 +1,133 @@
+{
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "GitHub provides a REST API for developers to interact with its platform, including authentication methods, API surface, and MCP server capabilities.",
+  "website": "https://github.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "jwt"
+  ],
+  "auth_notes": "GitHub supports multiple authentication methods including OAuth2, API keys, and bearer tokens.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.github.com/rest",
+    "rate_limits": "Yes, with varying limits based on authentication method."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/github/github-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, pagination is supported in API responses.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Go",
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "Free and paid plans available, with varying rates and features.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.github.com/rest/authentication/authenticating-to-the-rest-api",
+      "quote_snippet": "You can authenticate to the REST API to access more endpoints and have a higher rate limit.",
+      "field_supported": "auth",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "You can authenticate to GitHub, run the following command from your terminal.",
+      "field_supported": "auth",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "The GitHub REST API is fully described in an OpenAPI compliant document.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server?featured_on=talkpython",
+      "quote_snippet": "GitHub's official MCP Server connects AI tools directly to GitHub's platform.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:18:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "quote_snippet": "API endpoint. For general guidance about what scopes to choose, see Scopes for OAuth apps . Personal access tokens act as your",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.github.com/en/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "r more information, see Using GitHub CLI in workflows . Authenticating with an access token Instead of using the gh auth login",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "quote_snippet": "Access tokens created by apps are automatically authorized for SAML SSO. Using basic authentication Some REST API endpoints for GitHub Apps and",
+      "field_supported": "auth:basic",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.github.com/en/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "earer or Authorization: token to pass a token. However, if you are passing a JSON web token (JWT), you must use Authorization:",
+      "field_supported": "auth:jwt",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server",
+      "quote_snippet": "1. Using Command Line Argument: ``` github-mcp-server --tools get_file_contents,issue_read,create_pull_request ``` 2. Using Environment Variable: ``` \"get_file_contents,issue_read,create_pull_request\" \" \" ``` 3. Combining with",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/github-copilot/github-copilot-plans-pricing",
+      "quote_snippet": "-Key need no key. Calls with it need a paid plan — get a key . Get an API key Free tier,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:18:44",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth https://docs.github.com/rest/authentication/authenticating-to-the-rest-api",
+    "dropped-quote-not-in-page: auth https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+    "dropped-quote-not-in-page: api_surface https://docs.github.com/rest/quickstart?apiVersion=2026-03-10",
+    "dropped-quote-not-in-page: existing_mcp https://github.com/github/github-mcp-server?featured_on=talkpython",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth ['oauth2', 'api_key', 'basic', 'bearer_token', 'jwt', 'other'] -> ['oauth2', 'api_key', 'basic', 'jwt']",
+    "pass3 R3 official MCP found on vendor domain: https://github.com/github/github-mcp-server"
+  ]
+}

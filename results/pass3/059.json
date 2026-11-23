@@ -1,0 +1,103 @@
+{
+  "id": 59,
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Waterfall.io is a premium B2B data enrichment API that aggregates data from 30+ vendors, offering real-time email and phone verification.",
+  "website": "https://www.waterfall.io",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are used for authentication. Contact the team for API access and pricing.",
+  "self_serve": "trial",
+  "gate_detail": "Contact the team for API access and pricing.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Depends on the endpoint and volume committed to."
+  },
+  "existing_mcp": {
+    "exists": false,
+    "official": false,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "API access and pricing require contacting the team.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Supported",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "cURL",
+    "Python",
+    "JavaScript",
+    "PHP",
+    "Go",
+    "Java",
+    "Ruby"
+  ],
+  "api_access_pricing": "Outcome-based, on credits. A credit is deducted only when a verified result is returned.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://docs.waterfall.io/v1/authentication",
+      "quote_snippet": "Authenticate data and account API requests with your Waterfall API key in the x-api-key header.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/api-keys-create",
+      "quote_snippet": "Create a new API key",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:15:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/introduction",
+      "quote_snippet": "The Waterfall API is available at https://api.waterfall.io.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.waterfall.io/pricing",
+      "quote_snippet": "Outcome-based, on credits. A credit is deducted only when a verified result is returned.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://waterfall.io",
+      "quote_snippet": "prospector' \\ --header 'Content-Type: application/json' \\ --header 'x-waterfall-api-key: YOURKEY' \\ --data '{ \"domain\": \"stripe.com\", \"title_filter\": \"(marketing director)\", \"verified_only\":false, \"limit",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T17:15:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.waterfall.io/pricing",
+      "quote_snippet": "oncile what you were charged against what you received, per request. Is there a free trial, and is there a minimum? Before",
+      "field_supported": "self_serve:trial",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://docs.waterfall.io/v1/authentication",
+    "dropped-quote-not-in-page: api_surface https://docs.waterfall.io/v1/introduction",
+    "dropped-quote-not-in-page: api_access_pricing https://www.waterfall.io/pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://hub.docker.com/mcp/server/github-official/manual']"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_line_description": "BigCommerce offers a suite of APIs for building and managing online stores, products, catalogs, orders, customers, checkouts, payments, and shipping.",
+  "website": "https://www.bigcommerce.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API keys are used for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.bigcommerce.com/v3/swagger.json",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.bigcommerce.com/blog/what-is-an-agent"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.bigcommerce.com",
+      "quote_snippet": "Generate API credentials\nNavigate to Settings > API Accounts in your store control panel. Create credentials with the scopes you need.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:51:06",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "quote_snippet": "Every parent set of API credentials that you request for your store is its own API account.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:51:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+      "quote_snippet": "An MCP server for the BigCommerce REST API. Gives an AI assistant read access to your catalog, customers and orders — and, when you turn it on, the ability to change them.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:51:14",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.bigcommerce.com",
+      "quote_snippet": "mple uses Request Runner to make an initial request that creates a Storefront API token. It is a REST API request, so",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:51:06",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.bigcommerce.com/blog/what-is-an-agent",
+      "quote_snippet": "BigCommerce's MCP server is a perfect example. Today, our MCP server is strictly Storefront (and the developers in our beta are making",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.swell.is/content/bigcommerce-pricing",
+      "quote_snippet": "rce offers a 15-day free trial with no credit card required. BigCommerce has no free plan. Can I downgrade my BigCommerce plan?",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:51:13",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.bigcommerce.com/pricing']",
+    "pass3 R3 official MCP found on vendor domain: https://www.bigcommerce.com/blog/what-is-an-agent"
+  ]
+}

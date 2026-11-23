@@ -1,0 +1,110 @@
+{
+  "id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Intercom offers an AI agent (Fin) and a helpdesk platform with an API and MCP server.",
+  "website": "https://intercom.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Intercom recommends OAuth for public apps and Access Tokens for private apps.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://apitracker.io/a/intercom",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.intercom.com/integrations/connectors/intercom-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby",
+    "PHP",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+      "quote_snippet": "You can create a new developer workspace for developing apps.",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apitracker.io/a/intercom",
+      "quote_snippet": "1 MCP Server",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:59:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "quote_snippet": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apitracker.io/a/intercom",
+      "quote_snippet": "not been reviewed here. Check the provider documentation for the required keys, OAuth scopes and account access before sending a request. Check",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T15:59:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apitracker.io/a/intercom",
+      "quote_snippet": "requirements Transport Streamable HTTP Authentication OAuth recommended; bearer API token also supported. Server URL https://mcp.intercom.com/mcp Use the Streamable HTTP endpoint and authorize",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T15:59:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+      "quote_snippet": "## Overview Intercom's MCP server lets AI tools and CLIs (like Claude Code, Claude Desktop, ChatGPT, Cursor, and VS Code) securely access",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.helpdesk.com/blog/intercom-pricing",
+      "quote_snippet": "st the platform before spending anything. What it doesn’t offer is a permanent free plan or free tier. Once the trial ends,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:00:04",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: self_serve https://intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.intercom.com/integrations/connectors/intercom-mcp-server",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

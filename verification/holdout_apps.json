@@ -1,0 +1,22 @@
+{
+ "seed": 2026,
+ "n": 15,
+ "ids": [
+  7,
+  19,
+  22,
+  39,
+  44,
+  47,
+  54,
+  55,
+  61,
+  68,
+  77,
+  78,
+  80,
+  88,
+  91
+ ],
+ "note": "held-out: never used to design pass 3 rules; truths audited BEFORE viewing agent answers"
+}

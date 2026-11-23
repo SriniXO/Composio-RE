@@ -1,0 +1,123 @@
+{
+  "id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "one_line_description": "Close is a CRM and Sales tool that offers an API for integrations and AI agents.",
+  "website": "https://close.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Close supports OAuth 2.0 for user-facing integrations and API keys for internal tools or simple integrations.",
+  "self_serve": "trial",
+  "gate_detail": "No gate required for self-serve access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Not specified in the provided sources."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://help.close.com/integrations/close-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Not specified in the provided sources.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "Not specified in the provided sources.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "quote_snippet": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:56:21",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "quote_snippet": "API keys are best used for scripts and simple integrations that are internal to your organization.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:56:22",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.close.com/integrations",
+      "quote_snippet": "Close’s REST API supports everything from a simple internal script to a full product integration used by thousands of Close customers.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:56:23",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "quote_snippet": "You will get a following JSON response",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:56:21",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "quote_snippet": "API keys use HTTP Basic client side authentication.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:56:22",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apitracker.io/a/closeio",
+      "quote_snippet": "not been reviewed here. Check the provider documentation for the required keys, OAuth scopes and account access before sending a request. Check",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T15:56:20",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apitracker.io/a/closeio",
+      "quote_snippet": "gement View ↗ Webhook management Authentication & access Authentication methods API Key Pricing & operations Service status View ↗ Service status Tools",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T15:56:20",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.close.com/integrations/close-mcp-server",
+      "quote_snippet": "#### Step 2 Use the command palette (Mac: `Cmd+Shift+P`, Windows: `Ctrl+Shift+P`) to list the MCP servers, select `close-remote-mcp`, and click “Start Server.”",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://close.com/pricing",
+      "quote_snippet": "per user / month$139 per user / monthTry for free Who is this for? [...] Your free trial also includes calling and",
+      "field_supported": "self_serve:trial",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developer.close.com/api/overview/oauth-authentication",
+    "dropped-quote-not-in-page: api_surface https://developer.close.com/api/overview/api-key-authentication",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R2 api type unclear -> REST (rest=9, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://help.close.com/integrations/close-mcp-server",
+    "pass3 R4 self_serve yes -> trial",
+    "pass3 R5 verdict ready_now/none -> ready_with_caveats/paid_plan"
+  ]
+}

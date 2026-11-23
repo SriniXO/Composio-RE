@@ -1,0 +1,115 @@
+{
+  "id": 79,
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Smartsheet is a productivity and project management tool with a robust API for integration and automation.",
+  "website": "https://smartsheet.com/",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "OAuth 2.0 is used for authentication, with a 3-legged process requiring human intervention.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.smartsheet.com/2.0",
+    "rate_limits": "300 requests per minute for most operations, 30 per minute for attachment and history calls."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "C#",
+    "Java",
+    "Node.js",
+    "Python"
+  ],
+  "api_access_pricing": "Business, Enterprise, or Advanced Work Management plans required.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://smartsheet.com/developers",
+      "quote_snippet": "Smartsheet MCP Server Tools",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:35:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://smartsheet.com/developers",
+      "quote_snippet": "Generate New Access Token",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:35:00",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apidog.com/blog/smartsheet-api-guide",
+      "quote_snippet": "Smartsheet API is a set of programmable interfaces provided by Smartsheet, a popular cloud-based platform for work management and collaboration.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T18:35:03",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apidog.com/blog/smartsheet-api-guide",
+      "quote_snippet": "The Smartsheet API is packed with features designed to streamline project management processes.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:35:03",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apidog.com/blog/smartsheet-api-guide",
+      "quote_snippet": "To access Smartsheet API, subscribe to the Smartsheet Business or Enterprise plan.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:35:03",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.activepieces.com/blog/smartsheet-api-rate-limits-auth-and-examples-2026",
+      "quote_snippet": "uthentication, permissions and payload shape are confirmed. Personal tokens and OAuth 2.0 Use a personal access token for a script one person",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:35:02",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+      "quote_snippet": "The Smartsheet MCP Server is an open, protocol-based integration layer built on Anthropic's Model Context Protocol standard. It exposes read/write access to",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.activepieces.com/blog/smartsheet-api-rate-limits-auth-and-examples-2026",
+      "quote_snippet": "behave identically with or without one. Everything below works on Activepieces' free plan. Start without code or a credit card. Token generation",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:35:02",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=ayAyEU_fGEs",
+    "dropped-quote-not-in-page: auth_methods https://smartsheet.com/developers",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

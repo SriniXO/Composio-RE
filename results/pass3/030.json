@@ -1,0 +1,107 @@
+{
+  "id": 30,
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "one_line_description": "Vonage provides a suite of APIs for communications and messaging, with authentication methods including Basic Auth and JWT. It offers a MCP server for AI assistants, providing tools for documentation search, code generation, and troubleshooting.",
+  "website": "https://developer.vonage.com",
+  "auth_methods": [
+    "basic",
+    "jwt"
+  ],
+  "auth_notes": "Vonage recommends JWT for production use due to its support for ACLs and webhooks.",
+  "self_serve": "yes",
+  "gate_detail": "none",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-mcp-tooling-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Node.js",
+    "Python",
+    "PHP"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+      "quote_snippet": "Verify supports two authentication methods: Basic authentication and JWT Bearer authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:22:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.vonage.com/en/getting-started/overview",
+      "quote_snippet": "To work with our APIs, you will need to sign up for an account.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T16:22:48",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+      "quote_snippet": "This MCP server enables AI assistants with access to Vonage API documentation, code snippets, tutorials, and troubleshooting resources.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T16:22:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+      "quote_snippet": "o Main Content Authentication Verify API supports two types of authentication: Basic Authentication JWT When should you use Basic Authentication or JWT?",
+      "field_supported": "auth:basic",
+      "fetched_at": "2026-11-23T16:22:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.vonage.com",
+      "quote_snippet": "ud with two-factor authentication Authenticate your end-users where they prefer JWT authentication available Real-time Monitoring Fraud Notification Prevent fraud with two-factor authentication",
+      "field_supported": "auth:jwt",
+      "fetched_at": "2026-11-23T16:22:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-mcp-tooling-server",
+      "quote_snippet": "The initial release ships with a set of focused, single-purpose tools: balance — check your Vonage account balance sms — send SMS",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.vonage.com",
+      "quote_snippet": "Popular Video Messaging Verify Identity Voice Ready to start building? Create a free account now! Experience seamless connectivity, real-time messaging, and crystal-clear",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:22:47",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: self_serve https://developer.vonage.com/en/getting-started/overview",
+    "dropped-quote-not-in-page: suggested_form https://github.com/Vonage/vonage-mcp-server-documentation",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.vonage.com/communications-apis/pricing']",
+    "pass3 R3 official MCP found on vendor domain: https://developer.vonage.com/en/blog/introducing-the-vonage-mcp-tooling-server"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "NotebookLM is a research and media-native AI tool that can be used to build AI agents and integrate generative AI into applications. It is currently only available through a private API and requires a paid plan.",
+  "website": "https://cloud.google.com/gemini",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "NotebookLM requires an API key for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "NotebookLM is currently only available through a private API and requires a paid plan.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": false,
+    "official": false,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "NotebookLM is currently only available through a private API and requires a paid plan.",
+  "suggested_form": "not feasible",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://cloud.google.com/gemini",
+      "quote_snippet": "NotebookLM is just fantastic, didn’t find any information on how to use via API.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T18:51:50",
+      "quote_verified": false
+    },
+    {
+      "url": "https://discuss.ai.google.dev/t/how-to-access-notebooklm-via-api/5084",
+      "quote_snippet": "There is currently not a public API for NotebookLM.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:51:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/notebooklm",
+      "quote_snippet": "NotebookLM is listed with 1 API on the APIs.io network.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:51:54",
+      "quote_verified": false
+    },
+    {
+      "url": "https://cloud.google.com/gemini",
+      "quote_snippet": "d building with the Gemini Developer API. Try Gemini 3 Get your no cost Gemini API key Gemini Developer API quickstart Gemini",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:51:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://cloud.google.com/gemini",
+      "quote_snippet": "with no lock-in. Pricing calculator Calculate your cloud savings. Google Cloud free tier Explore products with free monthly usage. Cost optimization framework",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:51:50",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://colab.research.google.com/drive/104mZ7leV_STnu14ywODIm727pT121Q5M?usp=sharing",
+    "dropped-quote-not-in-page: auth https://cloud.google.com/gemini",
+    "dropped-quote-not-in-page: api_surface https://apis.io/providers/notebooklm",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.saasworthy.com/product/google-notebooklm/pricing']",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict blocked/paid_plan -> ready_now/none"
+  ]
+}

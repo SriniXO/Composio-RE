@@ -1,0 +1,94 @@
+{
+  "id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_line_description": "QuickBooks API requires OAuth 2.0 authentication and has specific rate limits and pricing tiers.",
+  "website": "https://developer.intuit.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Requires an Intuit Developer account and app registration.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "500,000 CorePlus calls per month for Builder Tier"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://developer.intuit.com/docs/quickbooks/api/overview/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "Requires Intuit's App Partner Program approval.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Node.js",
+    "Python"
+  ],
+  "api_access_pricing": "tiered",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+      "quote_snippet": "The MCP server is designed for financial professionals working in production books.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+      "quote_snippet": "The server takes a different approach: it's designed for financial professionals working in production books.",
+      "field_supported": "suggested_form",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+      "quote_snippet": "The server requires QuickBooks internal IDs for every reference.",
+      "field_supported": "name_resolution",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://coefficient.io/quickbooks-api/setup-quickbooks-api-integration",
+      "quote_snippet": "s API integration requires creating an Intuit Developer account, registering an OAuth app, and implementing proper authentication flows. The process involves configuring",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:45:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apideck.com/blog/quickbooks-api-pricing-and-the-intuit-app-partner-program",
+      "quote_snippet": "Creates/Updates data (invoices, bills, customers): You'll likely remain in the free tier comfortably Reads/Queries data heavily : Consider which paid tier makes",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:45:53",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: existing_mcp https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+    "dropped-quote-not-in-page: suggested_form https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+    "dropped-quote-not-in-page: name_resolution https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://stackoverflow.com/questions/59577398/how-can-i-authenticate-my-quickbook-intuit-api-access-without-user-interection-a']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://developer.intuit.com/docs/quickbooks/api/overview/mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

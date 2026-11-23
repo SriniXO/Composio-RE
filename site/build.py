@@ -18,7 +18,7 @@ def pct(a, b):
     return f"{round(100 * a / b)}%" if b else "n/a"
 
 
-def headlines(st, apps):
+def headlines(st, apps, acc=None):
     n = st["n_apps"]
     out = []
     if st["auth_overall"]:
@@ -33,8 +33,15 @@ def headlines(st, apps):
         out.append(f"Most common blocker among non-ready apps: <b>{b.replace('_', ' ')}</b> ({c} apps).")
     out.append(f"<b>{len(st['easy_wins'])}</b> apps are <code>ready_now</code> (easy wins); <b>{len(st['needs_outreach'])}</b> need outreach.")
     out.append(f"Existing MCP found for <b>{st['existing_mcp_exists']}</b> apps; <b>{st['existing_mcp_unverified']}</b> unverified.")
-    out.append(f"Only <b>{st['with_verified_evidence']}</b> of {n} records have at least one machine-verified evidence quote; "
+    out.append(f"<b>{st['with_verified_evidence']}</b> of {n} records have at least one quote found verbatim on a fetched page (this shows a source exists, not that the answer is right); "
                f"<b>{len(st['needs_human'])}</b> are flagged for a human.")
+    h = (acc or {}).get("holdout", {}).get("runs")
+    if h:
+        c, p3 = h["constant"]["clean_13"], h["pass3"]["clean_13"]
+        good = [f for f in ("auth_methods", "api_surface") if p3[f]["accuracy"] - c[f]["accuracy"] > 0.2]
+        weak = [f for f in ("self_serve", "existing_mcp", "buildability") if p3[f]["accuracy"] - c[f]["accuracy"] <= 0.1]
+        out.append(f"<b>How far to trust this:</b> on held-out apps the final agent scored <b>{round(100*p3['ALL']['accuracy'])}%</b> (a pure guesser: {round(100*c['ALL']['accuracy'])}%). "
+                   f"Reliable fields: <b>{', '.join(good)}</b>. Barely better than guessing: <b>{', '.join(weak)}</b>, so counts of easy wins, self-serve apps and existing MCPs are <b>upper bounds</b>, not facts.")
     return out
 
 
@@ -49,7 +56,7 @@ def main():
         raise SystemExit("run `python -m agent.analyze --pass 2` first")
     payload = {"apps": apps, "stats": st, "accuracy": acc, "loops": jload("loop_effects.json", {}), "pass1": p1, "repo": a.repo, "live": a.live}
     blob = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
-    heads = "".join(f"<li>{h}</li>" for h in headlines(st, apps))
+    heads = "".join(f"<li>{h}</li>" for h in headlines(st, apps, acc))
     tpl = (SITE / "template.html").read_text(encoding="utf-8")
     ld = {"@context": "https://schema.org", "@type": "Dataset", "name": "Agent-toolkit buildability of 100 apps",
           "description": "Auth, self-serve vs gated, API surface, MCP and buildability for 100 apps, with evidence URLs.",
@@ -65,7 +72,7 @@ def main():
     llms = [f"# Agent-toolkit buildability research: {st['n_apps']} apps", "",
             f"Source: {a.live or '(live URL pending)'}  Repo: {a.repo or '(pending)'}",
             "Data: apps.json, apps.csv. Every field has evidence[] with url + quote; quote_verified=true means the quote was found verbatim in the fetched page.",
-            "", "## Headline patterns"] + ["- " + h.replace("<b>", "").replace("</b>", "").replace("<code>", "").replace("</code>", "") for h in headlines(st, apps)]
+            "", "## Headline patterns"] + ["- " + h.replace("<b>", "").replace("</b>", "").replace("<code>", "").replace("</code>", "") for h in headlines(st, apps, acc)]
     (SITE / "llms.txt").write_text("\n".join(llms), encoding="utf-8")
     print("built site/index.html,", len(apps), "apps")
 

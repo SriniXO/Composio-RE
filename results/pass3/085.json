@@ -1,0 +1,99 @@
+{
+  "id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "one_line_description": "iPayX is a finance and fintech app with a neutral FX verification layer, offering API access for authentication and other services.",
+  "website": "https://ipayx.ai/",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Uses OAuth2 for authentication.",
+  "self_serve": "paid_required",
+  "gate_detail": "unclear",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": null,
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": false,
+    "official": false,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "No public API available for MCP server or agent skills.",
+  "suggested_form": "not feasible",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "pay-per-use",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://ipayx.ai/docs",
+      "quote_snippet": "iPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T18:45:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://ipayx.ai/docs",
+      "quote_snippet": "We use OAuth2 for Authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:45:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://ipayx.ai/docs",
+      "quote_snippet": "Access tokens must be reused until they expire, instead of requesting a new token before every API call.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:45:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://ipayx.ai/docs",
+      "quote_snippet": "The X API uses pay-per-usage pricing with no subscriptions.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:45:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.lead.bank/api-reference/using-the-api/authentication",
+      "quote_snippet": "API Overview, OAuth Authentication, and IP Allowlist - Lead | API Docs Documentation Index Fetch the complete documentation index at: /llms",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:45:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.x.com/x-api/getting-started/pricing",
+      "quote_snippet": "ost reads per monthly billing cycle . If you need higher volume, upgrade to an Enterprise plan . Write operations Charged per",
+      "field_supported": "self_serve:paid_required",
+      "fetched_at": "2026-11-23T18:45:46",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve_unclear"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://ipayx.ai/docs",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "dropped-quote-not-in-page: auth_methods https://ipayx.ai/docs",
+    "dropped-quote-not-in-page: api_surface https://ipayx.ai/docs",
+    "dropped-quote-not-in-page: api_access_pricing https://ipayx.ai/docs",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/vickigogo/mcp', 'https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/README.md']",
+    "pass3 R4 self_serve unclear -> paid_required",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_with_caveats/paid_plan"
+  ]
+}

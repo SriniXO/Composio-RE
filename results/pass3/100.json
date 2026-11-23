@@ -1,0 +1,124 @@
+{
+  "id": 100,
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Grain is an AI notetaker that captures, enriches, and delivers meeting content to AI tools, offering both an MCP server and an API for integration.",
+  "website": "https://grain.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Grain supports OAuth2 for MCP and Personal Access Tokens for API access.",
+  "self_serve": "yes",
+  "gate_detail": "Free trial available; paid plans for Business and Enterprise users.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://grain.com/app/settings/integrations?tab=api",
+    "rate_limits": "300 requests per minute per token"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://api.grain.com/_/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "free for personal use; paid plans for Business and Enterprise users",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://grain.com/app/settings/integrations?tab=api",
+      "quote_snippet": "Every request needs a token in the Authorization header and a Public-Api-Version header",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://grain.com/app/settings/integrations?tab=api",
+      "quote_snippet": "A Personal Access Token (PAT) authenticates requests as you, with the same access you have in Grain",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://grain.com/app/settings/integrations?tab=api",
+      "quote_snippet": "Free plans get no API access",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://grain.com/app/settings/integrations?tab=api",
+      "quote_snippet": "The Grain API lets you read and manage recordings, highlights, uploads, and more",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://grain.com/app/settings/integrations?tab=api",
+      "quote_snippet": "The Grain API accepts Personal Access Tokens, Workspace Access Tokens, and OAuth 2.0 Authorization Code with PKCE",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://grain.com/app/settings/integrations?tab=api",
+      "quote_snippet": "The Grain MCP server is available now for all users",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.scalekit.com/blog/grain-mcp-vs-api",
+      "quote_snippet": "media upload and download, and sharing. Neither contains the other. MCP auth is OAuth only. The API accepts Personal Access Tokens, Workspace",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T19:03:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.grain.com",
+      "quote_snippet": "ore. This page gets you from zero to your first successful request! 1. Create a Personal Access Token A Personal Access Token",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T19:03:09",
+      "quote_verified": true
+    },
+    {
+      "url": "https://grain.com",
+      "quote_snippet": "ents can do the work. Start recording in minutes. Get started free Book my demo Free forever Bots optional No credit card",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T19:03:09",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://grain.com/app/settings/integrations?tab=api",
+    "dropped-quote-not-in-page: auth_methods https://grain.com/app/settings/integrations?tab=api",
+    "dropped-quote-not-in-page: api_access_pricing https://grain.com/app/settings/integrations?tab=api",
+    "dropped-quote-not-in-page: api_surface https://grain.com/app/settings/integrations?tab=api",
+    "dropped-quote-not-in-page: auth_methods https://grain.com/app/settings/integrations?tab=api",
+    "dropped-quote-not-in-page: existing_mcp https://grain.com/app/settings/integrations?tab=api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/grain-mcp']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://api.grain.com/_/mcp",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

@@ -20,7 +20,8 @@ def jaudge(i, r):
     if not t and not s: out["auth_methods"] = "correct"
     v = r["self_serve"]; good, ok = SS[i]
     isg = v in GATED
-    out["self_serve"] = "correct" if (good == "gated" and isg) or v == good else "partial" if (v == ok and ok) else "wrong"
+    cor = isg if good == "gated" else (v == "paid_required") if good == "paid" else (v == good)
+    out["self_serve"] = "correct" if cor else "partial" if ((v == ok and ok) or (good == "paid" and isg)) else "wrong"
     ty = r["api_surface"]["type"]; tr = API[i]
     out["api_surface"] = "correct" if ty == tr else "partial" if tr == "REST+GraphQL" and ty in ("REST","GraphQL") else "wrong"
     m = r["existing_mcp"]; te, to = MCP[i]

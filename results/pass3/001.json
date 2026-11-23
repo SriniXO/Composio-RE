@@ -1,0 +1,130 @@
+{
+  "id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_line_description": "Salesforce is a CRM and Sales platform that offers an AI agent toolkit through its Agentforce and AIforce features.",
+  "website": "https://salesforce.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "jwt"
+  ],
+  "auth_notes": "Salesforce supports multiple authentication methods including OAuth2, API keys, and JWT.",
+  "self_serve": "yes",
+  "gate_detail": "unclear",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "edition-dependent, daily request limits ranging from 15,000 for Developer orgs to 5,000,000 for Full Sandbox"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "Salesforce requires a paid add-on for Professional edition API access.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Apex",
+    "Flows",
+    "Lightning Web Components"
+  ],
+  "api_access_pricing": "Enterprise and Unlimited allow 100,000 API requests per 24 hours, Developer allows 15,000.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://salesforce.com",
+      "quote_snippet": "Salesforce powers the Agentic Enterprise, Agents handle the research, the validation, and the repetitive work — all within guardrails you control — so your people can focus on decisions only they can make.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:48:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://salesforce.com",
+      "quote_snippet": "Salesforce API access is edition-dependent, with Professional requiring a paid add-on and daily request limits ranging from 15,000 for Developer orgs to 5,000,000 for Full Sandbox.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:48:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+      "quote_snippet": "Salesforce’s hosted MCP servers allow AI assistants like Claude, ChatGPT, and more connect securely to your Salesforce logic and assets using the Model Context Protocol.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://frontal.so/gtm-apis/crm-apis/salesforce-api-review",
+      "quote_snippet": "h breaks any integration that signs in with a username and password rather than OAuth. The version retirement gives you two years.",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T15:48:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.flashift.app/docs/getting-started",
+      "quote_snippet": "rts the following authentication method: Bearer Authentication : To obtain your API key, please sign up on Flashift . Then, navigate to",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipeline.zoominfo.com/sales/salesforce-api",
+      "quote_snippet": "-Password Flow: Passes credentials directly; discouraged for production use. A basic authenticated REST API request: curl https://yourorg.my.salesforce.com/services/data/v67.0/sobjects/Account/001xx000003DGbYA",
+      "field_supported": "auth:basic",
+      "fetched_at": "2026-11-23T15:48:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://frontal.so/gtm-apis/crm-apis/salesforce-api-review",
+      "quote_snippet": "org's My Domain host. For server to server work, use external client apps with JWT. Salesforce stores third party access and refresh",
+      "field_supported": "auth:jwt",
+      "fetched_at": "2026-11-23T15:48:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+      "quote_snippet": "A hosted MCP server is a Salesforce-managed endpoint that exposes your org’s logic and assets — data, flows, Apex actions, queries, and",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://frontal.so/gtm-apis/crm-apis/salesforce-api-review",
+      "quote_snippet": "two of the other CRMs reviewed here: HubSpot includes API access on a genuinely free tier, and Pipedrive includes it in a",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T15:48:49",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, self_serve_unclear, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://papra.app/en/docs/api-reference/authentication",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=8L3lCpxfRRc",
+    "dropped-quote-not-in-page: auth_methods https://salesforce.com",
+    "dropped-quote-not-in-page: api_surface https://salesforce.com",
+    "dropped-quote-not-in-page: existing_mcp https://developer.salesforce.com/docs/platform/hosted-mcp-servers/overview",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth ['oauth2', 'api_key', 'basic', 'bearer_token', 'jwt', 'other'] -> ['oauth2', 'api_key', 'basic', 'jwt']",
+    "pass3 R2 api type unclear -> REST (rest=79, graphql=18)",
+    "pass3 R3 official MCP found on vendor domain: https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+    "pass3 R4 self_serve unclear -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

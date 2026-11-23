@@ -1,0 +1,100 @@
+{
+  "id": 95,
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Reducto is an agentic document platform for AI teams, offering APIs for parsing, extracting, splitting, classifying, and editing documents.",
+  "website": "https://reducto.ai",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Free tier available with instant key generation.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Yes, see pricing page for details."
+  },
+  "existing_mcp": {
+    "exists": false,
+    "official": null,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Not specified in the sources.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Node.js"
+  ],
+  "api_access_pricing": "Credit-based pay-as-you-go; standard plan includes 15,000 free credits.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://reducto.ai/pricing",
+      "quote_snippet": "Free tier or trial",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "quote_snippet": "Free tier includes 15,000 credits",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "quote_snippet": "Free tier or trial",
+      "field_supported": "time_to_first_call",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://reducto.ai/pricing",
+      "quote_snippet": "Free tier or trial",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://reducto.ai",
+      "quote_snippet": "estions, answered. Try for free Do you offer trials? How can I get access to an API key? You can get API",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:57:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dreaming.press/stack/reducto",
+      "quote_snippet": "ied; async batch jobs get a 20% discount (12h SLA). Growth/Enterprise above the free tier. 🔵 Agents: self serve instant key Instant",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:57:52",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=jJQoVkd5yLg",
+    "dropped-quote-not-in-page: auth_methods https://reducto.ai/pricing",
+    "dropped-quote-not-in-page: api_access_pricing https://reducto.ai/pricing",
+    "dropped-quote-not-in-page: time_to_first_call https://reducto.ai/pricing",
+    "dropped-quote-not-in-page: self_serve https://reducto.ai/pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Front is a customer service platform with an API that can be used to build integrations and automate customer support. It offers a developer portal with documentation, authentication, and a sandbox environment.",
+  "website": "https://front.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic"
+  ],
+  "auth_notes": "Front supports multiple authentication methods including OAuth2, API keys, basic auth, bearer tokens, JWT, and other methods.",
+  "self_serve": "yes",
+  "gate_detail": "No gate required for self-serve access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://dev.frontapp.com/docs/api",
+    "rate_limits": "Not specified in the provided sources."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://help.front.com/en/articles/4883136"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None.",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Yes, supported in the API.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "not specified"
+  ],
+  "api_access_pricing": "Paid plans available, with discounts for annual billing.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://front.com/pricing",
+      "quote_snippet": "Front offers multiple pricing plans, including a free trial.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T16:04:22",
+      "quote_verified": false
+    },
+    {
+      "url": "https://dev.frontapp.com/docs/api",
+      "quote_snippet": "Front provides a comprehensive API with detailed documentation and a Postman collection.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/providers/front",
+      "quote_snippet": "apabilities this provider offers. REST API at https://api2.frontapp.com/ (JSON) OAuth 2 and API token authentication Starter $25/seat/mo (up to 10 seats), Professional",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:04:17",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/front",
+      "quote_snippet": "this provider offers. REST API at https://api2.frontapp.com/ (JSON) OAuth 2 and API token authentication Starter $25/seat/mo (up to 10 seats), Professional $65,",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:04:17",
+      "quote_verified": true
+    },
+    {
+      "url": "https://community.front.com/developer-q-a-37/consume-api-with-basic-authentication-696",
+      "quote_snippet": "Consume API with Basic Authentication | Community. # Consume API with Basic Authentication Instead of calling Webhook URL without any authenticati",
+      "field_supported": "auth:basic",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.front.com/en/articles/4883136",
+      "quote_snippet": "## Overview Front's MCP server lets you and your teammates connect Front to AI assistants like Claude, ChatGPT, Gemini, and Microsoft Copilot.",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: self_serve https://front.com/pricing",
+    "dropped-quote-not-in-page: api_surface https://dev.frontapp.com/docs/api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth ['oauth2', 'api_key', 'basic', 'bearer_token', 'jwt', 'other'] -> ['oauth2', 'api_key', 'basic']",
+    "pass3 R3 official MCP found on vendor domain: https://help.front.com/en/articles/4883136",
+    "pass3 R4 conflicting signals (approval language AND free plan): kept model value"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": 9,
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "one_line_description": "Copper is a CRM and Sales tool that offers an API for integration with AI agents.",
+  "website": "https://copper.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key authentication is required for accessing the Copper API.",
+  "self_serve": "unclear",
+  "gate_detail": "unclear",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.copper.co/api-reference/getting-started",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.copper.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "The official MCP server for Copper is not yet available, but third-party solutions like viaSocket and CopperMCP are available.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer.copper.co/api-reference/getting-started",
+      "quote_snippet": "The Copper platform is equipped with a powerful API to provide integration with your applications.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:56:35",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mcpmarket.com/server/copper-crm",
+      "quote_snippet": "This tool serves as an MCP server, offering a streamlined interface to the Copper CRM API.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:56:39",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/copper-co",
+      "quote_snippet": "nnected exchanges while assets remain in custody. The API authenticates with an API key plus a per-request HMAC-SHA256 signature, publishes OpenAPI 3.1",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T15:56:32",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.copper.com/mcp",
+      "quote_snippet": "Request early access to the beta, or join the waitlist for updates as we get closer to launch. Already a Copper customer?",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve_unclear"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.copper.com/mcp",
+    "pass3 R4 conflicting signals (approval language AND free plan): kept model value"
+  ]
+}

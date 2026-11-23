@@ -1,0 +1,106 @@
+{
+  "id": 28,
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "one_line_description": "WhatsApp Business API can be used to build an AI-agent toolkit with a public API, OAuth2 authentication, and a wide range of features.",
+  "website": "https://developers.facebook.com/docs/whatsapp",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Authentication is handled via OAuth2, which is a widely used and secure method.",
+  "self_serve": "trial",
+  "gate_detail": "No gate or approval required for self-service access.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Yes, see the official documentation for details."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://mcp.aibase.com/server/1916354816103129090"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "Yes, see the official documentation for details.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript",
+    "cURL"
+  ],
+  "api_access_pricing": "Yes, see the official documentation for details.",
+  "time_to_first_call": "minutes",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "quote_snippet": "Drive revenue growth, boost efficiency, and deliver exceptional customer experiences with the WhatsApp Business Platform—our enterprise-grade APIs for messaging and calling.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T16:19:12",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "quote_snippet": "Authentication and authorization\nLearn how access controls and permissions work on the platform.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T16:19:12",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "quote_snippet": "Demo the API\nPreview an interactive experience showing how Jasper’s Market (our demo retail business) connects with customers using the WhatsApp Business Platform.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T16:19:12",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "quote_snippet": "About the APIs\nLearn about the APIs that are part of the WhatsApp Business Platform",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:19:12",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mcp.aibase.com/server/1916354816103129090",
+      "quote_snippet": "This is a middleware server that simplifies the interaction process with the WhatsApp Business API.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:19:21",
+      "quote_verified": true
+    },
+    {
+      "url": "https://chat-api.eu/en/resources/blog/secure-authentication-for-whatsapp-business-api-developer-guide",
+      "quote_snippet": "WhatsApp Business API authentication: OAuth, tokens and security | Chat API Chat API powered by RoxPay en Italiano English Deutsch Español Français",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:19:15",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.wapio.io/blog/whatsapp-api-pricing",
+      "quote_snippet": "paid accounts operate under different entitlement policies: Entitlement Feature 3-Day Free Trial Active Paid Subscription Credit Card Required No Yes (via Paddle",
+      "field_supported": "self_serve:trial",
+      "fetched_at": "2026-11-23T16:19:16",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://mcp.aibase.com/server/1916354816103129090",
+    "pass3 R4 self_serve yes -> trial",
+    "pass3 R5 verdict ready_now/none -> ready_with_caveats/paid_plan"
+  ]
+}

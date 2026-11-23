@@ -1,0 +1,102 @@
+{
+  "id": 87,
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "one_line_description": "Xero offers an AI toolkit including OpenAI Agents SDK, MCP Server, and LangChain, along with a range of APIs and developer resources.",
+  "website": "https://developer.xero.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Xero uses OAuth 2.0 for authentication, which involves creating an app in the Xero developer portal to obtain client ID and secret.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.xero.com/documentation/api/",
+    "rate_limits": "Yes, with tiered rate limits based on the number of connections and data egress."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://mcpserverhub.com/servers/xeroapi-xero-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes, supported by Xero APIs.",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "Tiered pricing based on connections and data egress.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/custom-connections/",
+      "quote_snippet": "Custom connections require different scopes depending on when they were created.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.xero.com/documentation/api/",
+      "quote_snippet": "Xero's API is an OAuth 2.0 REST API.",
+      "field_supported": "api_surface.type",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.xero.com/pricing",
+      "quote_snippet": "Starter tier allows 1,000 daily calls; Core and Plus allow 5,000 daily calls.",
+      "field_supported": "api_surface.rate_limits",
+      "fetched_at": "2026-11-23T18:48:39",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mcpserverhub.com/servers/xeroapi-xero-mcp-server",
+      "quote_snippet": "An MCP server that integrates with the MCP protocol.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T18:48:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.activepieces.com/blog/xero-api-setup-authentication-and-limits-2026",
+      "quote_snippet": "n exceeded 60-call-per-minute limit, breaking invoice syncs. The Xero API is an OAuth 2.0 REST API, the kind of thing you can",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:48:36",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.xero.com",
+      "quote_snippet": "rs. Xero Global App Awards Become an App Partner Start Building Sign up for a free account to build on the Xero",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:48:36",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developer.xero.com/documentation/guides/oauth2/custom-connections/",
+    "dropped-quote-not-in-page: api_surface.type https://developer.xero.com/documentation/api/",
+    "dropped-quote-not-in-page: api_surface.rate_limits https://developer.xero.com/pricing",
+    "dropped-quote-not-in-page: existing_mcp.exists https://mcpserverhub.com/servers/xeroapi-xero-mcp-server",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://stackoverflow.com/questions/64211913/connecting-to-the-xero-api']",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://mcpserverhub.com/servers/xeroapi-xero-mcp-server"
+  ]
+}

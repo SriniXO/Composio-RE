@@ -1,0 +1,107 @@
+{
+  "id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_line_description": "Binance provides an API for accessing cryptocurrency data and executing trades, with authentication via API keys and optional OAuth2.",
+  "website": "https://www.binance.com/en",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "auth_notes": "API keys can be created in the Binance API Management section. OAuth2 is optional and can be used for more secure access.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.binance.com/api/v3/exchangeInfo",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/ethancod1ng/binance-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Go"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://api-docs.openletterconnect.com/getting-started",
+      "quote_snippet": "To use the API, you’ll need an active account with Open Letter Connect.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T16:39:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.cardclan.io/api-reference/getting-started",
+      "quote_snippet": "Before you can start using the API, you’ll need to authenticate your requests. CardClan uses Bearer token authentication.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T18:43:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/binance/binance-plans-pricing",
+      "quote_snippet": "API connectivity, market data, and WebSocket streams are provided at no cost to authenticated users.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T18:43:35",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/ethancod1ng/binance-mcp-server",
+      "quote_snippet": "A Model Context Protocol (MCP) server for integrating AI assistants with Binance cryptocurrency exchange APIs, enabling automated trading, market data access, and account management.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:43:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://api-docs.openletterconnect.com/getting-started",
+      "quote_snippet": "ings. The system redirects to the General Settings page Step 3: Navigate to the API Keys Page In the left-side menu, click",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:39:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://api-docs.openletterconnect.com/getting-started",
+      "quote_snippet": "mmunication with the API, authentication is required. You can authenticate via OAuth by generating an access token from your application settings. This",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:39:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/binance/binance-plans-pricing",
+      "quote_snippet": "-Key need no key. Calls with it need a paid plan — get a key . Get an API key Free tier,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:43:35",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth https://apis.io/plans/binance/binance-plans-pricing",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://binance-docs.github.io']",
+    "pass3 R2 api type unclear -> REST (rest=10, graphql=0)",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://github.com/ethancod1ng/binance-mcp-server",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

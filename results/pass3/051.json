@@ -1,0 +1,118 @@
+{
+  "id": 51,
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "DataForSEO is a comprehensive SEO and data analysis platform with a RESTful API and MCP server options.",
+  "website": "https://dataforseo.com",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "API key authentication is used. The API key is a combination of login and password encoded in Base64.",
+  "self_serve": "yes",
+  "gate_detail": "Free trial available with a $50 minimum top-up required for ongoing use.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Yes, rate limits are specified in the HTTP headers."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://dataforseo.com/seo-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "PHP",
+    "C#",
+    "Java",
+    "Python",
+    "TypeScript"
+  ],
+  "api_access_pricing": "pay-as-you-go",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.dataforseo.com",
+      "quote_snippet": "DataForSEO API is using REST technology for interchanging data between your application and our service.",
+      "field_supported": "api_surface.type",
+      "fetched_at": "2026-11-23T17:06:20",
+      "quote_verified": false
+    },
+    {
+      "url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+      "quote_snippet": "Every endpoint in our Google Organic SERP API follows the same URL pattern, and it’s worth understanding its structure from the start to make integration easier.",
+      "field_supported": "api_surface.breadth",
+      "fetched_at": "2026-11-23T17:06:23",
+      "quote_verified": false
+    },
+    {
+      "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+      "quote_snippet": "Your DataForSEO API key is your API login and API password, joined as login:password and encoded in Base64.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:06:24",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dataforseo.com/pricing",
+      "quote_snippet": "Pay as you go\nNo subscriptions\n$50 minimum top-up",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T17:06:27",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+      "quote_snippet": "The DataForSEO MCP server is an official implementation of the Model Context Protocol that gives AI assistants structured access to DataForSEO’s suite of SEO APIs.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T17:06:23",
+      "quote_verified": false
+    },
+    {
+      "url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+      "quote_snippet": "ore detailed instructions on specific steps, see our authentication guide with API key setup and code examples for credential configuration, or follow",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T17:06:23",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dataforseo.com/seo-mcp-server",
+      "quote_snippet": "Add one entry to your MCP config running “npx -y dataforseo-mcp-server” with your DataForSEO credentials, or connect to the hosted endpoint at",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+      "quote_snippet": "ull setup. DataForSEO API key: FAQ How do I get my DataForSEO API key? Create a free account, log in, and open",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:06:24",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=9T5AjYXJU0E",
+    "dropped-quote-not-in-page: api_surface.type https://docs.dataforseo.com",
+    "dropped-quote-not-in-page: api_surface.breadth https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+    "dropped-quote-not-in-page: existing_mcp.exists https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://dataforseo.com/seo-mcp-server",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

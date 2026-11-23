@@ -1,0 +1,106 @@
+{
+  "id": 58,
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Sherlock is an open-source tool for finding usernames across social networks and websites.",
+  "website": "https://github.com/sherlock-project/sherlock",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "No authentication required for public use.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": false,
+    "url": "https://github.com/H4RR1SON/sherlock-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "quote_snippet": "Sherlock is an open-source tool designed to find usernames across a wide range of social networks and websites.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T17:15:42",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "quote_snippet": "It does not require API keys or login credentials for the sites it checks; instead, it simply constructs the expected profile URL for each site and observes the response to determine whether the username exists on a given platform.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:15:42",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "quote_snippet": "Sherlock is primarily a CLI tool, so some familiarity with the command line is required to install and run it.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:15:42",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/H4RR1SON/sherlock-mcp",
+      "quote_snippet": "An official Model Context Protocol (MCP) server for the Covertlabs infostealer intelligence platform.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:15:46",
+      "quote_verified": true
+    },
+    {
+      "url": "https://api-docs.openletterconnect.com/getting-started",
+      "quote_snippet": "mmunication with the API, authentication is required. You can authenticate via OAuth by generating an access token from your application settings. This",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:39:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://api-docs.openletterconnect.com/getting-started",
+      "quote_snippet": "ings. The system redirects to the General Settings page Step 3: Navigate to the API Keys Page In the left-side menu, click",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T16:39:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apify.com/misceres/sherlock/api",
+      "quote_snippet": "Twitch) and get a profile URL for each hit. Open-source Sherlock engine (MIT). Free plan checks the top 100 sites; paid plans",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:15:43",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth_unknown"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: one_line_description https://github.com/sherlock-project/sherlock",
+    "dropped-quote-not-in-page: auth_methods https://github.com/sherlock-project/sherlock",
+    "dropped-quote-not-in-page: api_surface https://github.com/sherlock-project/sherlock",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R1 auth [] -> ['oauth2', 'api_key']",
+    "pass3 R2 api type unclear -> REST (rest=4, graphql=0)",
+    "pass3 R3 MCP 'official' unsupported (no vendor-domain MCP found); set official=False url=https://github.com/H4RR1SON/sherlock-mcp"
+  ]
+}

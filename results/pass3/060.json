@@ -1,0 +1,99 @@
+{
+  "id": 60,
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Clay is a data, SEO, and scraping platform with a unique API and MCP server for AI-agent workflows.",
+  "website": "https://clay.com",
+  "auth_methods": [
+    "jwt"
+  ],
+  "auth_notes": "JWT authentication is required for accessing the HTTP API and MCP server.",
+  "self_serve": "yes",
+  "gate_detail": "Free trial available for initial exploration.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "No public rate limits specified."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.clay.com/guides/clay-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The MCP server requires partner approval for use.",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript"
+  ],
+  "api_access_pricing": "Growth plan: $446/mo, Enterprise plan: $167/mo",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+      "quote_snippet": "Use HTTP API connections authenticated securely with JWT tokens.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipeline.zoominfo.com/sales/clay-api",
+      "quote_snippet": "Clay's programmatic access is not what most developers expect when they hear 'API.'",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/bpw-civic/clay-mcp-server",
+      "quote_snippet": "MCP server for Clay.com API - people and company enrichment",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:15:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+      "quote_snippet": "HTTP API with JWT authentication - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search",
+      "field_supported": "auth:jwt",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.clay.com/guides/clay-mcp",
+      "quote_snippet": "MCP, the Model Context Protocol, is an open standard for connecting an AI assistant to an outside system. Clay's MCP server uses",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipeline.zoominfo.com/sales/clay-api",
+      "quote_snippet": "nteractive API reference or OpenAPI spec Pricing / access Webhooks available on free tier; HTTP API integrations on Growth ($495/mo) and above;",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:15:53",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://pipeline.zoominfo.com/sales/clay-api",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.pulsemcp.com/servers/clay']",
+    "pass3 R2 api type unclear -> REST (rest=27, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://www.clay.com/guides/clay-mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

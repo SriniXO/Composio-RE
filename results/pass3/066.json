@@ -1,0 +1,107 @@
+{
+  "id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Neo4j is a graph database platform with APIs for authentication and querying.",
+  "website": "https://neo4j.com/",
+  "auth_methods": [
+    "basic"
+  ],
+  "auth_notes": "Supports both basic and bearer token authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "GraphQL",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.neo4j.io/v1",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://dev.neo4j.com/mcpserver_github_discourse"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "JavaScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://neo4j.com/docs/query-api/current/authentication-authorization",
+      "quote_snippet": "Authorization: Basic <base64(username:password)>",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:24:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://neo4j.com/docs/query-api/current/authentication-authorization",
+      "quote_snippet": "Authorization: Bearer <token>",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:24:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/neo4j",
+      "quote_snippet": "2 published contracts",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T17:24:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/neo4j/mcp",
+      "quote_snippet": "Neo4j official MCP Server",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:24:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://neo4j.com/docs/query-api/current/authentication-authorization",
+      "quote_snippet": "disabled on the server, requests can be sent without an Authorization header. Basic authentication The header format for basic authentication follows the",
+      "field_supported": "auth:basic",
+      "fetched_at": "2026-11-23T17:24:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dev.neo4j.com/mcpserver_github_discourse",
+      "quote_snippet": "Install with PyPI: ``` pip install neo4j-mcp-server ``` For manual installation or using `brew`, please see MCP documentation -> Installation. ## Server",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.apievangelist.com/store/neo4j-authentication-api",
+      "quote_snippet": "y needs no key. Full bodies and the synthesis endpoints are Pro. Get an API key Free tier, no email required. Sign",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T17:24:43",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://neo4j.com/docs/query-api/current/authentication-authorization",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://neo4j.com/docs/api', 'https://mcpservers.org/servers/cxt9/neo4j-mcp']",
+    "pass3 R1 auth ['basic', 'bearer_token'] -> ['basic']",
+    "pass3 R2 api type REST -> GraphQL (rest=8, graphql=38)",
+    "pass3 R3 official MCP found on vendor domain: https://dev.neo4j.com/mcpserver_github_discourse"
+  ]
+}

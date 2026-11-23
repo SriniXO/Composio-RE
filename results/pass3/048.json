@@ -1,0 +1,116 @@
+{
+  "id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "one_line_description": "Gumroad provides an API for managing products, sales, and users, with OAuth2 authentication and webhooks.",
+  "website": "https://gumroad.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Requires creating an application and obtaining an access token.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript",
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://gumroad.com/api",
+      "quote_snippet": "The Gumroad OAuth API is based around REST.",
+      "field_supported": "api_type",
+      "fetched_at": "2026-11-23T16:57:58",
+      "quote_verified": false
+    },
+    {
+      "url": "https://gumroad.com/api",
+      "quote_snippet": "We return JSON for every request, including errors.",
+      "field_supported": "api_response_format",
+      "fetched_at": "2026-11-23T16:57:58",
+      "quote_verified": false
+    },
+    {
+      "url": "https://gumroad.com/api",
+      "quote_snippet": "Gumroad uses OAuth 2.0 for authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:57:58",
+      "quote_verified": false
+    },
+    {
+      "url": "https://gumroad.com/api",
+      "quote_snippet": "Yes, the official Gumroad API does support webhooks.",
+      "field_supported": "webhooks",
+      "fetched_at": "2026-11-23T16:57:58",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/rmarescu/gumroad-mcp",
+      "quote_snippet": "A Model Context Protocol (MCP) server implementation for Gumroad API",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:58:05",
+      "quote_verified": true
+    },
+    {
+      "url": "https://nocodeapi.com/marketplace/gumroad",
+      "quote_snippet": "nroad API we need Access Token, process to get that: Go to https://gumroad.com/oauth/applications and Fill the form Application name & redirect URI(just",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:57:59",
+      "quote_verified": true
+    },
+    {
+      "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+      "quote_snippet": "is&lt;/h3&gt; &lt;p&gt;Gumroad runs a server that speaks MCP (Model Context Protocol), so an AI assistant that supports MCP can work with your",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.paritydeals.com/gumroad-vs-polar-fees",
+      "quote_snippet": "e against developer rate A $25 sale costs $4.03 on Gumroad and $1.75 on Polar's free tier. Compare the 12.9% + 80¢",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:58:03",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://gumroad.com/help/article/280-create-application-api",
+    "dropped-quote-not-in-page: api_type https://gumroad.com/api",
+    "dropped-quote-not-in-page: api_response_format https://gumroad.com/api",
+    "dropped-quote-not-in-page: auth_methods https://gumroad.com/api",
+    "dropped-quote-not-in-page: webhooks https://gumroad.com/api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

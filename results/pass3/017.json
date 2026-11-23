@@ -1,0 +1,96 @@
+{
+  "id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Plain is a support infrastructure platform that allows teams and agents to work together, manage customer conversations, and build custom workflows.",
+  "website": "https://plain.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Plain uses OAuth2 for authentication.",
+  "self_serve": "paid_required",
+  "gate_detail": "unclear",
+  "api_surface": {
+    "type": "GraphQL",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://plainframework.com/docs/plain-api/plain/api/README.md",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.plain.com/blog/february-product-updates"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "The source does not mention any existing MCP server or agent skills for Plain.",
+  "suggested_form": "not feasible",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://plain.com/docs/plain-api/plain/api/README.md",
+      "quote_snippet": "Authentication and authorization",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "quote_snippet": "To call the API as a user in your workspace, use an OAuth app.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:07:54",
+      "quote_verified": false
+    },
+    {
+      "url": "https://plainframework.com/docs/plain-api/plain/api",
+      "quote_snippet": "plain-api/plain/api/README.md · Docs v0.166.0 Make OAuthConnection.refresh_access_token() safe to call concurrently 6f264ad · Nov 4 dropseed/plain 1.0k BSD-3 Plain Get Started",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:07:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.plain.com/blog/february-product-updates",
+      "quote_snippet": "The Plain MCP server gives AI tools like Claude, ChatGPT, and Cursor direct access to your Plain workspace. Once connected, your AI",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server",
+      "quote_snippet": "e same access requirements as their corresponding GitHub features. If a feature requires a paid GitHub or Copilot license, the equivalent MCP",
+      "field_supported": "self_serve:paid_required",
+      "fetched_at": "2026-11-23T16:07:59",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, self_serve_unclear"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=V1u0wqRbjEU",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "dropped-quote-not-in-page: auth_methods https://plain.com/docs/plain-api/plain/api/README.md",
+    "dropped-quote-not-in-page: auth_methods https://www.plain.com/docs/graphql/authentication",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://devcommunity.x.com/t/announcing-the-x-api-pay-per-use-pricing-pilot/250253']",
+    "pass3 R2 api type unclear -> GraphQL (rest=3, graphql=21)",
+    "pass3 R3 official MCP found on vendor domain: https://www.plain.com/blog/february-product-updates",
+    "pass3 R4 self_serve unclear -> paid_required",
+    "pass3 R5 verdict blocked/partner_approval -> ready_with_caveats/paid_plan"
+  ]
+}

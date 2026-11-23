@@ -1,0 +1,107 @@
+{
+  "id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_line_description": "Salesforce Commerce Cloud provides an API for developers to interact with its services, including authentication via OAuth 2.0 and a public API for accessing various functionalities.",
+  "website": "https://developer.salesforce.com/docs/commerce",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Authentication uses OAuth 2.0 via Salesforce Account Manager (SLAS for shopper flows).",
+  "self_serve": "yes",
+  "gate_detail": "Free tier available with trial, paid plans available for more advanced features.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.salesforce.com/docs/commerce/commerce-api/references",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The official MCP server is available, but it requires partner approval.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://apis.io/security/salesforce-commerce-cloud/salesforce-commerce-cloud-authentication",
+      "quote_snippet": "OAuth 2.0 access token from SLAS (Shopper APIs) or Salesforce Account Manager (Data and Admin APIs), sent as `Authorization: Bearer <token>`.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:53:30",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/apis/salesforce-commerce-cloud/scapi",
+      "quote_snippet": "Modern REST API family for B2C Commerce Cloud built on a unified RAML specification, organized into Shopper, Data, and Admin APIs for headless commerce.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:53:31",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/salesforce/salesforce-plans-pricing",
+      "quote_snippet": "Salesforce Sales Cloud editions, re-read from the published Sales Cloud pricing page on 2026-10-12 (HTTP 200).",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:53:33",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/BrinsilElias/commercecloud-mcp-server",
+      "quote_snippet": "🤖 An MCP server that helps connect your AI applications with your Salesforce Commerce Cloud instance",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:53:35",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/security/salesforce-commerce-cloud/salesforce-commerce-cloud-authentication",
+      "quote_snippet": "erce Salesforce B2C Commerce B2B Commerce Demandware Methods: http Schemes: 1 OAuth flows: API key in: Security Schemes bearerAuth http scheme: bearer",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:53:30",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+      "quote_snippet": "The B2C Commerce MCP Service is a fully-hosted service for linking an AI agent to real-time B2C Commerce data access. The B2C",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/security/salesforce-commerce-cloud/salesforce-commerce-cloud-authentication",
+      "quote_snippet": "-Key need no key. Calls with it need a paid plan — get a key . Get an API key Free tier,",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T16:53:30",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://developer.salesforce.com/docs/commerce', 'https://mcpservers.org/servers/BrinsilElias/commercecloud-mcp-server']",
+    "pass3 R2 api type unclear -> REST (rest=6, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/agentic-mcp-shopper-tools-quick-start.html",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

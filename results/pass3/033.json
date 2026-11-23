@@ -1,0 +1,106 @@
+{
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "LinkedIn Ads API allows for programmatic management and reporting of LinkedIn advertising campaigns, with access gated through OAuth 2.0.",
+  "website": "https://learn.microsoft.com/linkedin/marketing",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Requires OAuth 2.0 with specific scopes for accessing advertising data.",
+  "self_serve": "trial",
+  "gate_detail": "Access is gated through the LinkedIn Developer Portal and requires approval.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "Not specified in the sources."
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.linkedin.com/posts/msantos86_is-linkedin-embracing-ai-its-not-the-full-platform-activity-7501698696309485568-vpGb"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "paid_plan",
+  "blocker_detail": "Access requires approval through the LinkedIn Developer Portal.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://learn.microsoft.com/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+      "quote_snippet": "Access to the Advertising API is reserved for applications building supported use cases.",
+      "field_supported": "auth",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.nexla.com/user-guides/connectors/li_ads_api/overview",
+      "quote_snippet": "LinkedIn Ads API uses OAuth 2.0 authentication with specific scopes for accessing advertising data.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T16:25:09",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dlthub.com/context/source/linkedin-ads",
+      "quote_snippet": "All requests require an 'Authorization' header with a Bearer token.",
+      "field_supported": "auth",
+      "fetched_at": "2026-11-23T16:25:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dlthub.com/context/source/linkedin-ads",
+      "quote_snippet": "The Marketing API only returns data for accounts you own; the Ad Library API queries publicly disclosed ads across any advertiser, including competitors.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:25:00",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+      "quote_snippet": "An MCP (Model Context Protocol) server that enables Claude AI to access and analyze your LinkedIn Ads data.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:25:06",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dlthub.com/context/source/linkedin-ads",
+      "quote_snippet": "is https://api.linkedin.com/rest/ and all requests require a Bearer token via OAuth 2.0 authorization code flow. dlt is an open-source Python library that",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:25:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.linkedin.com/posts/msantos86_is-linkedin-embracing-ai-its-not-the-full-platform-activity-7501698696309485568-vpGb",
+      "quote_snippet": "Is LinkedIn embracing AI? It's not the full-platform story a lot of marketers will hear in Slack today. LinkedIn's MCP Server just",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://docs.nexla.com/user-guides/connectors/li_ads_api/overview",
+    "dropped-quote-not-in-page: auth https://learn.microsoft.com/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+    "dropped-quote-not-in-page: api_surface https://dlthub.com/context/source/linkedin-ads",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.linkedin.com/posts/msantos86_is-linkedin-embracing-ai-its-not-the-full-platform-activity-7501698696309485568-vpGb",
+    "pass3 R4 conflicting signals (approval language AND free plan): kept model value",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_with_caveats/paid_plan"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": 24,
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_line_description": "Lark is a communication and messaging platform with a robust API ecosystem, including an MCP server for AI agent integration.",
+  "website": "https://open.larksuite.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Lark uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Lark offers a trial period for developers to explore its platform and APIs.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://open.larksuite.com/document/server-docs/getting-started/getting-started",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "TypeScript",
+    "cURL"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/ugzNzUjL4czM14CO3MTN/guide/getting-start",
+      "quote_snippet": "Unlock Lark's full potential with 2500+ APIs",
+      "field_supported": "api_surface.breadth",
+      "fetched_at": "2026-11-23T16:14:39",
+      "quote_verified": false
+    },
+    {
+      "url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/overview",
+      "quote_snippet": "Lark's permission system is central to protecting company data, and crucial for developers to understand when building on its platform.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:14:41",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mcp.so/servers/lark-openapi-mcp",
+      "quote_snippet": "No overview available yet",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:14:35",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+      "quote_snippet": "ed on your use case If you need to call APIs with user identity, please set the OAuth 2.0 redirect URL to",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T16:14:35",
+      "quote_verified": true
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+      "quote_snippet": "Transmission mode: Keep the default Streamable HTTP. Streamable HTTP is chunked streaming based on HTTP protocol and supports progressive transmission of any",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list?from=home",
+      "quote_snippet": "ncluding Authentication and Authorization, Event Subscription, and Contacts are free to use, regardless of your Lark plan. Basic: This covers most Lark",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://open.larksuite.com",
+    "composio:TAVILY_EXTRACT fallback used for https://open.larksuite.com/document/ukTMukTMukTM/ugzNzUjL4czM14CO3MTN/guide/getting-start",
+    "composio:TAVILY_EXTRACT fallback used for https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/overview",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=GLiZ0PvEMCE",
+    "dropped-quote-not-in-page: api_surface.breadth https://open.larksuite.com/document/ukTMukTMukTM/ugzNzUjL4czM14CO3MTN/guide/getting-start",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

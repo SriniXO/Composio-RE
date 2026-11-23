@@ -1,0 +1,148 @@
+{
+  "id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "one_line_description": "Stripe provides a public API and MCP server for AI agents.",
+  "website": "https://stripe.com/",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "auth_notes": "API keys can be used for both test and live environments. OAuth 2.0 is used for more secure access.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://stripe.com/docs/api",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.stripe.com/mcp?agent=claude-desktop&locale=en-GB"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Ruby",
+    "Python",
+    "PHP",
+    "Java",
+    "Node.js",
+    "Go",
+    ".NET"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API is organized around REST.",
+      "field_supported": "api_surface.type",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks.",
+      "field_supported": "sandbox_test_env",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API uses API keys to authenticate requests.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API differs for every account as we release new versions and tailor functionality.",
+      "field_supported": "api_surface.breadth",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API doesn’t support bulk updates. You can work on only one object per request.",
+      "field_supported": "api_surface.rate_limits",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API supports both read and write tools.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API supports both read and write tools.",
+      "field_supported": "existing_mcp.official",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API supports both read and write tools.",
+      "field_supported": "existing_mcp.url",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "xes without affecting your live data or interacting with banking networks. The API key that you use to authenticate the request determines",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T15:44:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/stripe",
+      "quote_snippet": "s made. Model Context Protocol (MCP) measured — observed by APIs.io (verified) OAuth 2.0 Protected Resource Metadata measured — observed by APIs.io",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T15:44:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.stripe.com/mcp?agent=claude-desktop&locale=en-GB",
+      "quote_snippet": "The Stripe MCP server exposes multiple APIs that you can call with the `stripe_api_read` and `stripe_api_write` tools. This access makes much of",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.devtoolsdaily.com/directory/mcp-servers/stripe-mcp",
+      "quote_snippet": "ronment via OAuth Local server with a restricted API key Made by Stripe Pricing Free to use; requires a Stripe account License",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T15:44:48",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface.type https://stripe.com/docs/api",
+    "dropped-quote-not-in-page: existing_mcp.exists https://stripe.com/docs/api",
+    "dropped-quote-not-in-page: existing_mcp.official https://stripe.com/docs/api",
+    "dropped-quote-not-in-page: existing_mcp.url https://stripe.com/docs/api",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://docs.stripe.com/mcp?agent=claude-desktop&locale=en-GB"
+  ]
+}

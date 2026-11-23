@@ -1,30 +1,22 @@
 {
- "source_pass": "2",
+ "source_pass": "3",
  "n_apps": 100,
  "auth_overall": [
   [
    "oauth2",
-   52
+   62
   ],
   [
    "api_key",
-   51
+   62
   ],
   [
    "basic",
-   8
-  ],
-  [
-   "bearer_token",
-   8
+   7
   ],
   [
    "jwt",
-   8
-  ],
-  [
-   "other",
-   4
+   7
   ]
  ],
  "auth_by_category": {
@@ -42,15 +34,7 @@
     1
    ],
    [
-    "bearer_token",
-    1
-   ],
-   [
     "jwt",
-    1
-   ],
-   [
-    "other",
     1
    ]
   ],
@@ -65,18 +49,6 @@
    ],
    [
     "basic",
-    1
-   ],
-   [
-    "bearer_token",
-    1
-   ],
-   [
-    "jwt",
-    1
-   ],
-   [
-    "other",
     1
    ]
   ],
@@ -101,29 +73,21 @@
   "Marketing, Ads, Email and Social": [
    [
     "oauth2",
-    6
+    7
    ],
    [
     "api_key",
-    4
+    5
    ]
   ],
   "Ecommerce": [
    [
     "oauth2",
-    7
+    8
    ],
    [
     "api_key",
-    4
-   ],
-   [
-    "basic",
-    1
-   ],
-   [
-    "bearer_token",
-    1
+    5
    ],
    [
     "jwt",
@@ -133,11 +97,11 @@
   "Data, SEO and Scraping": [
    [
     "api_key",
-    6
+    8
    ],
    [
     "oauth2",
-    1
+    3
    ],
    [
     "jwt",
@@ -147,128 +111,120 @@
   "Developer, Infra and Data platforms": [
    [
     "api_key",
-    5
+    7
    ],
    [
     "oauth2",
-    4
+    6
    ],
    [
     "basic",
     3
    ],
    [
-    "bearer_token",
-    3
-   ],
-   [
     "jwt",
     3
-   ],
-   [
-    "other",
-    2
    ]
   ],
   "Productivity and Project Management": [
    [
     "api_key",
-    6
+    9
    ],
    [
     "oauth2",
-    3
+    6
    ]
   ],
   "Finance and Fintech": [
    [
     "oauth2",
-    8
+    9
    ],
    [
     "api_key",
-    3
-   ],
-   [
-    "bearer_token",
-    1
+    4
    ]
   ],
   "AI, Research and Media-native": [
    [
     "api_key",
-    8
+    9
    ],
    [
     "oauth2",
     3
-   ],
-   [
-    "bearer_token",
-    1
    ]
   ]
  },
  "self_serve_overall": [
   [
-   "trial",
-   55
+   "yes",
+   81
   ],
   [
-   "yes",
-   31
+   "trial",
+   11
   ],
   [
    "unclear",
-   14
+   4
+  ],
+  [
+   "paid_required",
+   3
+  ],
+  [
+   "admin_approval",
+   1
   ]
  ],
  "self_serve_by_category": {
   "CRM and Sales": [
    [
-    "trial",
-    4
+    "yes",
+    8
    ],
    [
-    "yes",
-    4
+    "trial",
+    1
    ],
    [
     "unclear",
-    2
+    1
    ]
   ],
   "Support and Helpdesk": [
    [
-    "trial",
-    7
+    "yes",
+    8
    ],
    [
     "unclear",
-    2
+    1
    ],
    [
-    "yes",
+    "paid_required",
     1
    ]
   ],
   "Communications and Messaging": [
    [
-    "trial",
-    5
+    "yes",
+    8
    ],
    [
-    "yes",
-    5
+    "trial",
+    2
    ]
   ],
   "Marketing, Ads, Email and Social": [
    [
-    "trial",
+    "yes",
     7
    ],
    [
-    "yes",
+    "trial",
     2
    ],
    [
@@ -278,142 +234,130 @@
   ],
   "Ecommerce": [
    [
-    "trial",
-    6
-   ],
-   [
     "yes",
-    2
+    8
    ],
    [
-    "unclear",
+    "trial",
     2
    ]
   ],
   "Data, SEO and Scraping": [
    [
-    "trial",
-    5
+    "yes",
+    9
    ],
    [
-    "yes",
-    5
+    "trial",
+    1
    ]
   ],
   "Developer, Infra and Data platforms": [
    [
     "yes",
-    5
+    9
    ],
    [
     "trial",
-    3
-   ],
-   [
-    "unclear",
-    2
+    1
    ]
   ],
   "Productivity and Project Management": [
    [
-    "trial",
-    6
+    "yes",
+    9
    ],
    [
     "unclear",
-    3
-   ],
-   [
-    "yes",
     1
    ]
   ],
   "Finance and Fintech": [
    [
     "yes",
-    4
+    6
    ],
    [
     "trial",
-    4
+    2
    ],
    [
-    "unclear",
-    2
+    "admin_approval",
+    1
+   ],
+   [
+    "paid_required",
+    1
    ]
   ],
   "AI, Research and Media-native": [
    [
-    "trial",
-    8
+    "yes",
+    9
    ],
    [
-    "yes",
-    2
+    "paid_required",
+    1
    ]
   ]
  },
  "buildability_overall": [
   [
    "ready_now",
-   60
+   82
   ],
   [
    "ready_with_caveats",
-   31
+   15
   ],
   [
    "unverified",
-   7
+   2
   ],
   [
    "blocked",
-   2
+   1
   ]
  ],
  "buildability_by_category": {
   "CRM and Sales": [
    [
     "ready_now",
-    7
+    8
    ],
    [
     "ready_with_caveats",
-    3
+    2
    ]
   ],
   "Support and Helpdesk": [
    [
     "ready_now",
-    6
+    9
    ],
    [
     "ready_with_caveats",
-    3
-   ],
-   [
-    "blocked",
     1
    ]
   ],
   "Communications and Messaging": [
    [
     "ready_now",
-    7
+    8
    ],
    [
     "ready_with_caveats",
-    3
+    2
    ]
   ],
   "Marketing, Ads, Email and Social": [
    [
-    "ready_with_caveats",
-    5
+    "ready_now",
+    7
    ],
    [
-    "ready_now",
-    4
+    "ready_with_caveats",
+    2
    ],
    [
     "unverified",
@@ -423,62 +367,44 @@
   "Ecommerce": [
    [
     "ready_now",
-    5
+    8
    ],
    [
     "ready_with_caveats",
-    4
+    2
+   ]
+  ],
+  "Data, SEO and Scraping": [
+   [
+    "ready_now",
+    9
+   ],
+   [
+    "ready_with_caveats",
+    1
+   ]
+  ],
+  "Developer, Infra and Data platforms": [
+   [
+    "ready_now",
+    9
+   ],
+   [
+    "ready_with_caveats",
+    1
+   ]
+  ],
+  "Productivity and Project Management": [
+   [
+    "ready_now",
+    9
    ],
    [
     "unverified",
     1
    ]
   ],
-  "Data, SEO and Scraping": [
-   [
-    "ready_now",
-    8
-   ],
-   [
-    "ready_with_caveats",
-    2
-   ]
-  ],
-  "Developer, Infra and Data platforms": [
-   [
-    "ready_now",
-    8
-   ],
-   [
-    "unverified",
-    2
-   ]
-  ],
-  "Productivity and Project Management": [
-   [
-    "ready_now",
-    4
-   ],
-   [
-    "ready_with_caveats",
-    3
-   ],
-   [
-    "unverified",
-    3
-   ]
-  ],
   "Finance and Fintech": [
-   [
-    "ready_now",
-    5
-   ],
-   [
-    "ready_with_caveats",
-    5
-   ]
-  ],
-  "AI, Research and Media-native": [
    [
     "ready_now",
     6
@@ -491,52 +417,77 @@
     "blocked",
     1
    ]
+  ],
+  "AI, Research and Media-native": [
+   [
+    "ready_now",
+    9
+   ],
+   [
+    "ready_with_caveats",
+    1
+   ]
   ]
  },
  "blockers": [
   [
-   "partner_approval",
-   29
+   "paid_plan",
+   14
   ],
   [
    "other",
-   7
+   2
   ],
   [
-   "paid_plan",
-   4
+   "partner_approval",
+   1
+  ],
+  [
+   "review_process",
+   1
   ]
  ],
  "easy_wins": [
+  "Salesforce",
   "HubSpot",
   "Pipedrive",
   "Attio",
+  "Twenty",
   "Podio",
   "Zoho CRM",
-  "Close",
   "DealCloud",
+  "Zendesk",
   "Intercom",
   "Freshdesk",
   "Front",
   "Pylon",
   "LiveAgent",
+  "Help Scout",
   "Gorgias",
-  "Slack",
+  "Gladly",
   "Twilio",
+  "Zoho Cliq",
   "Lark (Larksuite)",
+  "Pumble",
   "Discord",
   "Telegram",
-  "WhatsApp Business",
+  "Aircall",
   "Vonage",
   "GoHighLevel",
   "Mailchimp",
   "Klaviyo",
+  "systeme.io",
   "Pinterest",
+  "Threads (Meta)",
+  "SendGrid",
   "Shopify",
   "WooCommerce",
   "BigCommerce",
+  "Salesforce Commerce Cloud",
   "Magento (Adobe Commerce)",
+  "Ecwid",
   "Gumroad",
+  "fanbasis",
   "DataForSEO",
   "SE Ranking",
   "Ahrefs",
@@ -545,6 +496,7 @@
   "Firecrawl",
   "Bright Data",
   "Sherlock",
+  "Clay",
   "GitHub",
   "Vercel",
   "Netlify",
@@ -552,17 +504,27 @@
   "Supabase",
   "Neo4j",
   "Snowflake",
-  "Datadog",
+  "MongoDB Atlas",
+  "Sentry",
   "Notion",
   "Airtable",
+  "Linear",
+  "Jira",
+  "Monday.com",
   "ClickUp",
+  "Coda",
   "Smartsheet",
+  "Harvest",
   "Stripe",
   "Plaid",
   "Binance",
+  "QuickBooks",
   "Xero",
   "Brex",
+  "NotebookLM",
+  "Otter AI",
   "Fathom",
+  "Consensus",
   "Reducto",
   "Devin",
   "higgsfield",
@@ -570,43 +532,12 @@
   "Grain"
  ],
  "needs_outreach": [
-  "Salesforce",
-  "Twenty",
   "Copper",
-  "Zendesk",
-  "Plain",
-  "Help Scout",
-  "Gladly",
-  "Zoho Cliq",
-  "Pumble",
-  "Aircall",
-  "Meta Ads",
-  "LinkedIn Ads",
-  "systeme.io",
-  "Threads (Meta)",
-  "SendGrid",
-  "Salesforce Commerce Cloud",
-  "Squarespace",
-  "Amazon Selling Partner",
-  "fanbasis",
-  "Waterfall.io",
-  "Clay",
-  "Linear",
-  "Monday.com",
-  "Coda",
-  "Paygent Connect",
-  "iPayX",
-  "QuickBooks",
-  "Ramp",
-  "PitchBook",
-  "NotebookLM",
-  "Otter AI",
-  "Consensus",
-  "Mermaid CLI"
+  "Paygent Connect"
  ],
- "existing_mcp_exists": 81,
- "existing_mcp_unverified": 10,
- "with_verified_evidence": 75,
+ "existing_mcp_exists": 93,
+ "existing_mcp_unverified": 2,
+ "with_verified_evidence": 100,
  "needs_human": [
   "Salesforce",
   "Podio",
@@ -673,30 +604,6 @@
   ]
  ],
  "defeated": [
-  "Salesforce",
-  "Front",
-  "Plain",
-  "Slack",
-  "Twilio",
-  "Telegram",
-  "Google Ads",
-  "WooCommerce",
-  "Squarespace",
-  "Ecwid",
-  "Apify",
-  "GitHub",
-  "Cloudflare",
-  "MongoDB Atlas",
-  "Datadog",
-  "Sentry",
-  "Airtable",
-  "Jira",
-  "Asana",
-  "Harvest",
-  "QuickBooks",
-  "Xero",
-  "Ramp",
-  "Reducto",
-  "Grain"
+  "Paygent Connect"
  ]
 }

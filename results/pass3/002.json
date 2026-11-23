@@ -1,0 +1,101 @@
+{
+  "id": 2,
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "one_line_description": "HubSpot is a CRM and Sales platform with an API for integration and an AI agent toolkit through its Agent Hub.",
+  "website": "https://hubspot.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "HubSpot uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.hubspot.com/docs/api/overview",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.hubspot.com/ai-tools/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://hubspot.com",
+      "quote_snippet": "HubSpot aligns marketing, sales, and service around your customer data, so your teams and AI always know what customers need.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T15:48:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://hubspot.com",
+      "quote_snippet": "HubSpot's API is one of the most dev friendly",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:48:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://coworker.ai/blog/hubspot-mcp",
+      "quote_snippet": "HubSpot's own MCP server connects AI tools to HubSpot data.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:48:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apievangelist.com/2026/08/25/hubspot-oauth-but-create-the-app-by-hand",
+      "quote_snippet": "HubSpot Has the OAuth, but Not the Onboarding - API Evangelist How AI is applied across API Evangelist and APIs.io. Read my",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "quote_snippet": "HubSpot offers two distinct MCP servers that act as secure gateways for AI agents and tools. The HubSpot MCP Server (Remote) This",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apievangelist.com/2026/08/25/hubspot-oauth-but-create-the-app-by-hand",
+      "quote_snippet": "y needs no key. Full bodies and the synthesis endpoints are Pro. Get an API key Free tier, no email required. Sign",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T15:48:48",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://hubspot.com",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R2 api type unclear -> REST (rest=13, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://developers.hubspot.com/ai-tools/mcp",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

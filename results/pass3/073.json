@@ -1,0 +1,105 @@
+{
+  "id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Linear is a project management tool with a GraphQL API and SDK for building integrations and AI agents.",
+  "website": "https://linear.app",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Linear supports OAuth2 for third-party tools and personal API keys for internal scripts.",
+  "self_serve": "yes",
+  "gate_detail": "The trial period is unclear, but it likely requires a Linear account.",
+  "api_surface": {
+    "type": "GraphQL",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "10,000-point complexity ceiling for all GraphQL API requests"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://linear.app/docs/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "The official MCP server is deprecated and no longer maintained. A custom implementation exists but requires setup and maintenance.",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "TypeScript"
+  ],
+  "api_access_pricing": "per-seat freemium with AI Agents built in",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developers.linear.app",
+      "quote_snippet": "Use OAuth 2.0 or personal API keys to authenticate your requests to the Linear API",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:12:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://linear.app/developers/graphql",
+      "quote_snippet": "Linear’s public API is built using GraphQL. It’s the same API we use internally for developing our applications.",
+      "field_supported": "api_surface.type",
+      "fetched_at": "2026-11-23T18:12:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/tiovikram/linear-mcp",
+      "quote_snippet": "A Model Context Protocol (MCP) server that provides tools for interacting with Linear's API, enabling AI agents to manage issues, projects, and teams programmatically through the Linear platform.",
+      "field_supported": "existing_mcp.exists",
+      "fetched_at": "2026-11-23T18:12:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.linear.app",
+      "quote_snippet": "arn how to use the GraphQL API to query and mutate your data Authentication Use OAuth 2.0 or personal API keys to",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:12:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.linear.app",
+      "quote_snippet": "phQL API to query and mutate your data Authentication Use OAuth 2.0 or personal API keys to authenticate your requests to the",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:12:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://linear.app/docs/mcp",
+      "quote_snippet": "``` { \"mcpServers\": { \"linear\": { \"command\": \"npx\", \"args\": [\"-y\", \"mcp-remote\", \" } } } ``` 1. `CTRL/CMD` `P` and search for",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://quackback.io/blog/linear-pricing",
+      "quote_snippet": "1, 2026 · Updated November 12, 2026 · 12 min read Comparisons Pricing Linear's free plan gives you unlimited members but caps",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:12:51",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": false,
+    "reason": ""
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://linear.app/docs/mcp",
+    "pass3 R4 self_serve trial -> yes",
+    "pass3 R5 verdict ready_with_caveats/partner_approval -> ready_now/none"
+  ]
+}

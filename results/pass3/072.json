@@ -1,0 +1,109 @@
+{
+  "id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Airtable is a productivity and project management tool that can be used as an AI-agent toolkit through its API and MCP server.",
+  "website": "https://airtable.com/",
+  "auth_methods": [
+    "api_key"
+  ],
+  "auth_notes": "Airtable uses API keys for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Airtable offers a free trial for API usage, but for heavy API usage, a paid plan is required.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://airtable.com/developers/api",
+    "rate_limits": "5 requests per second per base"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.airtable.com/articles/mcp-server-interfaces-automations"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "yes",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "Free for light use, paid for heavy use",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://airtable.com/developers/api",
+      "quote_snippet": "Airtable's structured field types, relational links, and built-in automations make it a rich data layer for AI agents.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://airtable.com/developers/api",
+      "quote_snippet": "Works with Claude, ChatGPT, or any connected MCP client.",
+      "field_supported": "suggested_form",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://airtable.com/developers/api",
+      "quote_snippet": "Airtable's Web API has a rate limit of 5 requests per second, per base.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://airtable.com/developers/api",
+      "quote_snippet": "Airtable provides core skills and role-based solutions skills.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.karllhughes.com/posts/using-airtable-as-an-api",
+      "quote_snippet": "ticating users requires them to have an Airtable account and generate their own API key Single API key is not as secure",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:10:52",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.airtable.com/articles/mcp-server-interfaces-automations",
+      "quote_snippet": "Airtable's MCP (Model Context Protocol) server is Airtable's implementation of the open MCP standard, which lets AI models securely connect to external",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.karllhughes.com/posts/using-airtable-as-an-api",
+      "quote_snippet": "econd, which might be fine for light use, but could be limiting as you scale up Free accounts are limited to 1,000",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:10:52",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=DOH-UDrVXXI",
+    "dropped-quote-not-in-page: api_surface https://airtable.com/developers/api",
+    "dropped-quote-not-in-page: suggested_form https://airtable.com/developers/api",
+    "dropped-quote-not-in-page: api_surface https://airtable.com/developers/api",
+    "dropped-quote-not-in-page: existing_mcp https://airtable.com/developers/api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []",
+    "pass3 R3 official MCP found on vendor domain: https://www.airtable.com/articles/mcp-server-interfaces-automations",
+    "pass3 R4 self_serve trial -> yes"
+  ]
+}

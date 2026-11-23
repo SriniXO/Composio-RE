@@ -1,0 +1,84 @@
+{
+  "id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "",
+  "website": "",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.sentry.io/product/sentry-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "unverified",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://cli.sentry.dev/commands/auth",
+      "quote_snippet": ": Option Description --token <token> Authenticate using an API token instead of OAuth --timeout <timeout> Timeout for OAuth flow in seconds (default:",
+      "field_supported": "auth:oauth2",
+      "fetched_at": "2026-11-23T18:10:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://cli.sentry.dev/commands/auth",
+      "quote_snippet": "someone else Options: Option Description --token <token> Authenticate using an API token instead of OAuth --timeout <timeout> Timeout for OAuth flow in",
+      "field_supported": "auth:api_key",
+      "fetched_at": "2026-11-23T18:10:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.sentry.io/product/sentry-mcp",
+      "quote_snippet": "# Sentry MCP Server Connects AI assistants to Sentry for searching errors, analyzing performance, triaging issues, reading documentation, and managing projects —",
+      "field_supported": "existing_mcp:official",
+      "fetched_at": "",
+      "quote_verified": true
+    },
+    {
+      "url": "https://sentry.io/pricing",
+      "quote_snippet": "Pricing: Free Developer Plan, Pay as You Grow | Sentry Skip to main content Pricing plans for dev teams of all sizes",
+      "field_supported": "self_serve:yes",
+      "fetched_at": "2026-11-23T18:10:50",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
+  },
+  "pass_name": "pass3",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://***REDACTED***']",
+    "pass3 R1 auth [] -> ['oauth2', 'api_key']",
+    "pass3 R2 api type unclear -> REST (rest=2, graphql=0)",
+    "pass3 R3 official MCP found on vendor domain: https://docs.sentry.io/product/sentry-mcp",
+    "pass3 R4 self_serve unclear -> yes",
+    "pass3 R5 verdict unverified/other -> ready_now/none"
+  ]
+}
