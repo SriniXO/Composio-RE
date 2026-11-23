@@ -1,0 +1,6 @@
+httpx
+beautifulsoup4
+pydantic>=2
+anthropic  # optional; only if ANTHROPIC_API_KEY is set
+
+playwright
