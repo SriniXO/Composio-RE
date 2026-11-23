@@ -1,0 +1,63 @@
+{
+  "id": 11,
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Customer support and helpdesk platform",
+  "website": "https://www.zendesk.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods",
+  "self_serve": "yes",
+  "gate_detail": "Partner-gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://developer.zendesk.com/documentation/api-reference/",
+    "rate_limits": "50 requests per minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": null,
+    "url": "https://www.zendesk.com/mcp/"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partner approval and paid plan",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://www.zendesk.com/mcp/",
+      "quote_snippet": "The Zendesk MCP is a cloud-based platform that provides a set of APIs and tools for developers to build custom integrations.",
+      "field_supported": "MCP server",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on self-serve capabilities and pricingmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['api_surface.type', 'api_surface.breadth', 'existing_mcp.official']"
+  ]
+}

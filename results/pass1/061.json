@@ -1,0 +1,63 @@
+{
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "GitHub API for developers to interact with GitHub repositories and data",
+  "website": "https://docs.github.com/rest",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "GitHub API uses OAuth 2.0 for authentication",
+  "self_serve": "yes",
+  "gate_detail": "GitHub API is self-serve, no gatekeeper required",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.github.com/rest/api/v3/",
+    "rate_limits": "rate-limited, see https://docs.github.com/rest/overview/limits"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.github.com/rest/api/v3/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "free for public repos, paid for private repos",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.github.com/rest/api/v3/",
+      "quote_snippet": "The GitHub API is a REST API that provides access to GitHub data.",
+      "field_supported": "all fields",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "GitHub API is well-documented and widely usedmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": 24,
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_line_description": "Lark is a communication and messaging platform",
+  "website": "https://open.larksuite.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Lark uses OAuth 2.0 for authentication",
+  "self_serve": "yes",
+  "gate_detail": "Lark has a public API and self-serve credentials",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://open.larksuite.com/api",
+    "rate_limits": "not specified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://open.larksuite.com/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "not specified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://open.larksuite.com/",
+      "quote_snippet": "Lark is a communication and messaging platform with a public API",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lark has a public API and self-serve credentialsmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

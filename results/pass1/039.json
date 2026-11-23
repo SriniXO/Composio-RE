@@ -1,0 +1,51 @@
+{
+  "id": 39,
+  "app": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "A social media app for sharing short-form videos and photos.",
+  "website": "https://developers.facebook.com/docs/threads",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "No specific notes available.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "none",
+  "blocker_detail": "No public API available.",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['pagination', 'api_access_pricing', 'time_to_first_call', 'confidence', 'api_surface.type', 'api_surface.breadth', 'needs_human.flag', 'needs_human.reason']"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": 98,
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Command-line interface for Mermaid.js",
+  "website": "https://github.com/mermaid-js/mermaid-cli",
+  "auth_methods": [],
+  "auth_notes": "None",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "None"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "other",
+  "blocker_detail": "Needs partnership, contact-sales, or no public API",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['main_blocker', 'pagination', 'api_access_pricing', 'time_to_first_call', 'confidence', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag', 'needs_human.reason']"
+  ]
+}

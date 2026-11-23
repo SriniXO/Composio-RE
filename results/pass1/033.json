@@ -1,0 +1,60 @@
+{
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "LinkedIn Ads API for marketing automation and ad management",
+  "website": "https://learn.microsoft.com/en-us/linkedin/marketing",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Requires LinkedIn Developer Platform credentials",
+  "self_serve": "yes",
+  "gate_detail": "Partner-approved",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.microsoft.com/en-us/linkedin/marketing/api/",
+    "rate_limits": "50 requests/minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.linkedin.com/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires LinkedIn Developer Platform credentials and partner approval",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "free trial, then paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/api/",
+      "quote_snippet": "The LinkedIn Ads API provides a set of endpoints for managing ad campaigns, targeting, and budgeting.",
+      "field_supported": "ad_campaigns",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Requires partner approval and LinkedIn Developer Platform credentialsmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

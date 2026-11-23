@@ -1,0 +1,62 @@
+{
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "AI-agent toolkit for media and research",
+  "website": "https://docs.devin.ai",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Unclear",
+  "self_serve": "unclear",
+  "gate_detail": "Unclear",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "Unclear",
+    "rate_limits": "Unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.devin.ai"
+  },
+  "composio_status": "unverified",
+  "buildability": "unverified",
+  "main_blocker": "other",
+  "blocker_detail": "Unclear",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Unclear"
+  ],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.devin.ai",
+      "quote_snippet": "Unclear",
+      "field_supported": "Unclear",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Unclearmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['buildability', 'main_blocker', 'webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

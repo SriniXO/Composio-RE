@@ -1,0 +1,60 @@
+{
+  "id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Datadog API for monitoring and tracking",
+  "website": "https://docs.datadoghq.com/api",
+  "auth_methods": [
+    "api_key",
+    "oauth2"
+  ],
+  "auth_notes": "API key authentication and OAuth 2.0 token authentication",
+  "self_serve": "yes",
+  "gate_detail": "Public API, no review process",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.datadoghq.com/api/v2/",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.datadoghq.com/api/v2/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "No public API, requires paid plan for full access",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.datadoghq.com/api/v2/",
+      "quote_snippet": "The Datadog API is a public API that can be accessed using an API key or OAuth 2.0 token.",
+      "field_supported": "api_key",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on API access pricing and time to first callmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag']"
+  ]
+}

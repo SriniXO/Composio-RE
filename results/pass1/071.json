@@ -1,0 +1,73 @@
+{
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Notion API key can be obtained through personal access tokens, which provide easy access to the API for developers.",
+  "website": "https://developers.notion.com",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Personal access tokens are the easiest way to get started with the Notion API.",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.notion.com/specification",
+    "rate_limits": "per-connection limit of 600 requests/min on Business/Enterprise and 180 requests/min on other plans"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.notion.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "other",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "Business plan required for full access",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.youtube.com/watch?v=fzCgCCvzs6c",
+      "quote_snippet": "The easiest way to get a Notion API key is to go to personal access tokens.",
+      "field_supported": "API key",
+      "fetched_at": "2026-11-23T15:36:24",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/security/notion/notion-authentication",
+      "quote_snippet": "Notion secures its APIs with http and oauth2 across 2 declared security schemes, as derived from its OpenAPI definitions.",
+      "field_supported": "Security Schemes",
+      "fetched_at": "2026-11-23T15:36:24",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.notion.com/guides/connections-and-tokens/overview",
+      "quote_snippet": "Try the Quickstart to create a page with a personal access token.",
+      "field_supported": "Getting started",
+      "fetched_at": "2026-11-23T15:36:24",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['gate_detail', 'main_blocker', 'blocker_detail', 'pagination', 'time_to_first_call', 'auth_methods.1', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.reason']"
+  ]
+}

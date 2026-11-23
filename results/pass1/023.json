@@ -1,0 +1,70 @@
+{
+  "id": 23,
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_line_description": "Zoho Cliq is a communication and messaging platform that enables teams to collaborate and communicate effectively.",
+  "website": "https://www.zoho.com/cliq/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Zoho Cliq uses OAuth 2.0 for authentication and API key for API access.",
+  "self_serve": "yes",
+  "gate_detail": "Zoho Cliq offers a self-serve model for users to create and manage their teams, channels, and messages.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "medium",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://cliq.zoho.com/api/v2/",
+    "rate_limits": "50 requests per minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://cliq.zoho.com/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "JavaScript"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.zoho.com/cliq/help/using-cliq/creating-a-team.html",
+      "quote_snippet": "To create a team, go to the Teams tab and click on Create Team.",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.zoho.com/cliq/api/v2/",
+      "quote_snippet": "The API documentation provides detailed information on API endpoints, parameters, and response formats.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type']"
+  ]
+}

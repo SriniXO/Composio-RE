@@ -1,0 +1,80 @@
+{
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_line_description": "Podio is a CRM and sales platform that provides an API for authentication and data access.",
+  "website": "https://podio.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Uses OAuth 2.0 for authentication, with API keys required for server-side authentication.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth authorization with API key required for server-side authentication.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.podio.com/doc",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.podio.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "Requires API key for server-side authentication.",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization",
+      "quote_snippet": "Get an API key",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:29:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://stackoverflow.com/questions/44623183/what-does-it-mean-to-use-an-api-key-in-server-side-auth-flow",
+      "quote_snippet": "Use an API key in server-side auth flow.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:29:00",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.podio.com/models/itemrevision",
+      "quote_snippet": "The revision number for the item.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:29:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.podio.com/doc/users/get-user-property-29798",
+      "quote_snippet": "Returns the value of the property for the active user.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:29:00",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'outreach_needed', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

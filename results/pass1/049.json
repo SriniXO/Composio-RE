@@ -1,0 +1,63 @@
+{
+  "id": 49,
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "one_line_description": "Amazon Selling Partner API for ecommerce developers",
+  "website": "https://developer-docs.amazon.com/sp-api",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Amazon provides various authentication methods for its Selling Partner API.",
+  "self_serve": "yes",
+  "gate_detail": "Partner approval required for full access",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.aws.amazon.com/sp-api/latest/APIReference/APIOverview.html",
+    "rate_limits": "varies by API endpoint"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": null,
+    "url": "https://developer-docs.amazon.com/sp-api"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partner approval and a paid plan",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Java",
+    "Python",
+    "C#"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer-docs.amazon.com/sp-api/latest/APIReference/APIOverview.html",
+      "quote_snippet": "The Amazon Selling Partner API is a public API that provides access to Amazon's selling partner data and functionality.",
+      "field_supported": "varies by API endpoint",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing and time to first callmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.official']"
+  ]
+}

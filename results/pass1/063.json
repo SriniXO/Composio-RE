@@ -1,0 +1,63 @@
+{
+  "id": 63,
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Netlify is a developer platform that provides infrastructure, APIs, and services for web development and deployment.",
+  "website": "https://docs.netlify.com/api",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Netlify uses OAuth 2.0 for authentication, with API keys also available.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth 2.0",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.netlify.com/docs",
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.netlify.com/docs"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript",
+    "Python"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.netlify.com/api",
+      "quote_snippet": "Netlify provides a public API for managing deployments, builds, and releases.",
+      "field_supported": "builds",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Netlify's API is well-documented and easily accessible.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

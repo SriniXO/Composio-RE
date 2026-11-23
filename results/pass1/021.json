@@ -1,0 +1,63 @@
+{
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "one_line_description": "Real-time messaging and collaboration platform",
+  "website": "https://slack.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods, including OAuth 2.0 and API keys.",
+  "self_serve": "yes",
+  "gate_detail": "Public API available, no review process required.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.slack.com/methods",
+    "rate_limits": "50 requests per second"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.slack.com/methods"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "free trial, then paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://slack.com/docs/api",
+      "quote_snippet": "The Slack API is a RESTful API that provides access to Slack's data and functionality.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Nonemodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

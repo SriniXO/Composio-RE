@@ -1,0 +1,59 @@
+{
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "AI-powered chatbot and note-taking tool",
+  "website": "https://otter.ai/",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Requires API key for self-serve access",
+  "self_serve": "trial",
+  "gate_detail": "Partner-gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://otter.ai/api",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://otter.ai/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partner approval for public API access",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://otter.ai/",
+      "quote_snippet": "Otter AI is a research-native AI tool that provides a simple and easy-to-use interface for taking notes and organizing research.",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of publicly available information on pricing, API access, and buildabilitymodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

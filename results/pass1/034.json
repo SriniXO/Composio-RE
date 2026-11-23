@@ -1,0 +1,62 @@
+{
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "GoHighLevel is a marketing, ads, email, and social platform that offers a suite of tools for businesses.",
+  "website": "https://highlevel.stoplight.io",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Supports multiple authentication methods, including OAuth2, API key, basic auth, bearer token, JWT, and others.",
+  "self_serve": "yes",
+  "gate_detail": "No gate detail available.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://highlevel.stoplight.io/openapi",
+    "rate_limits": "Rate limits apply"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://highlevel.stoplight.io"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "Requires a paid plan or trial for full functionality.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Go"
+  ],
+  "api_access_pricing": "Paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://highlevel.stoplight.io",
+      "quote_snippet": "GoHighLevel offers a suite of marketing, ads, email, and social tools for businesses.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing, time to first call, and outreach needed.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

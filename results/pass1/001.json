@@ -1,0 +1,73 @@
+{
+  "id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_line_description": "Salesforce provides various authentication methods, including OAuth 2.0, OpenID Connect, and HTTP bearer, for its APIs.",
+  "website": "https://developer.salesforce.com/",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "Salesforce issues no API keys, and every API call carries an OAuth access token minted against a specific org for a specific user.",
+  "self_serve": "yes",
+  "gate_detail": "Free trial, no credit card, no installations",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://apis.io/security/service-cloud/service-cloud-authentication",
+    "rate_limits": "not specified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "not specified",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Java",
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "not specified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://apis.io/security/service-cloud/service-cloud-authentication",
+      "quote_snippet": "Salesforce issues NO API keys. Every API call carries an OAuth access token minted against a specific org for a specific user.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:28:20",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart-oauth.html",
+      "quote_snippet": "To use Connect REST API, create a REST entry point in your org. Salesforce defines this entry point as an external client app.",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "quote_snippet": "To log in to a sandbox, append the `--instance-url` flag and specify your sandbox URL.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:28:20",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "not specifiedmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'time_to_first_call', 'outreach_needed', 'auth_methods.2', 'auth_methods.1', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

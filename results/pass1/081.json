@@ -1,0 +1,65 @@
+{
+  "id": 81,
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "one_line_description": "API toolkit for online payments and subscription management",
+  "website": "https://stripe.com/docs/api",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports OAuth 2.0, API keys, Basic Auth, Bearer Tokens, and JWT",
+  "self_serve": "yes",
+  "gate_detail": "Public API with rate limits",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.stripe.com/docs/api",
+    "rate_limits": "Yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://stripe.com/docs/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "Ruby",
+    "PHP",
+    "Node.js"
+  ],
+  "api_access_pricing": "Free tier available, paid plans available",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://stripe.com/docs/api",
+      "quote_snippet": "The Stripe API is a RESTful API that provides access to Stripe's payment and subscription management features.",
+      "field_supported": "API toolkit",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": 30,
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "one_line_description": "Vonage API for building communications and messaging applications",
+  "website": "https://developer.vonage.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports OAuth 2.0, API Key, Basic Auth, Bearer Token, and JWT Auth",
+  "self_serve": "yes",
+  "gate_detail": "Partner Gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.vonage.com/docs/api/",
+    "rate_limits": "50 requests/minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.vonage.com/docs/api/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Node.js"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developer.vonage.com/docs/api/",
+      "quote_snippet": "The Vonage API is a RESTful API that provides access to our communications and messaging services.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing and outreach requirementsmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag']"
+  ]
+}

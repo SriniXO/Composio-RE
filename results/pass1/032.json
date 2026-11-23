@@ -1,0 +1,63 @@
+{
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Meta Ads API for managing ads and ad campaigns",
+  "website": "https://developers.facebook.com/docs/marketing-apis",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports OAuth 2.0 and API key authentication",
+  "self_serve": "yes",
+  "gate_detail": "Partner approval required for full access",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.facebook.com/docs/marketing-apis/reference/",
+    "rate_limits": "50 requests per second"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.facebook.com/docs/marketing-apis"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partner approval for full access",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/docs/marketing-apis/getting-started/",
+      "quote_snippet": "To get started, create a Facebook Developer account and register your app.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing and outreach requirementsmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

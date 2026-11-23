@@ -1,0 +1,72 @@
+{
+  "id": 5,
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "one_line_description": "Twenty is a CRM and sales platform that integrates with AI agents and the Model Context Protocol (MCP) server.",
+  "website": "https://twenty.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Twenty uses OAuth 2.0 for authentication, and API keys can be used for authentication and authorization.",
+  "self_serve": "yes",
+  "gate_detail": "Twenty has a self-serve portal for creating API keys and setting up authentication.",
+  "api_surface": {
+    "type": "GraphQL",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.twenty.com/developers/extend/api",
+    "rate_limits": "unlimited"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/mhenry3164/twenty-crm-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.x.com/fundamentals/authentication/oauth-1-0a/api-key-and-secret",
+      "quote_snippet": "Learn what the X API Key and Secret (consumer key and secret) are, how to create them in the Developer Portal, and how to regenerate or rotate them.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:28:50",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "quote_snippet": "Create an API key in Settings â†’ Developers â†’ API â†’ + Create key. Copy it immediately â€” itâ€39s shown once.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T15:28:50",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/mhenry3164/twenty-crm-mcp-server",
+      "quote_snippet": "mcpServers\"twenty-crm\" \"command\" \"npx\" \" \" \"args\"-y\" \" \"github:mhenry3164/twenty-crm-mcp-server\" \" \" \"env\" \"TWENTY_API_KEY\" \"your_api_key_here\" \" \" \"TWENTY_BASE_URL\" \" \" ",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:28:50",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'outreach_needed', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag']"
+  ]
+}

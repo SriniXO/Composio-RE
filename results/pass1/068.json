@@ -1,0 +1,63 @@
+{
+  "id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Cloud-based MongoDB platform for developers and teams",
+  "website": "https://www.mongodb.com/docs/atlas/api",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "No public API, requires self-serve credentials or partner approval",
+  "self_serve": "yes",
+  "gate_detail": "Partner approval required for public API access",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.mongodb.com/atlas/api/",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.mongodb.com/atlas/api/"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "No public API, requires partner approval",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Go"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.mongodb.com/atlas/api/",
+      "quote_snippet": "The Atlas API provides a public API for accessing MongoDB Atlas resources.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on API access pricing and rate limitsmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_line_description": "Pipedrive is a CRM and sales platform that offers API access and authentication through OAuth 2.0 and API key",
+  "website": "https://pipedrive.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "OAuth 2.0 and API key required for authentication",
+  "self_serve": "yes",
+  "gate_detail": "OAuth 2.0 flow with redirect URI configuration",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.pipedrive.com/en/latest/",
+    "rate_limits": "30,000 base tokens x plan multiplier x seat count"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.pipedream.com/app/pipedrive"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "included on all plans",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://mindcloud.co/docs/universal/rest/pipedrive/latest/introduction/authentication",
+      "quote_snippet": "Use the Pipedrive Developer Hub and enable OAuth authorization.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://devcommunity.pipedrive.com/t/using-api-key-and-api-secret-to-authorize-api-actions-in-my-app/3323",
+      "quote_snippet": "We only provide OAuth for authentication (via App), otherwise some integrations are built directly through the API Token.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://pipeline.zoominfo.com/sales/pipedrive-api",
+      "quote_snippet": "Pipedrive supports two authentication methods: a personal API token and OAuth 2.0.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": false
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "quote_snippet": "All requests to our API need authentication.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+      "quote_snippet": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.pipedrive.com/en/features/crm-api",
+      "quote_snippet": "Every Pipedrive plan comes with an API token that gives you access to our RESTful API for free.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/Wirasm/pipedrive-mcp",
+      "quote_snippet": "This server enables Claude to create, read, update, and delete Pipedrive records through MCP tool calls.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://mcp.pipedream.com/app/pipedrive",
+      "quote_snippet": "Pipedrive MCP Server | Pipedream.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://devcommunity.pipedrive.com/t/pipedrive-mcp-server/20195",
+      "quote_snippet": "The only available MCP server seems to be via RUBE so Iâ€â„¢ve created one based on the GitHub - pipedrive/client-nodejs: Pipedrive API client for NodeJS Â· GitHub",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:28:07",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['pagination', 'time_to_first_call', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

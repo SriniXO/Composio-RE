@@ -1,0 +1,63 @@
+{
+  "id": 74,
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Jira is a project management and issue tracking tool.",
+  "website": "https://developer.atlassian.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods.",
+  "self_serve": "yes",
+  "gate_detail": "Partner-gated, requires approval for public API access.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.atlassian.com/docs/rest/api/",
+    "rate_limits": "Yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.atlassian.com/rest/api/"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partner approval for public API access.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Java",
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "Yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer.atlassian.com/rest/api/",
+      "quote_snippet": "The Jira REST API is a public API that can be accessed without authentication.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on self-serve credentials and public API access.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

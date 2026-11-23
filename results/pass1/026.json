@@ -1,0 +1,63 @@
+{
+  "id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_line_description": "Discord is a communication platform designed for communities, offering real-time messaging, voice, and video chat.",
+  "website": "https://discord.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Discord uses OAuth 2.0 for authentication, with optional API key and basic auth support.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth 2.0",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://discord.com/api/docs",
+    "rate_limits": "varies"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://discord.com/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://discord.com/developers/docs",
+      "quote_snippet": "Discord provides a comprehensive API documentation at https://discord.com/api/docs.",
+      "field_supported": "API surface, buildability",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing and outreach neededmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

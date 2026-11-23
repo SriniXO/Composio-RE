@@ -1,0 +1,63 @@
+{
+  "id": 65,
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Supabase is a free, open-source alternative to PostgreSQL, with a focus on developer tools and infrastructure.",
+  "website": "https://supabase.io/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods, including OAuth2, API key, Basic Auth, Bearer Token, and JWT.",
+  "self_serve": "yes",
+  "gate_detail": "No public API, requires partnership or contact-sales for access.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://supabase.io/docs/api",
+    "rate_limits": "Yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://supabase.io/docs/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partnership or contact-sales for access to the public API.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Go"
+  ],
+  "api_access_pricing": "Free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://supabase.io/docs",
+      "quote_snippet": "Supabase is a free, open-source alternative to PostgreSQL, with a focus on developer tools and infrastructure.",
+      "field_supported": "one_line_description",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing, time to first call, and outreach needed.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

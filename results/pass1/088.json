@@ -1,0 +1,60 @@
+{
+  "id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_line_description": "Brex is a financial services company that provides business credit cards and loans to startups and small businesses.",
+  "website": "https://developer.brex.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Brex uses OAuth 2.0 for authentication and API key-based authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Brex has a self-serve portal for developers to access their API credentials and manage their accounts.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.brex.com/openapi",
+    "rate_limits": "rate-limited"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.brex.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "api_access_pricing": "free trial, then paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developer.brex.com",
+      "quote_snippet": "\"Brex provides a self-serve portal for developers to access their API credentials and manage their accounts.\"",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

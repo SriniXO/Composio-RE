@@ -1,0 +1,63 @@
+{
+  "id": 31,
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Google Ads API for developers to manage ads campaigns and conversions",
+  "website": "https://developers.google.com/google-ads",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports OAuth 2.0, API key, Basic Auth, Bearer Token, and JWT Auth",
+  "self_serve": "yes",
+  "gate_detail": "Partner-approved, requires Google Ads account",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.google.com/google-ads/docs/reference/rest/v10",
+    "rate_limits": "50 requests/second"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.google.com/google-ads/docs/reference/rest/v10"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "Requires Google Ads account and partner approval",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Java",
+    "Python",
+    "C#"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developers.google.com/google-ads/docs/reference/rest/v10",
+      "quote_snippet": "The Google Ads API is a RESTful API that allows you to manage ads campaigns and conversions.",
+      "field_supported": "API surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "API documentation and code examples are availablemodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

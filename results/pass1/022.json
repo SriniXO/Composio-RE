@@ -1,0 +1,70 @@
+{
+  "id": 22,
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "one_line_description": "Twilio is a cloud communication platform for building, scaling, and operating real-time communication and collaboration applications.",
+  "website": "https://www.twilio.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Twilio provides both free and paid plans, with varying levels of access and features.",
+  "self_serve": "yes",
+  "gate_detail": "Twilio offers a free trial and paid plans, with varying levels of access and features.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://www.twilio.com/docs/api",
+    "rate_limits": "varies by plan"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.twilio.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "Node.js"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.twilio.com/docs/api",
+      "quote_snippet": "The Twilio API is a RESTful API that provides access to our communication services.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.twilio.com/mcp",
+      "quote_snippet": "Twilio MCP is a managed platform for building, deploying, and managing real-time communication applications.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Some features and pricing plans may require human oversight or approval.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag']"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "All-in-one marketing platform for businesses",
+  "website": "https://systeme.io/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Unclear",
+  "self_serve": "yes",
+  "gate_detail": "Partner-gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://systeme.io/api/",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "https://systeme.io/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Partner-gated access to API and MCP",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "PHP",
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://systeme.io/",
+      "quote_snippet": "Systeme.io is an all-in-one marketing platform for businesses.",
+      "field_supported": "one_line_description",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of publicly available informationmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'outreach_needed', 'api_surface.type', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

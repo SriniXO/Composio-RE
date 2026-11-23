@@ -1,0 +1,64 @@
+{
+  "id": 57,
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Bright Data is a data and SEO tool that provides scraping and data extraction capabilities.",
+  "website": "https://www.brightdata.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Unclear",
+  "self_serve": "yes",
+  "gate_detail": "Partner-gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.brightdata.com/",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "https://docs.brightdata.com/"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Partner approval required for full access to the API.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "JavaScript",
+    "Java"
+  ],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.brightdata.com/",
+      "quote_snippet": "Bright Data provides a comprehensive API for data extraction and scraping.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of publicly available information on API access and pricing.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": 29,
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "one_line_description": "Aircall is a cloud-based phone system and communication platform for businesses.",
+  "website": "https://www.aircall.io/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Aircall supports OAuth 2.0, API keys, Basic Auth, Bearer Tokens, and JWT Auth.",
+  "self_serve": "yes",
+  "gate_detail": "Aircall offers a self-serve portal for users to manage their accounts and features.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://api.aircall.io/",
+    "rate_limits": "50 requests/minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.aircall.io/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.aircall.io/docs/api/",
+      "quote_snippet": "The Aircall API is designed to be easy to use and provides a wide range of features for integrating with your business.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Aircall's API documentation and support resources are well-established and comprehensive.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": 60,
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Clay is a data scraping and SEO tool",
+  "website": "https://clay.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Unclear",
+  "self_serve": "yes",
+  "gate_detail": "Unclear",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "Unclear",
+    "rate_limits": "Unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "Unclear"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "other",
+  "blocker_detail": "Unclear",
+  "suggested_form": "unverified",
+  "webhooks": null,
+  "pagination": "Unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Unclear"
+  ],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://clay.com",
+      "quote_snippet": "Clay is a data scraping and SEO tool",
+      "field_supported": "one_line_description",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of informationmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['suggested_form', 'webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

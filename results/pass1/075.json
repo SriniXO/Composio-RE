@@ -1,0 +1,60 @@
+{
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Task and project management tool for teams",
+  "website": "https://developers.asana.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "OAuth 2.0 and API key authentication available",
+  "self_serve": "yes",
+  "gate_detail": "Partner approval required for full access",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.asana.com/docs/api/",
+    "rate_limits": "50 requests/minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.asana.com/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires partner approval for full access",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "JavaScript"
+  ],
+  "api_access_pricing": "free trial, then paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developers.asana.com/",
+      "quote_snippet": "Asana provides a public API for developers to access and manipulate data.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Partner approval required for full accessmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

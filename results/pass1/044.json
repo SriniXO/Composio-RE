@@ -1,0 +1,64 @@
+{
+  "id": 44,
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_line_description": "Salesforce Commerce Cloud is an ecommerce platform that provides a suite of tools for building and managing online stores.",
+  "website": "https://developer.salesforce.com/commerce",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Salesforce Commerce Cloud uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Salesforce Commerce Cloud provides a self-serve portal for developers to manage their stores and products.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.salesforce.com/docs/en/commerce/rest/latest/",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": null,
+    "url": "https://developer.salesforce.com/commerce"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Java",
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developer.salesforce.com/commerce/docs/en/commerce/rest/latest/",
+      "quote_snippet": "The Commerce Cloud REST API is a public API that provides access to the Commerce Cloud data.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.official']"
+  ]
+}

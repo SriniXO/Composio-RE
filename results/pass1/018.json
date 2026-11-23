@@ -1,0 +1,63 @@
+{
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Help Scout is a support and helpdesk platform that provides tools for customer support teams.",
+  "website": "https://helpscout.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods, including OAuth2, API key, Basic Auth, Bearer Token, and JWT.",
+  "self_serve": "yes",
+  "gate_detail": "Self-serve credentials and public API available.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://helpscout.com/api/docs/",
+    "rate_limits": "50 requests/minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://helpscout.com/mcp/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://helpscout.com/api/docs/",
+      "quote_snippet": "The Help Scout API is designed to be easy to use and provides a wide range of endpoints for managing customers, tickets, and more.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on pricing and outreach requirementsmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

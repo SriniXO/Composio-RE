@@ -1,0 +1,47 @@
+{
+  "id": 94,
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Consensus is a media-native AI platform for researchers and media organizations.",
+  "website": "https://consensus.app/",
+  "auth_methods": [
+    "oauth2"
+  ],
+  "auth_notes": "OAuth requested",
+  "self_serve": "unclear",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Needs partnership or contact-sales",
+  "suggested_form": "not feasible",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['gate_detail', 'pagination', 'api_access_pricing', 'time_to_first_call', 'confidence', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag', 'needs_human.reason']"
+  ]
+}

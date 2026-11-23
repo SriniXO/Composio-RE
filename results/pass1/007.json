@@ -1,0 +1,71 @@
+{
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_line_description": "Zoho CRM is a cloud-based CRM and sales platform.",
+  "website": "https://www.zoho.com/crm/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Zoho CRM uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Zoho CRM offers a free trial, and then it's paid.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://developer.zoho.com/api/v1/",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.zoho.com/crm/"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Zoho CRM requires a partner approval for enterprise plans.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "JavaScript"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://www.zoho.com/crm/help/using-crm/setting-up-authentication.html",
+      "quote_snippet": "Zoho CRM uses OAuth 2.0 for authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.zoho.com/crm/help/using-crm/setting-up-authentication.html",
+      "quote_snippet": "Zoho CRM offers a free trial, and then it's paid.",
+      "field_supported": "gate_detail",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Insufficient information about authentication methods and pricing.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

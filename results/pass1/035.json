@@ -1,0 +1,63 @@
+{
+  "id": 35,
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Mailchimp is an email marketing platform that allows users to create and send targeted email campaigns.",
+  "website": "https://mailchimp.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Mailchimp uses OAuth 2.0 for API authentication, but also supports API keys and basic authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Mailchimp offers a self-serve interface for creating and sending email campaigns.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://mailchimp.com/developer/api/",
+    "rate_limits": "rate-limited"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mailchimp.com/developer/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "free trial, then paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://mailchimp.com/developer/api/",
+      "quote_snippet": "The Mailchimp API is designed to be easy to use and provides a wide range of features for creating and sending email campaigns.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "nomodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "id": 28,
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "one_line_description": "WhatsApp Business API for messaging and customer support",
+  "website": "developers.facebook.com/docs/whatsapp",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Requires a Facebook Developer account and a verified business phone number",
+  "self_serve": "yes",
+  "gate_detail": "Partner-gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.facebook.com/docs/whatsapp/api-reference",
+    "rate_limits": "varies"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": null,
+    "url": "https://developers.facebook.com/docs/whatsapp/api-reference"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires a verified business phone number and a Facebook Developer account",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Java",
+    "Python",
+    "C#"
+  ],
+  "api_access_pricing": "varies",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/docs/whatsapp/api-reference",
+      "quote_snippet": "To get started, you need to create a WhatsApp Business account and verify your business phone number.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on self-serve credentials and public API availabilitymodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.official']"
+  ]
+}

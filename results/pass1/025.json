@@ -1,0 +1,56 @@
+{
+  "id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "one_line_description": "Pumble is a messaging app that allows users to make voice and video calls, send messages, and share files.",
+  "website": "https://pumble.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Unclear how authentication works without official documentation.",
+  "self_serve": "unclear",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "None",
+    "rate_limits": "None"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "None"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "other",
+  "blocker_detail": "Needs partnership, contact-sales, or no public API.",
+  "suggested_form": "unverified",
+  "webhooks": null,
+  "pagination": "None",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "None",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "None",
+      "quote_snippet": "None",
+      "field_supported": "None",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of official documentation and unclear authentication process.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['main_blocker', 'suggested_form', 'webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

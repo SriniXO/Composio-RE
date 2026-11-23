@@ -1,0 +1,53 @@
+{
+  "id": 72,
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Airtable is a cloud-based productivity and project management tool.",
+  "website": "https://airtable.com/",
+  "auth_methods": [],
+  "auth_notes": "Unclear",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://airtable.com/developers/api-reference",
+    "rate_limits": "Unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "https://airtable.com/developers"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "other",
+  "blocker_detail": "No public API",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "Unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://airtable.com/developers",
+      "quote_snippet": "Airtable provides a public API for developers to access and manipulate data.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on self-serve credentials, public API, and rate limits.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['main_blocker', 'webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

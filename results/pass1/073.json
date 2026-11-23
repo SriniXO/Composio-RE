@@ -1,0 +1,48 @@
+{
+  "id": 73,
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Linear: A productivity and project management app for developers",
+  "website": "https://developers.linear.app/",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "No official documentation on authentication methods",
+  "self_serve": "yes",
+  "gate_detail": "No gate detail available",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "other",
+  "blocker_detail": "No information available",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Insufficient informationmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

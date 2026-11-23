@@ -1,0 +1,66 @@
+{
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Gorgias is a support and helpdesk platform that provides AI-powered chatbots and automation tools.",
+  "website": "https://gorgias.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "Gorgias offers both OAuth 2.0 and API key authentication methods.",
+  "self_serve": "yes",
+  "gate_detail": "Gorgias provides a self-serve portal for users to manage their accounts and access the platform.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://gorgias.com/api/docs/",
+    "rate_limits": "50 requests per minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://gorgias.com/mcp/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "Gorgias requires a paid plan or partnership for full access to its features.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://gorgias.com/",
+      "quote_snippet": "Gorgias provides a self-serve portal for users to manage their accounts and access the platform.",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://gorgias.com/api/docs/",
+      "quote_snippet": "Gorgias provides a public API for developers to integrate with the platform.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth']"
+  ]
+}

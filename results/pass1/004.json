@@ -1,0 +1,91 @@
+{
+  "id": 4,
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "one_line_description": "Attio is a CRM platform that helps revenue agents orchestrate their workflows and automate their revenue motion.",
+  "website": "https://www.attio.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "OAuth 2.0 flow recommended for multiple workspaces, API key for single workspace",
+  "self_serve": "yes",
+  "gate_detail": "OAuth 2.0 flow, API key for single workspace",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.attio.com/rest-api/guides/authentication",
+    "rate_limits": "100 requests per minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.so/server/attio-mcp/Attio"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "javascript",
+    "python"
+  ],
+  "api_access_pricing": "paid_required",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.attio.com/rest-api/guides/authentication.md",
+      "quote_snippet": "You can find the reference for our OAuth authorize, token exchange and introspect endpoints here.",
+      "field_supported": "OAuth 2.0",
+      "fetched_at": "2026-11-23T15:27:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://attio.mintlify.app/rest-api/guides/authentication",
+      "quote_snippet": "You can find the reference for our OAuth authorize, token exchange and introspect endpoints here.",
+      "field_supported": "OAuth 2.0",
+      "fetched_at": "2026-11-23T15:27:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://journeybee.io/integrations/attio",
+      "quote_snippet": "Attio API setup pipeline: create a developer account, register an integration, set scopes, and generate the access token used to authenticate every API call.",
+      "field_supported": "API key",
+      "fetched_at": "2026-11-23T15:27:49",
+      "quote_verified": false
+    },
+    {
+      "url": "https://frontal.so/gtm-apis/crm-apis/attio-api-review",
+      "quote_snippet": "Attio API: Keys, Auth, and Developer Setup. # Attio API Guide: Developer Account Setup, API Keys and Authentication (2026)",
+      "field_supported": "API key",
+      "fetched_at": "2026-11-23T15:27:49",
+      "quote_verified": false
+    },
+    {
+      "url": "https://tldv.io/blog/attio-crm",
+      "quote_snippet": "Yes. Attio’s Free plan covers up to three seats, 50,000 records, and three objects, with 100 AI credits per seat each month.",
+      "field_supported": "Free plan",
+      "fetched_at": "2026-11-23T15:27:49",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

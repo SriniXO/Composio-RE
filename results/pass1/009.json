@@ -1,0 +1,63 @@
+{
+  "id": 9,
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "one_line_description": "All-in-one sales and CRM platform for businesses",
+  "website": "https://copper.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Unclear",
+  "self_serve": "yes",
+  "gate_detail": "Partner Gated",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "Unclear",
+    "rate_limits": "Unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "Unclear"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Partner Gated",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://copper.com/",
+      "quote_snippet": "Copper is an all-in-one sales and CRM platform for businesses.",
+      "field_supported": "one_line_description",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of publicly available informationmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

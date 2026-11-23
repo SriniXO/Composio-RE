@@ -1,0 +1,63 @@
+{
+  "id": 8,
+  "app": "Close",
+  "category": "CRM and Sales",
+  "one_line_description": "Close CRM and Sales platform",
+  "website": "https://close.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Unclear",
+  "self_serve": "unclear",
+  "gate_detail": "Unclear",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://close.com/api/docs/",
+    "rate_limits": "Unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "null"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "other",
+  "blocker_detail": "Unclear",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "Unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://close.com/",
+      "quote_snippet": "Close provides a robust API for integrating with their platform.",
+      "field_supported": "API access",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of publicly available informationmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.type', 'existing_mcp.exists', 'existing_mcp.official']"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": 91,
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "NotebookLM is a cloud-based AI model for natural language processing and media analysis.",
+  "website": "https://cloud.google.com/gemini",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "NotebookLM uses a combination of authentication methods, including OAuth 2.0, API keys, and basic authentication.",
+  "self_serve": "yes",
+  "gate_detail": "NotebookLM provides a self-serve interface for users to access and manage their models.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://cloud.google.com/gemini/docs/reference/rest",
+    "rate_limits": "unverified"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "unverified"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "NotebookLM requires partner approval for access to its API.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unverified",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "api_access_pricing": "unverified",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://cloud.google.com/gemini/docs/getting-started",
+      "quote_snippet": "NotebookLM provides a self-serve interface for users to access and manage their models.",
+      "field_supported": "self_serve",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://cloud.google.com/gemini/docs/reference/rest",
+      "quote_snippet": "NotebookLM provides a REST API for accessing and managing models.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Insufficient information about the app's authentication and API access methods.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['webhooks', 'sandbox_test_env', 'time_to_first_call', 'outreach_needed', 'api_surface.breadth', 'api_surface.docs_quality', 'existing_mcp.exists', 'existing_mcp.official', 'needs_human.flag']"
+  ]
+}

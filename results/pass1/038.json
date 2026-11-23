@@ -1,0 +1,70 @@
+{
+  "id": 38,
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Pinterest API for developers to access and manage Pinterest data and functionality",
+  "website": "https://developers.pinterest.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "OAuth 2.0 and API key authentication available",
+  "self_serve": "yes",
+  "gate_detail": "Partner approval required for some features",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.pinterest.com/openapi/",
+    "rate_limits": "Rate limits apply for some API calls"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.pinterest.com/mcp/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Partner approval required for some features",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "JavaScript"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developers.pinterest.com/",
+      "quote_snippet": "Access to our API is free for developers who sign up for a Pinterest Developer account.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.pinterest.com/mcp/",
+      "quote_snippet": "Our MCP server provides a managed experience for developers who need more control over their Pinterest data.",
+      "field_supported": "suggested_form",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "API documentation and developer resources are well-maintainedmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality']"
+  ]
+}

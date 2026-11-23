@@ -1,0 +1,62 @@
+{
+  "id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "one_line_description": "E-commerce platform with REST API for managing products, orders, and more",
+  "website": "https://woocommerce.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Supports multiple authentication methods, including OAuth2 and API keys.",
+  "self_serve": "yes",
+  "gate_detail": "Partner-gated, requires WooCommerce Partner account for full access.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://woocommerce.github.io/rest-api/",
+    "rate_limits": "Rate-limited for free plans"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://woocommerce.github.io/rest-api/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "Requires WooCommerce Partner account for full access.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "PHP",
+    "JavaScript"
+  ],
+  "api_access_pricing": "Free plan available, paid plans required for full access.",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://woocommerce.github.io/rest-api/",
+      "quote_snippet": "The WooCommerce REST API is a powerful tool for managing products, orders, and more.",
+      "field_supported": "API Surface",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "high",
+  "needs_human": {
+    "flag": true,
+    "reason": "Lack of information on free plan access and paid plan pricing.model output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['time_to_first_call', 'outreach_needed', 'api_surface.type', 'api_surface.breadth', 'api_surface.docs_quality', 'needs_human.flag']"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": 99,
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "YouTube Transcript API for media-native AI research",
+  "website": "https://transcriptapi.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "No public API, requires partnership or contact-sales",
+  "self_serve": "unclear",
+  "gate_detail": "Partner approval required",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "narrow",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": null
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "No public API, requires partnership or contact-sales",
+  "suggested_form": "not feasible",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [],
+  "api_access_pricing": "",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "No public API, requires partnership or contact-salesmodel output violated schema; "
+  },
+  "pass_name": "pass1",
+  "verification_log": [
+    "schema-invalid fields dropped: ['self_serve', 'pagination', 'api_access_pricing', 'time_to_first_call', 'confidence', 'api_surface.type', 'needs_human.flag']"
+  ]
+}
