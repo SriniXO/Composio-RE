@@ -47,21 +47,26 @@ pre{background:var(--card);padding:12px;border-radius:8px;overflow:auto}details 
 <p class="mut">Click a row for evidence. Click a header to sort. Rows marked <code>needs human</code> were flagged by the agent as uncertain.</p>
 
 <h2 id="agent">4. The agent</h2>
-<pre>seed list → search (Composio TAVILY_SEARCH) → fetch docs/pricing/MCP pages
-  → [JS page? Composio TAVILY_EXTRACT → Playwright] → LLM extracts to fixed schema
-  → CODE checks each quote is verbatim in the page → verifier LLM re-reads cited page
-  → needs 2 independent pages for auth + self-serve → rule checks (dead links, contradictions)
-  → low confidence / conflict ⇒ needs_human</pre>
+<pre>PASS 1 (baseline): search snippets -> small LLM -> record
+PASS 2 (verified): search (Composio TAVILY_SEARCH) -> fetch docs/pricing/MCP pages
+  -> [unreadable page? Composio TAVILY_EXTRACT -> Playwright] -> LLM extracts to fixed schema
+  -> CODE checks each quote is verbatim in the page -> verifier LLM -> two-source rule -> rule checks
+  -> low confidence / conflict => needs_human (flags only; does not fix)
+PASS 3 (correcting, no LLM): re-read fetched text and CORRECT the record:
+  auth keyword must appear on a page | API type from page text | "official MCP" only on the vendor's own domain
+  | self-serve from pricing/access language | verdict re-derived from corrected fields</pre>
 <ul>
 <li><b>Composio used:</b> CLI-executed <code>TAVILY_SEARCH</code> and <code>TAVILY_EXTRACT</code> tools (logged-in CLI, no key in repo).</li>
-<li><b>LLM:</b> local Ollama (llama3.2 for pass 1, qwen2.5-coder:7b for pass 2): small models on purpose-constrained by code checks.</li>
+<li><b>LLM:</b> local Ollama (llama3.2 for pass 1, qwen2.5-coder:7b for pass 2); pass 3 uses no LLM. Small models, bounded by code checks.</li>
 <li><b>Where a human was needed:</b> see <a href="HUMAN_INTERVENTIONS.md">HUMAN_INTERVENTIONS.md</a>; count: <span id="nh"></span> flagged records.</li>
 </ul>
 
 <h2 id="proof">5. Proof: run it yourself</h2>
 <pre>pip install -r requirements.txt
 composio login
-python -m agent.run --pass 2 --app Notion</pre>
+python -m agent.run --pass 2 --app Notion     # one app, verified pass
+python -m agent.pass3 --app Notion            # correcting loops (no LLM)
+python -m agent.run --pass 2 --all && python -m agent.pass3 --all</pre>
 <p>Repo: <a id="repo2" href="https://github.com/SriniXO/Composio-RE">https://github.com/SriniXO/Composio-RE</a></p>
 
 <h2 id="machine">6. For agents (machine-readable)</h2>
@@ -78,7 +83,7 @@ const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>(
 const ver=a=>a.evidence.some(e=>e.quote_verified);
 const tiles=[['Apps',A.length],['ready_now',S.easy_wins.length],['Need outreach',S.needs_outreach.length],['Existing MCP',S.existing_mcp_exists],['Records with a verbatim quote',S.with_verified_evidence],['Flagged for human',S.needs_human.length]];
 $('#tiles').innerHTML=tiles.map(t=>`<div class="tile"><b>${t[1]}</b>${t[0]}</div>`).join('');
-$('#trust').innerHTML=`<b>Read with care:</b> this data was produced by small local models and is only as good as its checks. Section 6 shows measured accuracy: pass 2 was right on roughly two thirds of the sampled answers, so treat every count here as an estimate, not a fact.`;
+$('#trust').innerHTML=`<b>Read with care:</b> the final data comes from an agent whose accuracy was measured (section 7): about 80% on held-out apps overall, but only for auth and API type. Self-serve, MCP and buildability are barely better than guessing, so treat those counts as upper bounds, not facts. The accuracy figures come from an AI audit; a human check is not yet recorded.`;
 $('#nh').textContent=S.needs_human.length;
 $('#repo2').textContent=D.repo||'(pending)';
 const list=(id,arr)=>$(id).innerHTML=arr.length?arr.map(a=>`<span class="pill">${esc(a)}</span> `).join(''):'<span class="mut">none yet</span>';
