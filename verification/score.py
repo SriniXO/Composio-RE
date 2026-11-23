@@ -60,7 +60,11 @@ def main():
         res["human_review"] = {"n": len(done), "agree_with_audit": agree,
                                "pass2_accuracy_by_human": round(sum(W[r[key].strip().lower()] for r in done) / len(done), 3) if done else None}
     (ROOT / "data").mkdir(exist_ok=True)
-    (ROOT / "data" / "accuracy.json").write_text(json.dumps(res, indent=1, ensure_ascii=False), encoding="utf-8")
+    path = ROOT / "data" / "accuracy.json"
+    prev = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    prev.update(res)  # MERGE: other scripts own keys like holdout / rule_scored / ai_audit_small
+    res = prev
+    path.write_text(json.dumps(res, indent=1, ensure_ascii=False), encoding="utf-8")
     for p in ("pass1", "pass2"):
         print(p, {f: (v["accuracy"], v["strict"], v["n"]) for f, v in res["ai_audit"][p].items()})
     print("human rows filled:", res["human_rows_filled"], "| unverifiable excluded:", res["ai_audit_unverifiable_excluded"])
