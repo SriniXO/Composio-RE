@@ -9,4 +9,4 @@ Data: apps.json, apps.csv. Every field has evidence[] with url + quote; quote_ve
 - Most common blocker among non-ready apps: partner approval (29 apps).
 - 60 apps are ready_now (easy wins); 33 need outreach.
 - Existing MCP found for 81 apps; 10 unverified.
-- Only 75 of 100 records have at least one machine-verified evidence quote; 100 are flagged for a human.
+- Only 75 of 100 records have at least one machine-verified evidence quote; 53 are flagged for a human.

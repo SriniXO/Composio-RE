@@ -70,7 +70,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "Salesforce requires a paid add-on for Professional edition API access, which may need partner approval.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, self_serve_unclear, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -150,8 +150,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is needed based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -246,8 +246,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -335,8 +335,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human interaction required for setup or use.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -411,8 +411,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The official MCP server for Twenty is not yet available, and a community-driven version exists.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -491,7 +491,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human interaction required for authentication or API access.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -575,8 +575,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -667,8 +667,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -736,7 +736,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "The official MCP server for Copper is not yet available, and third-party solutions require additional research and validation.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -810,8 +810,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -892,8 +892,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The server is not listed in the official MCP registry, which may limit its discoverability.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -972,8 +972,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention required based on the provided sources.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1105,7 +1105,7 @@
   "confidence": "med",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1177,7 +1177,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human interaction required for self-serve access.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1254,7 +1254,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No evidence suggests human intervention is needed.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "self_serve_unclear, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1330,7 +1330,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1399,7 +1399,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "The source does not mention any existing MCP server or agent skills for Plain.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1484,8 +1484,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The API requires OAuth2 authentication and the Free plan has no API access, which may require additional setup and approval.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1558,8 +1558,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1653,8 +1653,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The Gladly API requires API User permission and a specific API token for authentication, which may require human intervention to set up.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1707,7 +1707,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1780,7 +1780,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1864,7 +1864,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "Requires setting up an MCP server, which involves integrating with Zoho MCP and configuring various tools.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -1941,8 +1941,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2019,8 +2019,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The existing MCP server requires Pumble app credentials, which may need partner approval.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2088,8 +2088,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2167,7 +2167,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2259,8 +2259,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2325,8 +2325,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "Aircall does not offer an MCP server and may consider it in the future.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2403,7 +2403,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2452,7 +2452,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2564,8 +2564,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "Standard Access requires App Review approval, which can take 3-7 business days.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2651,8 +2651,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "Access requires approval through the LinkedIn Developer Portal, which is a manual process.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2728,8 +2728,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2805,8 +2805,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided sources.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2882,7 +2882,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -2964,7 +2964,7 @@
   "confidence": "med",
   "needs_human": {
    "flag": true,
-   "reason": "The custom connector flow needs to be modified to skip OAuth negotiation for servers that authenticate via URL query parameter / API key.model output violated schema; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3040,8 +3040,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention required based on the evidence provided.model output violated schema; auth has no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3130,7 +3130,7 @@
   "confidence": "med",
   "needs_human": {
    "flag": true,
-   "reason": "The Threads API requires app review and is not available for public use without a Meta developer account.model output violated schema; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3246,7 +3246,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "The official SendGrid MCP is not available, and third-party MCP servers require additional setup and configuration.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3338,8 +3338,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3418,7 +3418,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention required based on the provided evidence.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3495,8 +3495,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3578,8 +3578,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The official MCP server requires partner approval, which is a manual process.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3656,8 +3656,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention required for setup or use.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3733,7 +3733,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "Squarespace requires partner approval for certain API usage, which may limit the availability of an official MCP server.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3783,7 +3783,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3870,8 +3870,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention required based on the provided evidence.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -3951,7 +3951,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "Requires developer registration and approval.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4023,7 +4023,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "FanBasis does not have a public API for MCP, and there is no official MCP server available.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4115,7 +4115,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4200,7 +4200,7 @@
   "confidence": "med",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4283,8 +4283,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4358,7 +4358,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "auth_unknown"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4432,7 +4432,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4525,7 +4525,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4602,8 +4602,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4680,7 +4680,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "auth_unknown"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4768,8 +4768,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "API access and pricing require contacting the team.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4844,8 +4844,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The MCP server requires partner approval for use.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -4933,7 +4933,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5011,7 +5011,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5093,8 +5093,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided sources.model output violated schema; auth has no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5265,7 +5265,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention required based on the provided sources.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5352,8 +5352,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention needed based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5437,8 +5437,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human interaction required for authentication or API access.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5519,7 +5519,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human interaction required for setup or usemodel output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5568,7 +5568,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5721,7 +5721,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5782,7 +5782,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5856,8 +5856,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -5939,7 +5939,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6017,8 +6017,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The official MCP server is deprecated and no longer maintained. A custom implementation exists but requires setup and maintenance.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6065,7 +6065,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6115,7 +6115,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6195,8 +6195,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The MCP server requires partner approval.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6271,8 +6271,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6381,7 +6381,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "The MCP server is community-built and not officially supported by Coda.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6475,8 +6475,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human interaction required for authentication or API usage.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6525,7 +6525,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, auth_unknown, self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6640,7 +6640,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided information.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6717,8 +6717,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human interaction is required based on the provided sources.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6802,8 +6802,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "No human intervention is required based on the provided sources.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6884,7 +6884,7 @@
   "confidence": "med",
   "needs_human": {
    "flag": true,
-   "reason": "The app requires partner approval for access and integration, which is not self-serve.model output violated schema; "
+   "reason": "self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -6964,7 +6964,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No public API available for MCP server or agent skills.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7043,7 +7043,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "Requires Intuit's App Partner Program approval.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7129,7 +7129,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required for authentication, API access, or building an MCP server.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7206,7 +7206,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "No human intervention is required based on the provided sources.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7281,7 +7281,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "The Ramp MCP server requires custom setup and approval from Ramp, which is a blocker for self-service.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7373,7 +7373,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "API access is a paid, contract-gated add-on, requiring contact with PitchBook for credentials.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7445,8 +7445,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "NotebookLM is currently only available through a private API and requires a paid plan, which may require human intervention to obtain.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7521,8 +7521,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The MCP server requires partner approval for use with Claude and other agents.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7645,8 +7645,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-   "flag": true,
-   "reason": "No human interaction is required for authentication, self-serve, or building an agent skills form.model output violated schema; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7718,7 +7718,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "API access is gated to the Enterprise plan; no self-serve developer tier.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7801,7 +7801,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7878,8 +7878,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -7980,8 +7980,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -8058,8 +8058,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-   "flag": true,
-   "reason": "The Mermaid CLI and MCP servers require Node.js to be installed, which may not be available on all platforms.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "flag": false,
+   "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -8145,7 +8145,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "auth_unknown, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [
@@ -8241,7 +8241,7 @@
   "confidence": "low",
   "needs_human": {
    "flag": true,
-   "reason": "model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+   "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

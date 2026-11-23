@@ -69,7 +69,7 @@
   "confidence": "med",
   "needs_human": {
     "flag": true,
-    "reason": "The custom connector flow needs to be modified to skip OAuth negotiation for servers that authenticate via URL query parameter / API key.model output violated schema; "
+    "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

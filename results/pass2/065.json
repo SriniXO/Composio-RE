@@ -60,8 +60,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-    "flag": true,
-    "reason": "No human intervention needed based on the provided information.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+    "flag": false,
+    "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [

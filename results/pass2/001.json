@@ -69,7 +69,7 @@
   "confidence": "low",
   "needs_human": {
     "flag": true,
-    "reason": "Salesforce requires a paid add-on for Professional edition API access, which may need partner approval.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+    "reason": "no_verified_evidence, self_serve_unclear, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

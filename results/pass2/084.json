@@ -70,7 +70,7 @@
   "confidence": "med",
   "needs_human": {
     "flag": true,
-    "reason": "The app requires partner approval for access and integration, which is not self-serve.model output violated schema; "
+    "reason": "self_serve_unclear"
   },
   "pass_name": "pass2",
   "verification_log": [

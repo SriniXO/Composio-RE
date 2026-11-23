@@ -62,7 +62,7 @@
   "confidence": "low",
   "needs_human": {
     "flag": true,
-    "reason": "No human intervention is required based on the provided sources.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+    "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

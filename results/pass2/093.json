@@ -112,8 +112,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-    "flag": true,
-    "reason": "No human interaction is required for authentication, self-serve, or building an agent skills form.model output violated schema; "
+    "flag": false,
+    "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [

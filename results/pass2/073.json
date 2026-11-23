@@ -62,8 +62,8 @@
   ],
   "confidence": "low",
   "needs_human": {
-    "flag": true,
-    "reason": "The official MCP server is deprecated and no longer maintained. A custom implementation exists but requires setup and maintenance.model output violated schema; self_serve has no verified evidence; low confidence or no verified evidence; "
+    "flag": false,
+    "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [

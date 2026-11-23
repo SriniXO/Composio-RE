@@ -63,7 +63,7 @@
   "confidence": "low",
   "needs_human": {
     "flag": true,
-    "reason": "Squarespace requires partner approval for certain API usage, which may limit the availability of an official MCP server.model output violated schema; auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+    "reason": "no_verified_evidence, mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

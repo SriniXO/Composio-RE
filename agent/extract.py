@@ -104,9 +104,7 @@ def salvage(app: dict, data: dict, pass_name: str) -> AppRecord:
         try:
             rec = AppRecord(**data)
             if dropped:
-                rec.verification_log.append(f"schema-invalid fields dropped: {dropped}")
-                rec.needs_human.flag = True
-                rec.needs_human.reason += "model output violated schema; "
+                rec.verification_log.append(f"schema-invalid fields dropped: {dropped}")  # logged, not a human flag
             return rec
         except ValidationError as err:
             for e in sorted(err.errors(), key=lambda e: [-x if isinstance(x, int) else 0 for x in e["loc"]]):

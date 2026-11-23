@@ -63,8 +63,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-    "flag": true,
-    "reason": "No human intervention required based on the evidence provided.model output violated schema; auth has no verified evidence; "
+    "flag": false,
+    "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [

@@ -70,7 +70,7 @@
   "confidence": "med",
   "needs_human": {
     "flag": true,
-    "reason": "No human intervention is required based on the provided information.model output violated schema; "
+    "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

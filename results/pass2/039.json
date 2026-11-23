@@ -78,7 +78,7 @@
   "confidence": "med",
   "needs_human": {
     "flag": true,
-    "reason": "The Threads API requires app review and is not available for public use without a Meta developer account.model output violated schema; "
+    "reason": "mcp_claimed_without_verified_evidence"
   },
   "pass_name": "pass2",
   "verification_log": [

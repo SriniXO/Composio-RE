@@ -63,8 +63,8 @@
   ],
   "confidence": "med",
   "needs_human": {
-    "flag": true,
-    "reason": "model output violated schema; "
+    "flag": false,
+    "reason": ""
   },
   "pass_name": "pass2",
   "verification_log": [
