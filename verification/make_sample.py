@@ -42,12 +42,12 @@ def main():
     with open(ROOT / "verification" / "sample.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["id", "app", "field", "pass1_answer", "pass2_answer", "evidence_urls_pass2",
-                    "human_verdict(correct|wrong|partial)", "truth_per_docs", "human_source_url", "notes"])
+                    "human_verdict_pass1", "human_verdict_pass2", "truth_per_docs", "human_source_url", "notes"])
         for i in chosen:
             a, b = p1.get(i, {}), p2.get(i, {})
             for fld in FIELDS:
                 urls = " | ".join(e["url"] for e in b.get("evidence", []) if e.get("quote_verified"))
-                w.writerow([i, (b or a)["app"], fld, show(a, fld) if a else "", show(b, fld) if b else "", urls, "", "", "", ""])
+                w.writerow([i, (b or a)["app"], fld, show(a, fld) if a else "", show(b, fld) if b else "", urls, "", "", "", "", ""])
     print(f"sample of {len(chosen)} apps -> verification/sample.csv ({len(chosen)*len(FIELDS)} rows)")
 
 
