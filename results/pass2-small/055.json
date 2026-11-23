@@ -1,0 +1,81 @@
+{
+  "id": 55,
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Apify is a platform for building, running, and sharing web scraping and automation tools in the cloud.",
+  "website": "https://docs.apify.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Apify uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth 2.0",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://artifacts.apis.io/apify/openapi/apify-actors-api-openapi.yml",
+    "rate_limits": "0.00 USD / 1,000 dataset items"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.apify.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "0.00 USD / 1,000 dataset items",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.apify.com/api/v2",
+      "quote_snippet": "The Apify API is a RESTful API that allows you to interact with the Apify platform from your applications.",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/apis/apify/apify-actors-api",
+      "quote_snippet": "The Apify Actors API is a RESTful API that allows you to manage and run Apify Actors.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:10:46",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/plans/apify/apify-plans-pricing",
+      "quote_snippet": "Apify offers three pricing plans: Free, Professional, and Enterprise.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T17:10:49",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: api_surface https://docs.apify.com/api/v2",
+    "dropped-quote-not-in-page: existing_mcp https://apis.io/apis/apify/apify-actors-api",
+    "dropped-quote-not-in-page: existing_mcp https://apis.io/plans/apify/apify-plans-pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

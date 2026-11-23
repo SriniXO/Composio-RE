@@ -1,0 +1,57 @@
+{
+  "id": 3,
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_line_description": "Pipedrive is a CRM and sales software that provides a pipeline management system, automated lead nurturing, and AI-powered sales conversations.",
+  "website": "https://pipedrive.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Pipedrive uses OAuth 2.0 for authentication, and API tokens are required for API access.",
+  "self_serve": "yes",
+  "gate_detail": "Pipedrive offers a 14-day free trial, and pricing plans start at $14.90/month for the Essential plan.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "rate_limits": "token-based daily budget"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.so/servers/pipedrive-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Node.js",
+    "PHP"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Pipedrive's API is well-documented and has a high level of supportauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=7hFpCTgfXNg",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

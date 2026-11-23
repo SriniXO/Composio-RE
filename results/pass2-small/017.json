@@ -1,0 +1,84 @@
+{
+  "id": 17,
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Plain is a support infrastructure for humans & agents, providing a platform to orchestrate customer work and connect every customer conversation to the right people, context, and tools.",
+  "website": "https://plain.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Plain uses OAuth 2.0 for authentication and authorization.",
+  "self_serve": "yes",
+  "gate_detail": "Plain provides a gate to access its API, which can be used for self-serve authentication.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://plain-api/plain/api/README.md",
+    "rate_limits": "10 requests per second"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/github/github-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "JavaScript",
+    "TypeScript"
+  ],
+  "api_access_pricing": "free trial, then paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://plain.com/docs/graphql/authentication",
+      "quote_snippet": "Create a machine user and an API key, and scope it with fine-grained permissions.",
+      "field_supported": "authentication",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://plain.com/docs/graphql/introduction",
+      "quote_snippet": "Plain itself is built on this same GraphQL API.",
+      "field_supported": "api",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server",
+      "quote_snippet": "The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub.",
+      "field_supported": "mcp",
+      "fetched_at": "2026-11-23T16:07:57",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=V1u0wqRbjEU",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "dropped-quote-not-in-page: authentication https://plain.com/docs/graphql/authentication",
+    "dropped-quote-not-in-page: api https://plain.com/docs/graphql/introduction",
+    "dropped-quote-not-in-page: mcp https://github.com/github/github-mcp-server",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://devcommunity.x.com/t/announcing-the-x-api-pay-per-use-pricing-pilot/250253']"
+  ]
+}

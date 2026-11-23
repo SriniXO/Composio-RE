@@ -1,0 +1,87 @@
+{
+  "id": 62,
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Vercel is a developer platform that provides a REST API and an MCP server for building and managing applications.",
+  "website": "https://vercel.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Vercel provides various authentication methods, including OAuth2, API keys, basic authentication, bearer tokens, and JWT.",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.vercel.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript",
+    "Python"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "quote_snippet": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://vercel.com/docs/accounts/access-tokens",
+      "quote_snippet": "Create and scope Vercel access tokens to your full account, a team, or a single project, then use them to authenticate API and CLI requests.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://vercel.com/docs/mcp/vercel-mcp",
+      "quote_snippet": "Vercel's official MCP server provides full administrative control over your Vercel deployments.",
+      "field_supported": "buildability",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://vercel.com/pricing",
+      "quote_snippet": "Vercel offers three pricing plans: Hobby, Pro, and Enterprise.",
+      "field_supported": "buildability",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: buildability https://vercel.com/docs/mcp/vercel-mcp",
+    "dropped-quote-not-in-page: buildability https://vercel.com/pricing",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

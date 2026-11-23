@@ -1,0 +1,77 @@
+{
+  "id": 77,
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_line_description": "ClickUp is a productivity and project management tool that provides a public API and MCP server for integrating with AI agents.",
+  "website": "https://clickup.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Authentication is required for every request to the ClickUp API.",
+  "self_serve": "yes",
+  "gate_detail": "ClickUp provides a public API and MCP server for integrating with AI agents.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://clickup.com/api",
+    "rate_limits": "varies depending on Workspace Plan"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.clickup.com/docs/model-context-protocol"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [],
+  "api_access_pricing": "varies depending on Workspace Plan",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "quote_snippet": "To use the ClickUp API, you must authenticate every request.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T18:32:26",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.clickup.com/docs/getting-started",
+      "quote_snippet": "ClickUp API 2.0",
+      "field_supported": "API",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://clickup.com/blog/clickup-api",
+      "quote_snippet": "ClickUp API 2.0",
+      "field_supported": "API",
+      "fetched_at": "2026-11-23T18:32:27",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "ClickUp provides a public API and MCP server for integrating with AI agents.self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: API https://developer.clickup.com/docs/getting-started",
+    "dropped-quote-not-in-page: API https://clickup.com/blog/clickup-api",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

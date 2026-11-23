@@ -40,8 +40,8 @@ async def pass1(app: dict, client: httpx.AsyncClient, run: str) -> AppRecord:
     return await extract.extract(app, sources, extract.PASS1_MODEL, run, "pass1")
 
 
-async def one(app: dict, pass_no: int, client, sem, run: str, force: bool, retries: int = 2):
-    out = ROOT / "results" / f"pass{pass_no}" / f"{int(app['id']):03d}.json"
+async def one(app: dict, pass_no: int, client, sem, run: str, force: bool, tag: str = "", retries: int = 2):
+    out = ROOT / "results" / f"pass{pass_no}{tag}" / f"{int(app['id']):03d}.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     if out.exists() and not force:
         return
@@ -69,6 +69,7 @@ async def main():
     ap.add_argument("--app", help="app name (case-insensitive) or id")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--tag", default="", help="write to results/pass<N><tag>, e.g. -small; keeps other runs untouched")
     ap.add_argument("--concurrency", type=int, default=6)
     a = ap.parse_args()
     apps = load_apps()
@@ -80,7 +81,7 @@ async def main():
     run = f"pass{a.pass_no}-{time.strftime('%Y%m%d-%H%M%S')}"
     sem = asyncio.Semaphore(a.concurrency)
     async with httpx.AsyncClient() as client:
-        await asyncio.gather(*(one(x, a.pass_no, client, sem, run, a.force) for x in apps))
+        await asyncio.gather(*(one(x, a.pass_no, client, sem, run, a.force, a.tag) for x in apps))
 
 
 if __name__ == "__main__":

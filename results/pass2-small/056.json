@@ -1,0 +1,88 @@
+{
+  "id": 56,
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "Firecrawl is a knowledge infrastructure to make AI agents smarter by providing a web data API for search, scraping, parsing, crawling, mapping, and interacting with the web.",
+  "website": "https://firecrawl.dev",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Authentication is required for every API call, and the API key is sent on every request.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://firecrawl.dev/api-docs",
+    "rate_limits": "token-efficient"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://firecrawl-mcp-server.github.io"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Node.js",
+    "cURL",
+    "CLI"
+  ],
+  "api_access_pricing": "usage-based",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://firecrawl.dev",
+      "quote_snippet": "Search, scrape and clean the web for AI agents. The web data API for AI agents. Live web in. Clean context out.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T17:10:45",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/simonpierreboucher02/agentilab-firecrawl/blob/main/api-docs/01-getting-started/02-authentication.md",
+      "quote_snippet": "Every Firecrawl API (v2) request must be authenticated with your API key, passed as a bearer token in the Authorization header.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:10:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/simonpierreboucher02/agentilab-firecrawl/blob/main/api-docs/01-getting-started/01-create-account-and-api-key.md",
+      "quote_snippet": "To call the Firecrawl API (v2) you need a personal API key.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:10:51",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "quote_snippet": "Bring Firecrawl into Claude Code, Cursor, Antigravity, and any MCP-compatible client.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T17:10:55",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Noneself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: one_line_description https://firecrawl.dev",
+    "dropped-quote-not-in-page: suggested_form https://github.com/firecrawl/firecrawl-mcp-server",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.pulsemcp.com/servers/firecrawl']"
+  ]
+}

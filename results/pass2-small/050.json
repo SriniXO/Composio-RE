@@ -1,0 +1,69 @@
+{
+  "id": 50,
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "one_line_description": "FanBasis is a platform for online creators and entrepreneurs to create and sell products, including courses, webinars, and communities.",
+  "website": "https://fanbasis.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Commas (formerly FanBasis) bundles payments, funnels, courses, and payouts, but hides its actual rates until you ask.",
+  "self_serve": "yes",
+  "gate_detail": "Commas offers a self-serve model, allowing users to create and manage their own products and sales funnels.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.fanbasis.com/docs",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": false,
+    "official": false,
+    "url": "null"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Commas requires a partner approval for enterprise plans.",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://api.fanbasis.com/docs",
+      "quote_snippet": "FanBasis is a platform for online creators and entrepreneurs to create and sell products, including courses, webinars, and communities.",
+      "field_supported": "one_line_description",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Commas requires a partner approval for enterprise plans.auth has no verified evidence; self_serve has no verified evidence; contradictory self_serve vs blocker; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "dropped-quote-not-in-page: one_line_description https://api.fanbasis.com/docs",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "contradiction: self_serve=yes but blocker is partner/enterprise",
+    "dead_or_unreachable_sources: ['https://www.npmjs.com/package/@fanbasis/checkout-sdk', 'https://slashdot.org/software/p/FanBasis', 'https://mcpservers.org/servers/asbloom-py/mcp-servers']"
+  ]
+}

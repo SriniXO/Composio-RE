@@ -1,0 +1,191 @@
+{
+ "4": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "8": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "11": {
+  "auth_methods": "partial",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "17": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "20": {
+  "auth_methods": "wrong",
+  "self_serve": "wrong",
+  "api_surface": "wrong",
+  "existing_mcp": "wrong",
+  "buildability": "wrong"
+ },
+ "23": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "26": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "wrong",
+  "buildability": "correct"
+ },
+ "33": {
+  "auth_methods": "wrong",
+  "self_serve": "wrong",
+  "api_surface": "wrong",
+  "existing_mcp": "wrong",
+  "buildability": "correct"
+ },
+ "34": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "40": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "wrong",
+  "buildability": "partial"
+ },
+ "42": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "45": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "partial",
+  "existing_mcp": "wrong",
+  "buildability": "correct"
+ },
+ "48": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "correct",
+  "existing_mcp": "wrong",
+  "buildability": "correct"
+ },
+ "49": {
+  "auth_methods": "wrong",
+  "self_serve": "wrong",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "51": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "correct",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "52": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "53": {
+  "auth_methods": "wrong",
+  "self_serve": "wrong",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "65": {
+  "auth_methods": "partial",
+  "self_serve": "correct",
+  "api_surface": "correct",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "69": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "73": {
+  "auth_methods": "partial",
+  "self_serve": "correct",
+  "api_surface": "correct",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "76": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "correct",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "79": {
+  "auth_methods": "wrong",
+  "self_serve": "partial",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "81": {
+  "auth_methods": "partial",
+  "self_serve": "correct",
+  "api_surface": "correct",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "87": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "partial"
+ },
+ "93": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ },
+ "98": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "wrong",
+  "existing_mcp": "partial",
+  "buildability": "correct"
+ },
+ "100": {
+  "auth_methods": "wrong",
+  "self_serve": "correct",
+  "api_surface": "correct",
+  "existing_mcp": "correct",
+  "buildability": "correct"
+ }
+}

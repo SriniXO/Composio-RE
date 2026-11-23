@@ -1,0 +1,72 @@
+{
+  "id": 14,
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Front is a customer operations platform that provides a unified support platform for customer teams and AI agents.",
+  "website": "https://front.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Front provides a unified support platform for customer teams and AI agents.",
+  "self_serve": "yes",
+  "gate_detail": "Front provides a self-serve support platform for customers.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://apis.io/providers/front",
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": false,
+    "url": "https://github.com/stainless-api/mcp-front"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Front does not have an official MCP server yet.",
+  "suggested_form": "CLI wrapper",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://apis.io/providers/front",
+      "quote_snippet": "Front exposes a Core API (conversations, messages, channels, contacts, teammates, analytics), a Channels API for custom messaging integrations, a Plugin SDK for embedded UI apps, a Chat Widget, and Connectors for low-code automations.",
+      "field_supported": "API access",
+      "fetched_at": "2026-11-23T16:04:17",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/stainless-api/mcp-front",
+      "quote_snippet": "mcp-front sits between Claude and your MCP servers as an authentication gateway.",
+      "field_supported": "MCP authentication",
+      "fetched_at": "2026-11-23T16:04:26",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Front provides a self-serve support platform for customers.self_serve has no verified evidence; contradictory self_serve vs blocker; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "contradiction: self_serve=yes but blocker is partner/enterprise",
+    "dead_or_unreachable_sources: []"
+  ]
+}

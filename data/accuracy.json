@@ -865,5 +865,71 @@
   "pass2": {}
  },
  "human_rows_filled": 0,
- "sample_apps": 28
+ "sample_apps": 28,
+ "ai_audit_small": {
+  "pass2_small": {
+   "auth_methods": {
+    "accuracy": 0.074,
+    "strict": 0.0,
+    "n": 27
+   },
+   "self_serve": {
+    "accuracy": 0.704,
+    "strict": 0.556,
+    "n": 27
+   },
+   "api_surface": {
+    "accuracy": 0.278,
+    "strict": 0.259,
+    "n": 27
+   },
+   "existing_mcp": {
+    "accuracy": 0.759,
+    "strict": 0.741,
+    "n": 27
+   },
+   "buildability": {
+    "accuracy": 0.759,
+    "strict": 0.556,
+    "n": 27
+   },
+   "ALL": {
+    "accuracy": 0.515,
+    "strict": 0.422,
+    "n": 135
+   }
+  },
+  "constant_guess": {
+   "auth_methods": {
+    "accuracy": 0.074,
+    "strict": 0.0,
+    "n": 27
+   },
+   "ALL": {
+    "accuracy": 0.444,
+    "strict": 0.363,
+    "n": 135
+   },
+   "self_serve": {
+    "accuracy": 0.704,
+    "strict": 0.556,
+    "n": 27
+   },
+   "api_surface": {
+    "accuracy": 0.0,
+    "strict": 0.0,
+    "n": 27
+   },
+   "existing_mcp": {
+    "accuracy": 0.741,
+    "strict": 0.741,
+    "n": 27
+   },
+   "buildability": {
+    "accuracy": 0.704,
+    "strict": 0.519,
+    "n": 27
+   }
+  }
+ }
 }

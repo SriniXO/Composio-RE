@@ -1,0 +1,87 @@
+{
+  "id": 31,
+  "app": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Google Ads API toolkit for building AI-agents",
+  "website": "https://developers.google.com/google-ads/api",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "OAuth 2.0 and service accounts are supported",
+  "self_serve": "unclear",
+  "gate_detail": "Google Ads API",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.google.com/google-ads/api/docs/reference",
+    "rate_limits": "daily operations - test accounts (operations · day) 0.00 USD, daily operations - production accounts (operations · day) 0.00 USD"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/googleads/google-ads-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "requires Google Cloud project and service account",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+      "quote_snippet": "You need a Google Ads manager account to obtain a developer token and a Google Ads client account is the target of your API calls, identified by a 10-digit client customer ID.",
+      "field_supported": "developer_token",
+      "fetched_at": "2026-11-23T16:24:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/google-ads/google-ads-plans-pricing",
+      "quote_snippet": "The Google Ads API has no price. Google charges nothing for API access — the revenue is the ad spend the API manages.",
+      "field_supported": "pricing",
+      "fetched_at": "2026-11-23T16:24:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.google.com/program/plans-and-pricing",
+      "quote_snippet": "The current plan is Standard, which is free and includes basic access to AI developer tools.",
+      "field_supported": "plans",
+      "fetched_at": "2026-11-23T16:24:49",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp",
+      "quote_snippet": "A Google Ads MCP server, a Meta Ads MCP server (Facebook and Instagram ads), Google Analytics 4 and Google Search Console in one remote MCP for Claude, Claude Code, Claude Desktop, ChatGPT, Cursor, Windsurf and n8n: 250+ tools, OAuth login, no API keys or developer token, approval-gated writes, 7-day free trial.",
+      "field_supported": "mcp_server",
+      "fetched_at": "2026-11-23T16:24:53",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "requires human oversight for setup and configurationauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=EGXilq5i42M",
+    "dropped-quote-not-in-page: plans https://developer.google.com/program/plans-and-pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

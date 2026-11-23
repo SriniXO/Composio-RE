@@ -1,0 +1,82 @@
+{
+  "id": 43,
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_line_description": "BigCommerce provides APIs for building and managing online stores, products, catalogs, orders, customers, checkouts, payments, and shipping.",
+  "website": "https://developer.bigcommerce.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Authentication for hosted storefronts uses server-to-server tokens, while store-to-store tokens are deprecated.",
+  "self_serve": "yes",
+  "gate_detail": "none",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://apis.io/providers/bigcommerce",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/isaacgounton/bigcommerce-api-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "requires partnership and setup of a BigCommerce API account",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Java"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://developer.bigcommerce.com",
+      "quote_snippet": "Build, customize, and scale on the BigCommerce platform.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:51:06",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/bigcommerce",
+      "quote_snippet": "BigCommerce publishes 158 API contracts indexed on the APIs.io network.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:51:11",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+      "quote_snippet": "This project builds a read-only MCP server.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:51:14",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "requires human setup and configurationauth has no verified evidence; self_serve has no verified evidence; contradictory self_serve vs blocker; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: existing_mcp https://apis.io/providers/bigcommerce",
+    "dropped-quote-not-in-page: buildability https://github.com/isaacgounton/bigcommerce-api-mcp",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "contradiction: self_serve=yes but blocker is partner/enterprise",
+    "dead_or_unreachable_sources: ['https://www.bigcommerce.com/pricing']"
+  ]
+}

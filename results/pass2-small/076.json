@@ -1,0 +1,71 @@
+{
+  "id": 76,
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_line_description": "monday.com is a work operating system that powers teams to run processes, projects, and everyday work.",
+  "website": "https://developer.monday.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "monday.com uses personal V2 API tokens to authenticate requests and identify the user making the call.",
+  "self_serve": "yes",
+  "gate_detail": "monday.com has a GraphQL API that allows for secure access to structured data, tools to take action, and the context needed to make smart decisions.",
+  "api_surface": {
+    "type": "GraphQL",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.monday.com/v2",
+    "rate_limits": "10M complexity points per minute for personal tokens (1M on trial/free) and 1,000 to 5,000 requests per minute depending on plan (Enterprise 5,000, Pro 2,500)"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.monday.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.monday.com/api-reference/docs/getting-started",
+      "quote_snippet": "Making your first request For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version.",
+      "field_supported": "time_to_first_call",
+      "fetched_at": "2026-11-23T18:26:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/getting-started",
+      "quote_snippet": "Making your first request For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version.",
+      "field_supported": "time_to_first_call",
+      "fetched_at": "2026-11-23T18:26:37",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API', 'https://www.saasworthy.com/blog/monday-com-pricing-plans']"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "GoHighLevel is a marketing, ads, email, and social platform that provides APIs for authentication, webhooks, and integration with other systems.",
+  "website": "https://highlevel.stoplight.io",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Private Integration Token (PIT) and OAuth 2.0 are the recommended authentication methods.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth 2.0 and Private Integration Tokens (PIT) are available across plans.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://highlevel.stoplight.io",
+    "rate_limits": "varies by endpoint"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/drausal/gohighlevel-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Go"
+  ],
+  "api_access_pricing": "varies by plan",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://highlevel.stoplight.io",
+      "quote_snippet": "The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.",
+      "field_supported": "all",
+      "fetched_at": "2026-11-23T16:30:50",
+      "quote_verified": false
+    },
+    {
+      "url": "https://dev.to/autogencrm/getting-started-with-the-gohighlevel-api-auth-webhooks-and-common-gotchas-5fo3",
+      "quote_snippet": "Private Integration Token (PIT). Best for your own scripts and internal tools that touch one agency or one sub-account.",
+      "field_supported": "PIT",
+      "fetched_at": "2026-11-23T16:30:51",
+      "quote_verified": false
+    },
+    {
+      "url": "https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication",
+      "quote_snippet": "OAuth 2.0. Required when you're building a Marketplace app that many agencies or sub-accounts will install.",
+      "field_supported": "OAuth 2.0",
+      "fetched_at": "2026-11-23T16:30:51",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: all https://highlevel.stoplight.io",
+    "verifier-rejected: PIT https://dev.to/autogencrm/getting-started-with-the-gohighlevel-api-auth-webhooks-and-common-gotchas-5fo3",
+    "dropped-quote-not-in-page: OAuth 2.0 https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

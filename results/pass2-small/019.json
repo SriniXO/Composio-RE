@@ -1,0 +1,80 @@
+{
+  "id": 19,
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Gorgias is a conversational AI platform for ecommerce that provides a unified inbox across every channel, with live Shopify data and full customer context built into every conversation.",
+  "website": "https://gorgias.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Gorgias uses HTTP Basic authentication for private apps and OAuth2 for public apps.",
+  "self_serve": "yes",
+  "gate_detail": "Gorgias provides a public API and a developer portal for building custom integrations.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "broad",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.gorgias.com",
+    "rate_limits": "40 requests per 20 seconds for API key integrations, 80 requests per 20 seconds for OAuth2 apps"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.gorgias.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://gorgias.com",
+      "quote_snippet": "Deliver the best customer experience",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T16:07:55",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.ringly.io/blog/gorgias-developer",
+      "quote_snippet": "The API surface is broad enough that most things you'd want Gorgias to do, it can do",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:07:56",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.alchemer.com/help/gorgias-authentication",
+      "quote_snippet": "Gorgias API Credentials: What You Need",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:07:56",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.postman.com/core-gorgias/public-workspace/collection/0d3dyeo/gorgias-public-api",
+    "dropped-quote-not-in-page: existing_mcp https://help.alchemer.com/help/gorgias-authentication",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

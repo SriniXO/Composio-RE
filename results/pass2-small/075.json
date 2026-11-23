@@ -1,0 +1,80 @@
+{
+  "id": 75,
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Asana is a productivity and project management tool that provides an API for integrating with other tools and automating workflows.",
+  "website": "https://developers.asana.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Personal Access Tokens (PATs) are the recommended method for authenticating with the Asana API.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://app.asana.com/api/1.0",
+    "rate_limits": "1500 requests per minute for paid domains, 150 requests per minute for free domains"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.apis.guru/v2/specs/asana.com/1.0/openapi.json"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developers.asana.com/docs/quick-start",
+      "quote_snippet": "The Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)",
+      "field_supported": "API surface",
+      "fetched_at": "2026-11-23T18:19:44",
+      "quote_verified": true
+    },
+    {
+      "url": "https://forum.asana.com/t/oauth-personal-access-token-api-key-how-to-get-connected-to-asana-through-our-api/814",
+      "quote_snippet": "Personal Access Tokens (described below) are pretty much the direct replacement for API keys.",
+      "field_supported": "Auth methods",
+      "fetched_at": "2026-11-23T18:19:46",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/wwwaldo/mcp-asana",
+      "quote_snippet": "The MCP server can be started using the mcp_server/main.py script.",
+      "field_supported": "Buildability",
+      "fetched_at": "2026-11-23T18:19:48",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The API is well-documented and easy to use.self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=PHqjLID7WAg",
+    "dropped-quote-not-in-page: Buildability https://github.com/wwwaldo/mcp-asana",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

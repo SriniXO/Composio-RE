@@ -1,0 +1,80 @@
+{
+  "id": 20,
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Gladly is an agentic commerce platform that provides a conversational commerce experience for customers, with features like AI-powered chatbots, customer memory, and unified inbox.",
+  "website": "https://gladly.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Gladly uses HTTP Basic auth with a user's email and an API token for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Gladly provides a self-serve interface for users to manage their accounts and access the API.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.gladly.com/rest",
+    "rate_limits": "10 requests per second per HTTP method"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/gladly/rest-api-examples"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "node.js"
+  ],
+  "api_access_pricing": "usage-based",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://gladly.com",
+      "quote_snippet": "Gladly is the only retail-trained AI Commerce solution for the modern customer journey.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:11:23",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.gladly.com/rest",
+      "quote_snippet": "The Gladly API is a REST API at your own organization's domain (https://yourcompany.gladly.com/api/v1/), authenticated with HTTP Basic auth: the email of a Gladly user who has the API User permission, plus an API token that user creates.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:11:25",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/gladly/rest-api-examples",
+      "quote_snippet": "The Model Context Protocol gives AI agents a standard way to call external tools.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:11:27",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Gladly provides a self-serve interface and a comprehensive API for developers to integrate with their applications.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "dropped-quote-not-in-page: auth_methods https://developer.gladly.com/rest",
+    "dropped-quote-not-in-page: existing_mcp https://github.com/gladly/rest-api-examples",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://medium.com/@caring_smitten_gerbil_914/automate-github-like-a-pro-how-the-github-mcp-server-transforms-devops-with-ai-0c73e4edd6de']"
+  ]
+}

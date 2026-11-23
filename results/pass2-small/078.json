@@ -1,0 +1,82 @@
+{
+  "id": 78,
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Coda is a collaborative workspace that blends documents, spreadsheets, and applications into one canvas for dynamic data management and team collaboration.",
+  "website": "https://coda.io/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Coda uses Bearer token authentication with API tokens.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://coda.io/apis/v1",
+    "rate_limits": "Rate limits apply per-user across all endpoints that share the same limit and across all docs"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/orellazri/coda-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "other",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "Custom",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://coda.io/developers",
+      "quote_snippet": "The Coda API sets a reasonable limit on the number of requests that can be made per minute.",
+      "field_supported": "Rate limits",
+      "fetched_at": "2026-11-23T18:34:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.nexla.com/user-guides/connectors/coda_api",
+      "quote_snippet": "Coda API access requires a valid Coda account, API token, and document access.",
+      "field_supported": "Authentication",
+      "fetched_at": "2026-11-23T18:34:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://tray.ai/documentation/connectors/service/coda",
+      "quote_snippet": "The Coda connector uses Bearer token authentication with API tokens.",
+      "field_supported": "Authentication",
+      "fetched_at": "2026-11-23T18:34:48",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Coda's API is well-documented and easy to use.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=0ZRO6qkjXHk",
+    "composio:TAVILY_EXTRACT fallback used for https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+    "dropped-quote-not-in-page: Rate limits https://coda.io/developers",
+    "dropped-quote-not-in-page: Authentication https://docs.nexla.com/user-guides/connectors/coda_api",
+    "dropped-quote-not-in-page: Authentication https://tray.ai/documentation/connectors/service/coda",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_line_description": "Paygent Connect is a self-hosted MCP server that lets AI agents pay with policy-limited single-use cards (test mode) ",
+  "website": "https://github.com/samweiss6/paygent",
+  "auth_methods": [],
+  "auth_notes": "Use Bearer token in Authorization header",
+  "self_serve": "unclear",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "https://github.com/samweiss6/paygent"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "needs partnership, contact-sales, or no public API",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Node.js"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://github.com/samweiss6/paygent",
+      "quote_snippet": "Paygent is a self-hosted MCP server that lets your AI agent pay for things with single-use virtual cards, inside spending limits you set.",
+      "field_supported": "unclear",
+      "fetched_at": "2026-11-23T18:45:42",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "verifier-rejected: unclear https://github.com/samweiss6/paygent",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://paygent', 'https://mcpservers.org/servers/asifdotpy/github-mcp-server-asifdotpy']"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": 96,
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Devin is an autonomous AI software engineer that can write, run and test code, and is part of a larger ecosystem of tools and protocols for integrating AI into software development workflows.",
+  "website": "https://docs.devin.ai",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Devin uses a principal + token model for authentication, with service users and personal access tokens available.",
+  "self_serve": "yes",
+  "gate_detail": "Devin uses a self-serve model, with users able to create and manage their own sessions and tasks.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.devin.ai/v3/openapi.json",
+    "rate_limits": "rate-limited"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/desertaxle/devin-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "none",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "python",
+    "javascript"
+  ],
+  "api_access_pricing": "pay-per-use",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "quote_snippet": "The Devin API uses a principal + token model. A principal is who you are (your identity), and a token is how you prove it (your credential).",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T18:59:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.devin.ai/desktop/accounts/api-reference/api-introduction",
+      "quote_snippet": "The Devin Desktop API enables enterprise customers to programmatically access detailed usage analytics and manage usage configurations for their teams.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:59:39",
+      "quote_verified": true
+    },
+    {
+      "url": "https://replicas.dev/resources/devin-pricing",
+      "quote_snippet": "Devin self-serve plans: Free $0, Pro $20/mo, Max $200/mo, all single-seat.",
+      "field_supported": "pricing",
+      "fetched_at": "2026-11-23T18:59:39",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "noneself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: pricing https://replicas.dev/resources/devin-pricing",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

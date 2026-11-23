@@ -1,0 +1,87 @@
+{
+  "id": 6,
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_line_description": "Podio is a work management and collaboration platform that provides a programmable interface to its functionality through its API.",
+  "website": "https://podio.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Podio uses the OAuth2 protocol for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "The Podio API is available to use for both paid and free Podio accounts.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://developers.podio.com/api/",
+    "rate_limits": "base rate limits apply"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.podio.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Ruby",
+    ".NET",
+    "Java",
+    "iOS",
+    "Android",
+    "Objective-C"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.podio.com/",
+      "quote_snippet": "The Podio API is a complete programmable interface to all Podio functionality.",
+      "field_supported": "API surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.podio.com/authentication",
+      "quote_snippet": "Podio uses the OAuth2 protocol for authentication.",
+      "field_supported": "Authentication",
+      "fetched_at": "2026-11-23T15:52:36",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/providers/podio",
+      "quote_snippet": "Podio publishes 6 API contracts indexed on the APIs.io network.",
+      "field_supported": "API contracts",
+      "fetched_at": "2026-11-23T15:52:36",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "API documentation is comprehensive and well-maintained.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: API surface https://developers.podio.com/",
+    "dropped-quote-not-in-page: Authentication https://developers.podio.com/authentication",
+    "dropped-quote-not-in-page: API contracts https://apis.io/providers/podio",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

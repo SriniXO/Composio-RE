@@ -1,0 +1,117 @@
+{
+  "id": 93,
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Fathom is a research and media-native AI notetaking app that captures, transcribes, and summarizes Zoom, Google Meet, and Microsoft Teams calls.",
+  "website": "https://fathom.video",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "API key authentication and bearer token authentication are supported.",
+  "self_serve": "yes",
+  "gate_detail": "Fathom API provides a public API with rate limiting and authentication via API keys.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.usefathom.com/v1",
+    "rate_limits": "global rate limits apply"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.usefathom.com/v1"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "typescript",
+    "python"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://fathom.video",
+      "quote_snippet": "Fathom summarizes your meetings so you can focus on the conversation.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:54:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.fathom.ai/sdks/authentication",
+      "quote_snippet": "API Key Authentication: Authenticate with the Fathom SDKs using API keys.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:54:48",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.fathom.ai/api-overview",
+      "quote_snippet": "All REST API resources are authenticated with API keys generated via the Fathom website’s settings area.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:54:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/fathom-ai",
+      "quote_snippet": "Fathom AI provides an AI‑powered note‑taking service that captures, transcribes, and summarizes Zoom, Google Meet, and Microsoft Teams calls.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T18:54:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/fathom-ai",
+      "quote_snippet": "Fathom Analytics pricing starts at $15/mo for the up to 100,000 pageviews plan.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:54:49",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/Dot-Fun/fathom-mcp",
+      "quote_snippet": "Fathom AI MCP Server Connects Claude to your Fathom meetings, transcripts, and AI summaries.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:54:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/matthewbergvinson/fathom-mcp",
+      "quote_snippet": "Fathom AI MCP Server provides tools for accessing meeting recordings, summaries, transcripts, teams, and webhooks.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:54:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/agencyenterprise/fathom-mcp-server",
+      "quote_snippet": "Fathom AI MCP Server is published to the MCP Registry as io.github.agencyenterprise/fathom-mcp-server.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T18:54:54",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "med",
+  "needs_human": {
+    "flag": false,
+    "reason": "Fathom provides a self-serve interface and supports API key authentication."
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developers.fathom.ai/sdks/authentication",
+    "dropped-quote-not-in-page: api_access_pricing https://apis.io/providers/fathom-ai",
+    "dropped-quote-not-in-page: suggested_form https://github.com/Dot-Fun/fathom-mcp",
+    "dropped-quote-not-in-page: suggested_form https://github.com/matthewbergvinson/fathom-mcp",
+    "dropped-quote-not-in-page: suggested_form https://github.com/agencyenterprise/fathom-mcp-server",
+    "cross-source-missing: self_serve backed by 1 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

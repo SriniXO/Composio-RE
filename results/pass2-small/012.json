@@ -1,0 +1,78 @@
+{
+  "id": 12,
+  "app": "Intercom",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Intercom is a customer service platform that offers a native AI agent, Fin, for automating customer support.",
+  "website": "https://intercom.com",
+  "auth_methods": [
+    "oauth2",
+    "bearer_token",
+    "basic"
+  ],
+  "auth_notes": "Intercom uses OAuth for authentication, and provides an access token for private apps and a bearer token for public apps.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://apitracker.io/a/intercom",
+    "rate_limits": "10,000 requests per minute"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.intercom.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "usage-based",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://apitracker.io/a/intercom",
+      "quote_snippet": "Intercom API - Docs, SDKs & Integration",
+      "field_supported": "API surface",
+      "fetched_at": "2026-11-23T15:59:54",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/intercom/intercom-mcp-server",
+      "quote_snippet": "MCP server for the Intercom REST API (v2.11).",
+      "field_supported": "Existing MCP",
+      "fetched_at": "2026-11-23T16:00:05",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "quote_snippet": "To access the Intercom API, you have two authentication options depending on whether you app is public or private.",
+      "field_supported": "Authentication",
+      "fetched_at": "2026-11-23T15:59:55",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "verifier-rejected: API surface https://apitracker.io/a/intercom",
+    "dropped-quote-not-in-page: Existing MCP https://github.com/intercom/intercom-mcp-server",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

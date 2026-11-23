@@ -1,0 +1,92 @@
+{
+  "id": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_line_description": "Binance provides a free API plan with no usage limits, but requires a paid plan for higher usage and enterprise features.",
+  "website": "https://apis.io/plans/binance/binance-plans-pricing",
+  "auth_methods": [],
+  "auth_notes": "Authentication is required for secure communication with the API, and can be done via OAuth or API Key.",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/ethancod1ng/binance-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "none",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Node.js"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://api-docs.openletterconnect.com/getting-started",
+      "quote_snippet": "To use the API, you’ll need an active account with Open Letter Connect.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:39:10",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.cardclan.io/api-reference/getting-started",
+      "quote_snippet": "Before you can start using the API, you’ll need to authenticate your requests.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:43:00",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.cleeng.com/reference/getting-started-with-authentication-api",
+      "quote_snippet": "Authentication API accepts JWT (Bearer) token for authorization.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:15:36",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/binance/binance-plans-pricing",
+      "quote_snippet": "Binance does not charge for API access itself; commercial pricing is expressed as spot/futures trading commissions and a tiered VIP fee schedule based on 30-day trading volume and BNB holdings.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T18:43:35",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.trimble.com/en/pricing",
+      "quote_snippet": "We’re introducing a new, scalable pricing model for Trimble Developer in 2027.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T15:48:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/ecobee/ecobee-plans-pricing",
+      "quote_snippet": "ecobee Developer Program (Free): Free access to the ecobee API for authorized third-party applications.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T18:43:36",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "API is well-documented and easy to useself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: buildability https://apis.io/plans/ecobee/ecobee-plans-pricing",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://binance-docs.github.io']"
+  ]
+}

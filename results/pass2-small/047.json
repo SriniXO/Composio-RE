@@ -1,0 +1,79 @@
+{
+  "id": 47,
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "one_line_description": "Ecwid is an ecommerce platform that provides an API for integrating with other applications and services.",
+  "website": "https://api-docs.ecwid.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "OAuth 2.0 is used for public apps, while secret tokens are required for custom apps.",
+  "self_serve": "yes",
+  "gate_detail": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api-docs.ecwid.com",
+    "rate_limits": "50 tool calls / month (free plan)"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.flozic.ai/sse"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "CLI wrapper",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "quote_snippet": "All requests to Ecwid REST API require an access token. Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps.",
+      "field_supported": "access_token",
+      "fetched_at": "2026-11-23T16:56:02",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/m190/usefulapi-mcp/blob/main/servers/ecwid/README.md",
+      "quote_snippet": "Get your unique, dynamic MCP server URL instantly. This endpoint securely connects your AI assistant to Zapier's vast integration network.",
+      "field_supported": "MCP server URL",
+      "fetched_at": "2026-11-23T16:56:05",
+      "quote_verified": false
+    },
+    {
+      "url": "https://zapier.com/mcp/ecwid",
+      "quote_snippet": "Create Customer Creates a new customer.",
+      "field_supported": "Create customer",
+      "fetched_at": "2026-11-23T16:56:06",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "API documentation is available and well-maintained.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: access_token https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "dropped-quote-not-in-page: MCP server URL https://github.com/m190/usefulapi-mcp/blob/main/servers/ecwid/README.md",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": 18,
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_line_description": "Help Scout is a customer support platform that uses AI to help teams resolve conversations faster and understand the larger story behind them.",
+  "website": "https://helpscout.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key"
+  ],
+  "auth_notes": "The Help Scout API authenticates with OAuth2, and the Free plan does not include access to the API or integrations.",
+  "self_serve": "yes",
+  "gate_detail": "The Help Scout API has a rate limit of up to 200 calls per minute on the Standard plan, and up to 800 calls per minute on the Pro plan.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.helpscout.net/v2/",
+    "rate_limits": "shared per account"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://docs.helpscout.com/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "The Free plan does not include access to the API or integrations.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "PHP"
+  ],
+  "api_access_pricing": "per-seat pricing",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://helpscout.com",
+      "quote_snippet": "Help Scout: The AI-driven support platform for customer-first brands",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:07:54",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.helpscout.com/mailbox-api/",
+      "quote_snippet": "The Help Scout API authenticates with OAuth2",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developer.helpscout.com/docs-api/",
+      "quote_snippet": "The Help Scout API has a rate limit of up to 200 calls per minute on the Standard plan",
+      "field_supported": "api_surface",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/drewburchfield/help-scout-mcp-server",
+      "quote_snippet": "This puts Scout Monitoring's performance and error data directly in the hands of your AI Assistant",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:07:58",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The platform is designed to work with AI agentsself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developer.helpscout.com/mailbox-api/",
+    "dropped-quote-not-in-page: api_surface https://developer.helpscout.com/docs-api/",
+    "dropped-quote-not-in-page: buildability https://github.com/drewburchfield/help-scout-mcp-server",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

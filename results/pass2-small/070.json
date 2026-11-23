@@ -1,0 +1,113 @@
+{
+  "id": 70,
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Sentry is a developer platform for error tracking and performance monitoring",
+  "website": "https://docs.sentry.io",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Sentry supports OAuth2 with the authorization code grant type, as well as API tokens for authentication",
+  "self_serve": "trial",
+  "gate_detail": "trial",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.sentry.io/api",
+    "rate_limits": "50K errors/month"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.sentry.dev/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Go",
+    "Ruby",
+    "Java",
+    ".NET",
+    "mobile platforms"
+  ],
+  "api_access_pricing": "Pay as you grow",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.sentry.io/api",
+      "quote_snippet": "The Sentry web API is used to access the Sentry platform programmatically.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:10:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://cli.sentry.dev/commands/auth",
+      "quote_snippet": "Authenticate with Sentry",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:10:48",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.sentry.io/api/auth",
+      "quote_snippet": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:10:49",
+      "quote_verified": true
+    },
+    {
+      "url": "https://sentry.io/pricing",
+      "quote_snippet": "Sentry offers a free Developer plan (5K errors/month, 1 user), a Team plan starting at $26/month (50K errors), and a Business plan at $80/month (50K errors with advanced features).",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T18:10:50",
+      "quote_verified": false
+    },
+    {
+      "url": "https://useflori.com/mcp-servers/sentry",
+      "quote_snippet": "Yes. Sentry has an official MCP server: io.github.getsentry/sentry-mcp, published in the official MCP Registry under the verified getsentry GitHub organisation and hosted at https://mcp.sentry.dev/mcp.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:10:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/elliottlawson/mcp-sentry",
+      "quote_snippet": "This is a Node.js + TypeScript implementation of the Model Context Protocol (MCP) Sentry server.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:10:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/weekitmo/mcp-sentry",
+      "quote_snippet": "MCP Sentry Server (Node.js)",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:10:54",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: buildability https://sentry.io/pricing",
+    "dropped-quote-not-in-page: existing_mcp https://useflori.com/mcp-servers/sentry",
+    "dropped-quote-not-in-page: existing_mcp https://github.com/elliottlawson/mcp-sentry",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://***REDACTED***']"
+  ]
+}

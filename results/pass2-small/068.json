@@ -1,0 +1,116 @@
+{
+  "id": 68,
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "MongoDB Atlas is a fully-managed cloud platform for MongoDB",
+  "website": "https://www.mongodb.com/docs/atlas/api",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Service accounts are the recommended method to manage authentication to the Atlas Administration API.",
+  "self_serve": "yes",
+  "gate_detail": "none",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.mongodb.com/v1.0/atlas/",
+    "rate_limits": "100 requests per second"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mongodb.com/docs/atlas/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Go",
+    "JavaScript",
+    "Python",
+    "Java",
+    "C#"
+  ],
+  "api_access_pricing": "hourly",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "The Atlas Administration API accepts the following authentication methods: Service account access tokens (OAuth 2.0), API keys (HTTP Digest Authentication).",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "Service accounts are the recommended method to manage authentication to the Atlas Administration API.",
+      "field_supported": "auth_notes",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "The Atlas Administration API doesn't provide access to the data stored in your clusters.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "The Atlas Administration API accepts the following authentication methods: Service account access tokens (OAuth 2.0), API keys (HTTP Digest Authentication).",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "Service accounts are the recommended method to manage authentication to the Atlas Administration API.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "The Atlas Administration API doesn't provide access to the data stored in your clusters.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mongodb.com/docs/atlas/api",
+      "quote_snippet": "The Atlas Administration API accepts the following authentication methods: Service account access tokens (OAuth 2.0), API keys (HTTP Digest Authentication).",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T18:03:09",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://mongodb.com/docs/atlas/api",
+    "dropped-quote-not-in-page: auth_notes https://mongodb.com/docs/atlas/api",
+    "dropped-quote-not-in-page: existing_mcp https://mongodb.com/docs/atlas/api",
+    "dropped-quote-not-in-page: api_surface https://mongodb.com/docs/atlas/api",
+    "dropped-quote-not-in-page: auth_methods https://mongodb.com/docs/atlas/api",
+    "dropped-quote-not-in-page: existing_mcp https://mongodb.com/docs/atlas/api",
+    "dropped-quote-not-in-page: api_surface https://mongodb.com/docs/atlas/api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/ani5959/mongodb_mcp_with_adk']"
+  ]
+}

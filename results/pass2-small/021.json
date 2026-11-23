@@ -1,0 +1,80 @@
+{
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "one_line_description": "Slack is a communications and messaging platform that integrates AI agents and tools.",
+  "website": "https://slack.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Slack uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Slack has a gatekeeper that controls access to certain features.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.slack.com/methods",
+    "rate_limits": "varies"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.slack.com/enterprise/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "Ruby"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://slack.com",
+      "quote_snippet": "Slack connects your team. Slackbot multiplies what they can do.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:13:07",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.slack.dev/tools/node-slack-sdk/getting-started",
+      "quote_snippet": "Create a new app. Give your app a fun name and choose a development Slack workspace.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:13:08",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.slack.dev/authentication",
+      "quote_snippet": "Authentication is a critical part of the development process, but it doesn’t have to be daunting.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:13:12",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://api.slack.com/developer-program",
+    "dropped-quote-not-in-page: buildability https://docs.slack.dev/tools/node-slack-sdk/getting-started",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

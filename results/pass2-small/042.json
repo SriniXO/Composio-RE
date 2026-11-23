@@ -1,0 +1,69 @@
+{
+  "id": 42,
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "one_line_description": "A comprehensive tool for managing WooCommerce stores and WordPress sites",
+  "website": "https://github.com/afarhadi99/WordPress-mcp-full",
+  "auth_methods": [],
+  "auth_notes": "Requires WooCommerce REST API consumer key and secret",
+  "self_serve": "yes",
+  "gate_detail": "WooCommerce REST API",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+    "rate_limits": "varies"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/afarhadi99/WordPress-mcp-full"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Requires WooCommerce REST API consumer key and secret",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "PHP",
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "varies",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://github.com/afarhadi99/WordPress-mcp-full",
+      "quote_snippet": "This MCP requires three configuration parameters: wordpressUrl, username, and applicationPassword.",
+      "field_supported": "configuration parameters",
+      "fetched_at": "2026-11-23T16:51:08",
+      "quote_verified": false
+    },
+    {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+      "quote_snippet": "The WooCommerce REST API uses a key system to control access.",
+      "field_supported": "key system",
+      "fetched_at": "2026-11-23T16:51:00",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "requires WooCommerce REST API consumer key and secretauth has no verified evidence; self_serve has no verified evidence; contradictory self_serve vs blocker; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: configuration parameters https://github.com/afarhadi99/WordPress-mcp-full",
+    "dropped-quote-not-in-page: key system https://woocommerce.github.io/woocommerce-rest-api-docs/v3.html",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "contradiction: self_serve=yes but blocker is partner/enterprise",
+    "dead_or_unreachable_sources: []"
+  ]
+}

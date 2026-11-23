@@ -1,0 +1,78 @@
+{
+  "id": 45,
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_line_description": "Adobe Commerce is an e-commerce platform that provides a suite of editions catering to diverse needs, with a focus on multichannel, global commerce and integration with backend systems.",
+  "website": "https://developer.adobe.com/commerce",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Authentication methods supported by Adobe Commerce, including OAuth 1.0a, tokens, and login credentials.",
+  "self_serve": "yes",
+  "gate_detail": "The platform provides a secure, scalable, and extensible commerce platform with a wide range of REST API endpoints.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.adobe.com/commerce/webapi/rest",
+    "rate_limits": "varies"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developer.adobe.com/commerce"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "The platform requires an active Magento account and appropriate API credentials to use.",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "PHP",
+    "JavaScript"
+  ],
+  "api_access_pricing": "quote-based",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.adobe.com/commerce",
+      "quote_snippet": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:55:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/rest",
+      "quote_snippet": "The REST API documentation describes the REST APIs that are available in Adobe Commerce (PaaS) and Adobe Commerce as a Cloud Service (SaaS).",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T16:55:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/providers/magento",
+      "quote_snippet": "Magento publishes 16 API contracts indexed on the APIs.io network, including Adobe Commerce Webhooks, Adobe Commerce Eventing, Authentication API, and 13 more.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:55:42",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.linkedin.com/pulse/streamlining-operations-guide-adobe-commerce-api-dasharath-golani-bi5rf']"
+  ]
+}

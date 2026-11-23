@@ -1,0 +1,84 @@
+{
+  "id": 48,
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "one_line_description": "Gumroad is a digital commerce platform that allows creators to sell products directly to their audience without a storefront.",
+  "website": "https://gumroad.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Gumroad uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Gumroad has a gate detail feature that allows creators to control access to their products.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://gumroad.com/api",
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://gumroad.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "Gumroad's API is well-documented and easy to use.",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "Python",
+    "TypeScript"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://gumroad.com/api",
+      "quote_snippet": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+      "field_supported": "API surface",
+      "fetched_at": "2026-11-23T16:57:58",
+      "quote_verified": false
+    },
+    {
+      "url": "https://nocodeapi.com/marketplace/gumroad",
+      "quote_snippet": "Gumroad is a digital commerce platform that lets creators sell e-books, courses, software, memberships, music, and physical goods directly to their audience without needing a storefront, with built-in checkout, licensing, affiliate management, and analytics.",
+      "field_supported": "Overview",
+      "fetched_at": "2026-11-23T16:57:59",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/api-evangelist/gumroad",
+      "quote_snippet": "Gumroad uses a REST API. The documentation explicitly states: The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+      "field_supported": "API type",
+      "fetched_at": "2026-11-23T16:58:04",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Gumroad's API is well-documented and easy to use.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://gumroad.com/help/article/280-create-application-api",
+    "dropped-quote-not-in-page: API surface https://gumroad.com/api",
+    "dropped-quote-not-in-page: Overview https://nocodeapi.com/marketplace/gumroad",
+    "dropped-quote-not-in-page: API type https://github.com/api-evangelist/gumroad",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

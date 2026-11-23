@@ -1,0 +1,93 @@
+{
+  "id": 69,
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Datadog is a developer platform that provides monitoring, analytics, and security tools for infrastructure, applications, and services.",
+  "website": "https://www.datadoghq.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Datadog uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Datadog has a public API and a paid plan with additional features.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.datadoghq.com/api",
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.datadoghq.com/v1/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "python",
+    "java",
+    "javascript"
+  ],
+  "api_access_pricing": "paid",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.datadoghq.com/api/latest",
+      "quote_snippet": "The Datadog API is an HTTP REST API.",
+      "field_supported": "API documentation",
+      "fetched_at": "2026-11-23T18:10:34",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/datadog-apm/datadog-apm-plans-pricing",
+      "quote_snippet": "Datadog APM Pricing & API Plans | APIs.io",
+      "field_supported": "Pricing and API plans",
+      "fetched_at": "2026-11-23T18:10:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/datadog-labs/mcp-server",
+      "quote_snippet": "Official Datadog MCP Server",
+      "field_supported": "MCP server",
+      "fetched_at": "2026-11-23T18:10:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/shelfio/datadog-mcp",
+      "quote_snippet": "Datadog MCP Server - Comprehensive monitoring and observability tools for Datadog via Model Context Protocol",
+      "field_supported": "MCP server",
+      "fetched_at": "2026-11-23T18:10:39",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/ppandrangi/datadog-mcp",
+      "quote_snippet": "A comprehensive MCP server for Datadog integration with 31 tools, full CRUD operations, and async support for all major MCP clients",
+      "field_supported": "MCP server",
+      "fetched_at": "2026-11-23T18:10:39",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

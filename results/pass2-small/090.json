@@ -1,0 +1,84 @@
+{
+  "id": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_line_description": "PitchBook is a market intelligence platform providing a RESTful API for on-demand access to private and public market data.",
+  "website": "https://api.pitchbook.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Requests require an Authorization header with a custom token format.",
+  "self_serve": "unclear",
+  "gate_detail": "The PitchBook API is a REST interface for bringing selected PitchBook records into an internal system on demand.",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.pitchbook.com",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://explainx.ai/mcp-servers/pitchbook"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "Needs partnership, contact-sales, or no public API.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://dlthub.com/context/source/pitchbook-api",
+      "quote_snippet": "The REST API base URL is https://api.pitchbook.com and all requests require an Authorization header with a custom token format.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:49:59",
+      "quote_verified": true
+    },
+    {
+      "url": "https://dev.writer.com/connectors/pitchbook",
+      "quote_snippet": "The PitchBook connector uses API key authentication.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:50:00",
+      "quote_verified": false
+    },
+    {
+      "url": "https://scrapegraphai.com/blog/pitchbook-api",
+      "quote_snippet": "PitchBook provisions access with an API key or authentication token and does not publish fixed API prices or a complete public request example.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:50:01",
+      "quote_verified": true
+    },
+    {
+      "url": "https://quickexplainer.com/pitchbook-api-access-pricing-alternatives",
+      "quote_snippet": "The PitchBook API is a REST API that delivers PitchBook’s private and public market data, such as companies, deals, investors and funds, into your own systems.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:50:02",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "verifier-rejected: auth_methods https://dev.writer.com/connectors/pitchbook",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://pitchbook.com', 'https://mcpservers.org/servers/pitchbook-mcp', 'https://apigene.ai/mcp/official/pitchbook']"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": 33,
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "LinkedIn Ads API is a comprehensive advertising platform that enables businesses to create, manage, and optimize advertising campaigns on LinkedIn.",
+  "website": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+  "auth_methods": [],
+  "auth_notes": "Access is gated, and requires a LinkedIn Developer App with the Ad Library product enabled.",
+  "self_serve": "unclear",
+  "gate_detail": "The LinkedIn Marketing API Program has two tiers of access: Development and Standard.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+    "rate_limits": "Unclear"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/danielpopamd/linkedin-ads-mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "The LinkedIn Marketing API Program requires a LinkedIn Developer App with the Ad Library product enabled.",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "Unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "Unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+      "quote_snippet": "The LinkedIn Marketing API Program has two tiers of access: Development and Standard.",
+      "field_supported": "Marketing API Program",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.nexla.com/user-guides/connectors/li_ads_api/overview",
+      "quote_snippet": "The LinkedIn Ads connector enables you to access LinkedIn Ads API endpoints to retrieve ad accounts, campaign data, ad performance metrics, and other advertising-related information.",
+      "field_supported": "LinkedIn Ads connector",
+      "fetched_at": "2026-11-23T16:25:09",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/danielpopamd/linkedin-ads-mcp",
+      "quote_snippet": "A LinkedIn Developer App with the Ad Library product enabled is required to access the LinkedIn Ads API.",
+      "field_supported": "LinkedIn Developer App",
+      "fetched_at": "2026-11-23T16:25:06",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The LinkedIn Marketing API Program requires a LinkedIn Developer App with the Ad Library product enabled.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://docs.nexla.com/user-guides/connectors/li_ads_api/overview",
+    "dropped-quote-not-in-page: Marketing API Program https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers",
+    "dropped-quote-not-in-page: LinkedIn Developer App https://github.com/danielpopamd/linkedin-ads-mcp",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

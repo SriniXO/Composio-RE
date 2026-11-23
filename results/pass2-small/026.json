@@ -1,0 +1,83 @@
+{
+  "id": 26,
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_line_description": "Discord is a communication platform that allows users to chat, play games, and hang out with friends.",
+  "website": "https://discord.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Discord uses OAuth2 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "OAuth2",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://discord.com/api",
+    "rate_limits": "50 requests per second"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://discord.com/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "javascript",
+    "python",
+    "java"
+  ],
+  "api_access_pricing": "free for developers",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://discord.com",
+      "quote_snippet": "Discord is a voice, video and text communication service used by hundreds of millions of people to hang out and talk with their communities and friends.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:19:04",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/discord/discord-api-docs/blob/main/developers/bots/overview.mdx",
+      "quote_snippet": "Bots are applications that connect to Discord using the Discord API.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:19:04",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/discord/discord-plans-pricing",
+      "quote_snippet": "Discord Pricing: Plans, Costs & What You Pay",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:19:06",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=xh-EaV2DyAM",
+    "dropped-quote-not-in-page: auth_methods https://discord.com",
+    "dropped-quote-not-in-page: api_access_pricing https://apis.io/plans/discord/discord-plans-pricing",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

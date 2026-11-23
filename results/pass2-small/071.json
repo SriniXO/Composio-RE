@@ -1,0 +1,90 @@
+{
+  "id": 71,
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_line_description": "Notion API toolkit for building AI-agent integrations",
+  "website": "https://developers.notion.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Personal access token required for authentication",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.notion.com/openapi",
+    "rate_limits": "unlimited"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/makenotion/notion-mcp-server"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "javascript",
+    "typescript"
+  ],
+  "api_access_pricing": "unlimited",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developers.notion.com/quickstart",
+      "quote_snippet": "Create a page in your Notion workspace with a personal access token and a single API request.",
+      "field_supported": "auth_methods",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://thomasjfrank.com/notion-api-crash-course",
+      "quote_snippet": "This article may contain affiliate links.",
+      "field_supported": "self_serve",
+      "fetched_at": "2026-11-23T15:42:12",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.notion.com/cli/get-started/authentication",
+      "quote_snippet": "Authenticate with your Notion workspace: ntn login",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T15:42:13",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.notion.com/guides/notion-agent-apis/quickstart",
+      "quote_snippet": "Pick a Custom Agent to chat with.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T15:42:13",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Noneauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=fzCgCCvzs6c",
+    "dropped-quote-not-in-page: auth_methods https://developers.notion.com/quickstart",
+    "verifier-rejected: self_serve https://thomasjfrank.com/notion-api-crash-course",
+    "dropped-quote-not-in-page: suggested_form https://developers.notion.com/guides/notion-agent-apis/quickstart",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": 27,
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "one_line_description": "Telegram API and Bot API for building Telegram-based applications",
+  "website": "https://core.telegram.org",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Telegram offers three kinds of APIs for developers: Bot API, Telegram API and TDLib, and Gateway API.",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://core.telegram.org/bots/api"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "no public API",
+  "suggested_form": "CLI wrapper",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C++",
+    "JavaScript"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://core.telegram.org/bots/api",
+      "quote_snippet": "The Bot API allows you to connect bots to our system.",
+      "field_supported": "Bot API",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://core.telegram.org/bots/api",
+      "quote_snippet": "The Telegram API and TDLib allow you to build your own customized Telegram clients.",
+      "field_supported": "Telegram API",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://core.telegram.org/bots/api",
+      "quote_snippet": "The Gateway API allows any business, app or website to send authorization codes through Telegram instead of traditional SMS.",
+      "field_supported": "Gateway API",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "noauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=QkO7WSQbFbo",
+    "dropped-quote-not-in-page: Bot API https://core.telegram.org/bots/api",
+    "dropped-quote-not-in-page: Telegram API https://core.telegram.org/bots/api",
+    "dropped-quote-not-in-page: Gateway API https://core.telegram.org/bots/api",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

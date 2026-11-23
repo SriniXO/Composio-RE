@@ -1,0 +1,49 @@
+{
+  "id": 92,
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": "Otter AI is an AI-powered meeting transcription and conversational intelligence platform that automatically records, transcribes, and summarizes meetings across Zoom, Google Meet, Microsoft Teams, and other video conferencing services.",
+  "website": "https://help.otter.ai/",
+  "auth_methods": [],
+  "auth_notes": "Otter API key required for authentication",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.otter.ai/v1"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "none",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://help.otter.ai', 'https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API']"
+  ]
+}

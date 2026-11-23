@@ -1,0 +1,76 @@
+{
+  "id": 66,
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Neo4j is a graph database platform that provides an authentication API and a Model Context Protocol (MCP) server for interacting with its graph database.",
+  "website": "https://neo4j.com/",
+  "auth_methods": [
+    "oauth2",
+    "basic",
+    "bearer_token"
+  ],
+  "auth_notes": "Authentication is required for all requests, and both basic and bearer token authentication are supported.",
+  "self_serve": "yes",
+  "gate_detail": "https://neo4j.com/docs/query-api/current/authentication-authorization",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://neo4j.com/docs/query-api/current/",
+    "rate_limits": "none"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/neo4j/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "none",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "none",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "JavaScript"
+  ],
+  "api_access_pricing": "none",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://neo4j.com/docs/query-api/current/authentication-authorization",
+      "quote_snippet": "Unless authentication is disabled on the server, all requests must be authorized using the login credentials of a valid user.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T17:24:40",
+      "quote_verified": true
+    },
+    {
+      "url": "https://neo4j.com/docs/http-api/current/authentication-authorization",
+      "quote_snippet": "Both basic and bearer authentication are supported.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T17:24:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.apievangelist.com/store/neo4j-authentication-api",
+      "quote_snippet": "Neo4j Authentication API declares 1 security scheme for authenticating requests.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T17:24:43",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "noneself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://neo4j.com/docs/api', 'https://mcpservers.org/servers/cxt9/neo4j-mcp']"
+  ]
+}

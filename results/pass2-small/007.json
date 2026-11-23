@@ -1,0 +1,82 @@
+{
+  "id": 7,
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_line_description": "Zoho CRM is a CRM and Sales software that offers AI-powered automation and integration with various tools and platforms.",
+  "website": "https://www.zoho.com/crm",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Zoho CRM uses OAuth 2.0 for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://top-mcps.com/mcp/zoho-crm"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "none",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "java",
+    "python",
+    "node.js",
+    "php"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+      "quote_snippet": "The Zoho CRM API uses the OAuth 2.0 protocol for authentication.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:52:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+      "quote_snippet": "To use the Zoho CRM APIs, the users must authenticate the application to make API calls on their behalf with an access token.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:52:42",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WuDDfEgVI_8",
+      "quote_snippet": "In this tutorial, we'll guide you through the process of setting up an account with the Zoho API Developer Console.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:52:46",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "noneself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=WuDDfEgVI_8",
+    "dropped-quote-not-in-page: authentication https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

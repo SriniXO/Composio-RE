@@ -1,0 +1,120 @@
+{
+  "id": 85,
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "one_line_description": "iPayX is a neutral FX verification layer for fintech sales teams and FX brokers",
+  "website": "https://ipayx.ai/docs",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "MSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada",
+  "self_serve": "unclear",
+  "gate_detail": "unclear",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.lead.bank/api-reference/using-the-api/authentication",
+    "rate_limits": "unclear"
+  },
+  "existing_mcp": {
+    "exists": null,
+    "official": null,
+    "url": "https://gateway.docs.projectx.com/docs/getting-started/authenticate/authenticate-api-key"
+  },
+  "composio_status": "unverified",
+  "buildability": "blocked",
+  "main_blocker": "partner_approval",
+  "blocker_detail": "needs partnership, contact-sales, or no public API",
+  "suggested_form": "CLI wrapper",
+  "webhooks": null,
+  "pagination": "unclear",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "unclear"
+  ],
+  "api_access_pricing": "unclear",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://ipayx.ai/docs",
+      "quote_snippet": "iPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers.",
+      "field_supported": "one_line_description",
+      "fetched_at": "2026-11-23T18:45:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.lead.bank/api-reference/using-the-api/authentication",
+      "quote_snippet": "Authenticate to Lead’s REST APIs with OAuth2, choose the right access token scopes, and configure your IP allowlist for production traffic.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T18:45:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://gateway.docs.projectx.com/docs/getting-started/authenticate/authenticate-api-key",
+      "quote_snippet": "The login request takes two values: Field What to send userName The username you use to sign in to your firm's trading platform.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T18:45:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://support.helpdocs.io/article/e2gilg5mkd-creating-and-managing-api-keys",
+      "quote_snippet": "Editing API Keys Once you’ve created an API key, you can customize its settings to fit your specific needs:",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T18:45:45",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.x.com/x-api/getting-started/pricing",
+      "quote_snippet": "Resource Unit cost Posts: Read $0.005 per resource",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T18:45:46",
+      "quote_verified": true
+    },
+    {
+      "url": "https://techcrunch.com/2025/10/21/x-is-testing-a-pay-per-use-pricing-model-for-its-api",
+      "quote_snippet": "The X API uses pay-per-usage pricing with no subscriptions.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T18:45:46",
+      "quote_verified": false
+    },
+    {
+      "url": "https://platform.text.com/api-usage",
+      "quote_snippet": "Package Price per month Essential $29.99 100K monthly requests",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T18:45:50",
+      "quote_verified": false
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d3QpQO6Paeg",
+      "quote_snippet": "We just open sourced this on Friday and it’s been well-received.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T16:08:02",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://ipayx.ai/docs",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "verifier-rejected: one_line_description https://ipayx.ai/docs",
+    "dropped-quote-not-in-page: buildability https://support.helpdocs.io/article/e2gilg5mkd-creating-and-managing-api-keys",
+    "dropped-quote-not-in-page: buildability https://techcrunch.com/2025/10/21/x-is-testing-a-pay-per-use-pricing-model-for-its-api",
+    "verifier-rejected: buildability https://platform.text.com/api-usage",
+    "verifier-rejected: buildability https://www.youtube.com/watch?v=d3QpQO6Paeg",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/vickigogo/mcp', 'https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/README.md']"
+  ]
+}

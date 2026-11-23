@@ -1,0 +1,75 @@
+{
+  "id": 67,
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "Snowflake is a cloud-based platform for data warehousing, data engineering, and data governance.",
+  "website": "https://www.snowflake.com/",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Snowflake supports key pair authentication, OAuth, and programmatic access tokens.",
+  "self_serve": "yes",
+  "gate_detail": "Snowflake provides a self-serve portal for users to access and manage their accounts.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://apis.io/plans/snowflake/snowflake-plans-pricing",
+    "rate_limits": "1 request-per-second limit"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://apis.io/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "python",
+    "java",
+    "nodejs"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "quote_snippet": "Generate a JWT token in your application code, use the following steps: Generate the fingerprint (a SHA-256 hash) of the public key for the user. Prefix the fingerprint with SHA256:.",
+      "field_supported": "jwt",
+      "fetched_at": "2026-11-23T17:25:52",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+      "quote_snippet": "In each API request that you send, set the following headers: Authorization: Bearer JWT, where JWT is the token that you generated.",
+      "field_supported": "oauth2",
+      "fetched_at": "2026-11-23T17:25:53",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Snowflake provides a self-serve portal for users to access and manage their accounts.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://apis.io/plans/chartmetric/chartmetric-plans-pricing",
+    "dropped-quote-not-in-page: jwt https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "dropped-quote-not-in-page: oauth2 https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

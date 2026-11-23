@@ -1,0 +1,91 @@
+{
+  "id": 1,
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_line_description": "Salesforce is a CRM and sales platform that offers an AI-agent toolkit through its Model Context Protocol (MCP) server",
+  "website": "https://salesforce.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Salesforce offers multiple authentication methods, including OAuth 2.0, API key, basic authentication, bearer token, and JWT. The choice of authentication method depends on the edition and the user's permissions.",
+  "self_serve": "yes",
+  "gate_detail": "The Salesforce API is a portfolio of more than 30 distinct APIs, spanning REST, SOAP, GraphQL, gRPC, and event-streaming protocols.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://developer.salesforce.com/docs/en/api/",
+    "rate_limits": "tiered, based on edition and user permissions"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/tsmztech/mcp-server-salesforce"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "api_access_pricing": "bundled with Salesforce licenses",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://papra.app/en/docs/api-reference/authentication",
+      "quote_snippet": "Bearer Authentication: To obtain your API key, please sign up on Flashift. Then, navigate to Settings and click the Get API Key button.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:48:56",
+      "quote_verified": false
+    },
+    {
+      "url": "https://llmsrelay.com/docs/getting-started",
+      "quote_snippet": "If you need your first working request fast, open Quickstart. If you are choosing a model, start with Models. If you are wiring SDK auth, open Authentication.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T15:48:47",
+      "quote_verified": false
+    },
+    {
+      "url": "https://frontal.so/gtm-apis/crm-apis/salesforce-api-review",
+      "quote_snippet": "The Salesforce API is not one API. It is a portfolio of more than 30+ distinct APIs spanning REST, SOAP, GraphQL, gRPC, and event-streaming protocols, all versioned on a seasonal release cadence.",
+      "field_supported": "api_surface",
+      "fetched_at": "2026-11-23T15:48:49",
+      "quote_verified": false
+    },
+    {
+      "url": "https://activepieces.com/blog/salesforce-api-types-access-and-limits-2026-guide",
+      "quote_snippet": "Salesforce API access is edition-dependent, with Professional requiring a paid add-on and daily request limits ranging from 15,000 for Developer orgs to 5,000,000 for Full Sandbox.",
+      "field_supported": "limits",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://papra.app/en/docs/api-reference/authentication",
+    "composio:TAVILY_EXTRACT fallback used for https://www.youtube.com/watch?v=8L3lCpxfRRc",
+    "dropped-quote-not-in-page: authentication https://papra.app/en/docs/api-reference/authentication",
+    "verifier-rejected: authentication https://llmsrelay.com/docs/getting-started",
+    "dropped-quote-not-in-page: api_surface https://frontal.so/gtm-apis/crm-apis/salesforce-api-review",
+    "dropped-quote-not-in-page: limits https://activepieces.com/blog/salesforce-api-types-access-and-limits-2026-guide",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

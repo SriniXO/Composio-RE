@@ -1,0 +1,89 @@
+{
+  "id": 37,
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "All-in-one platform for online business, including sales funnels, email marketing, and online courses.",
+  "website": "https://systeme.io",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Authenticates via API key embedded in URL, no OAuth support",
+  "self_serve": "yes",
+  "gate_detail": "https://systeme.io/pricing",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://systeme.io/api",
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://mcp.systeme.io/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "No OAuth support, requires API key in URL",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "PHP",
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://systeme.io",
+      "quote_snippet": "The only tool you need to launch your online business",
+      "field_supported": "all",
+      "fetched_at": "2026-11-23T16:35:37",
+      "quote_verified": true
+    },
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "quote_snippet": "Our API exposes a carefully selected set of features, enabling developers to interact with our platform transparently and efficiently.",
+      "field_supported": "public_api",
+      "fetched_at": "2026-11-23T16:36:11",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apps.make.com/systeme-io",
+      "quote_snippet": "Systeme IO is an all-in-one platform for online business, providing tools for creating sales funnels, email marketing campaigns, and online courses.",
+      "field_supported": "all_in_one",
+      "fetched_at": "2026-11-23T16:36:00",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mindcloud.co/docs/universal/rest/systeme-io/latest",
+      "quote_snippet": "Every Systeme.io action uses the same URL pattern: POST https://connect.mindcloud.co/v2/universal/apps/systemeio/actions/{actionSlug}/run",
+      "field_supported": "public_api",
+      "fetched_at": "2026-11-23T16:36:02",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "API documentation and public API supportauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "composio:TAVILY_EXTRACT fallback used for https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "verifier-rejected: all_in_one https://apps.make.com/systeme-io",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://mcpservers.org/servers/snzeeee/mcp-server-systemeio', 'https://mcpservers.org/servers/softreviewed/systeme-extra-mcp']"
+  ]
+}

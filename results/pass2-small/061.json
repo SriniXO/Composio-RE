@@ -1,0 +1,109 @@
+{
+  "id": 61,
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": "GitHub provides a REST API for developers to access GitHub data and services.",
+  "website": "https://docs.github.com/rest",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "GitHub recommends using the built-in GITHUB_TOKEN for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "GitHub provides a self-service API gateway for authentication and rate limiting.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://docs.github.com/rest",
+    "rate_limits": "60 requests per hour for unauthenticated users"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://apis.io/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "go"
+  ],
+  "api_access_pricing": "pro_required",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://docs.github.com/rest",
+      "quote_snippet": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.github.com/en/rest/quickstart?apiVersion=2026-03-10",
+      "quote_snippet": "To authenticate your request, you will need to provide an authentication token with the required scopes or permissions.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": false
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "quote_snippet": "You can authenticate your request by sending the token in the Authorization header of your request.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T17:18:43",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/plans/github-copilot/github-copilot-plans-pricing",
+      "quote_snippet": "The page prices the product Basis: tiered subscription Delivered: managed Transcribed from the provider's pricing page on 2026-10-07",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T17:18:44",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/api-evangelist/toast-tab/blob/main/plans/toast-tab-plans-pricing.yml",
+      "quote_snippet": "Toast packages a restaurant POS, payment processing, hardware, and online-ordering platform.",
+      "field_supported": "buildability",
+      "fetched_at": "2026-11-23T17:18:45",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server?featured_on=talkpython",
+      "quote_snippet": "The GitHub MCP Server connects AI tools directly to GitHub's platform.",
+      "field_supported": "suggested_form",
+      "fetched_at": "2026-11-23T17:18:47",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/github/github-mcp-server?locale=en-US",
+      "quote_snippet": "The Go module path is github.com/github/github-mcp-server/v2.",
+      "field_supported": "sdk_languages",
+      "fetched_at": "2026-11-23T17:18:49",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Noneself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://docs.github.com/en/rest/quickstart?apiVersion=2026-03-10",
+    "dropped-quote-not-in-page: buildability https://apis.io/plans/github-copilot/github-copilot-plans-pricing",
+    "verifier-rejected: buildability https://github.com/api-evangelist/toast-tab/blob/main/plans/toast-tab-plans-pricing.yml",
+    "dropped-quote-not-in-page: sdk_languages https://github.com/github/github-mcp-server?locale=en-US",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

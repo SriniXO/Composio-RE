@@ -1,0 +1,75 @@
+{
+  "id": 32,
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": "Meta Ads API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+  "website": "https://developers.facebook.com/docs/marketing-apis",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt",
+    "other"
+  ],
+  "auth_notes": "Access token is required for every Marketing API call.",
+  "self_serve": "yes",
+  "gate_detail": "None",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.facebook.com/docs/marketing-api/reference/",
+    "rate_limits": "60 quota points with 300-second rate windows"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://developers.facebook.com/docs/marketing-api/mcp/"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Python",
+    "Java",
+    "C++"
+  ],
+  "api_access_pricing": "Free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.facebook.com/docs/marketing-api/get-started/authentication",
+      "quote_snippet": "Every Marketing API call requires an access token as a parameter.",
+      "field_supported": "Authentication",
+      "fetched_at": "",
+      "quote_verified": false
+    },
+    {
+      "url": "https://developers.facebook.com/docs/marketing-api/mcp/",
+      "quote_snippet": "The Meta Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+      "field_supported": "Overview",
+      "fetched_at": "",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "The Meta Ads API is a complex system that requires human oversight and expertise to use effectively.auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: Authentication https://developers.facebook.com/docs/marketing-api/get-started/authentication",
+    "dropped-quote-not-in-page: Overview https://developers.facebook.com/docs/marketing-api/mcp/",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

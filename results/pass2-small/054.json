@@ -1,0 +1,78 @@
+{
+  "id": 54,
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": "MrScraper is a web scraping platform that provides an API and tools for data extraction, with a focus on ease of use and scalability.",
+  "website": "https://docs.mrscraper.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Authentication is required to access the MrScraper API using API tokens and request headers.",
+  "self_serve": "yes",
+  "gate_detail": "The MrScraper API uses API token authentication to secure all endpoints.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://artifacts.apis.io/mrscraper/openapi/mrscraper-proxies-api-openapi.yml",
+    "rate_limits": "tokens"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.app.mrscraper.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": null,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "JavaScript",
+    "Python"
+  ],
+  "api_access_pricing": "tokens",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "quote_snippet": "The MrScraper API uses API token authentication to secure all endpoints. Every request must include a valid API token in the HTTP request headers.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T17:10:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://apis.io/apis/mrscraper/mrscraper-proxies-api",
+      "quote_snippet": "The Proxies API from MrScraper — 1 operation(s) for proxies.",
+      "field_supported": "proxies",
+      "fetched_at": "2026-11-23T17:10:38",
+      "quote_verified": true
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+      "quote_snippet": "MrScraper offers flexible subscription plans designed for different usage levels, from individual developers testing the platform to enterprise teams running large-scale scraping operations.",
+      "field_supported": "billing",
+      "fetched_at": "2026-11-23T17:10:39",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

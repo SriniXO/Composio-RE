@@ -1,0 +1,57 @@
+{
+  "id": 23,
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_line_description": "Zoho Cliq is a team chat and collaboration app with channels, video meetings, bots, and deep integration with Zoho CRM, Desk, and Projects.",
+  "website": "https://www.zoho.com/cliq",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Zoho Cliq uses OAuth for authentication.",
+  "self_serve": "yes",
+  "gate_detail": "Zoho Cliq offers a free plan with limited features, as well as paid plans with additional features.",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "good",
+    "openapi_spec_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth",
+    "rate_limits": "varies by plan"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/postman"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "CLI wrapper",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "C#",
+    "Python",
+    "JavaScript"
+  ],
+  "api_access_pricing": "varies by plan",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "auth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

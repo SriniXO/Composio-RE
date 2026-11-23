@@ -1,0 +1,71 @@
+{
+  "id": 46,
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "one_line_description": "Squarespace provides a developer platform with APIs, apps, and documentation for building and publishing external apps, including commerce, website, and domain management.",
+  "website": "https://developers.squarespace.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Squarespace uses OAuth 2.0 for authentication, with API keys and bearer tokens also supported.",
+  "self_serve": "yes",
+  "gate_detail": "Commerce APIs, Reseller APIs, and custom code spec",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developers.squarespace.com/commerce-apis/openapi",
+    "rate_limits": "Yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://apis.io/mcp/squarespace"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "None",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "Yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "TypeScript"
+  ],
+  "api_access_pricing": "Yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "quote_snippet": "Squarespace Commerce APIs accept two credential types over one wire format. Every request carries `Authorization: Bearer <token>`, where the token is either a merchant-generated API key or an OAuth 2.0 access token.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:55:53",
+      "quote_verified": false
+    },
+    {
+      "url": "https://apis.io/plans/squarespace/squarespace-plans-pricing",
+      "quote_snippet": "Squarespace Plans Pricing is the pricing profile for Squarespace on the APIs.io network — every figure transcribed verbatim from the provider’s own pricing page on 2026-10-28.",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:55:57",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Noneauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: auth_methods https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}

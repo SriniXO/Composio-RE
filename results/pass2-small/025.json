@@ -1,0 +1,102 @@
+{
+  "id": 25,
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "one_line_description": "Pumble is a free business communication and team messaging software that offers unlimited users, direct and group messages, and unlimited message history.",
+  "website": "https://pumble.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "Uses HTTP Header ApiKey: <your-api-key> on every request.",
+  "self_serve": "yes",
+  "gate_detail": "",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": null,
+    "rate_limits": null
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://pumble-api-keys.addons.marketplace.cake.com"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": null,
+  "sdk_languages": [
+    "Node.js",
+    "TypeScript"
+  ],
+  "api_access_pricing": "free",
+  "time_to_first_call": "unclear",
+  "outreach_needed": null,
+  "evidence": [
+    {
+      "url": "https://pumble.com",
+      "quote_snippet": "Pumble has greatly improved our communication — it reduced the distance and increased the communication flow.",
+      "field_supported": "unclear",
+      "fetched_at": "2026-11-23T16:15:29",
+      "quote_verified": false
+    },
+    {
+      "url": "https://mindcloud.co/docs/universal/rest/pumble/0.0.5/introduction/getting-started",
+      "quote_snippet": "Every Pumble action uses the same URL pattern: POST https://connect.mindcloud.co/v2/universal/apps/pumble/actions/{actionSlug}/run",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:15:31",
+      "quote_verified": true
+    },
+    {
+      "url": "https://developers.cleeng.com/reference/getting-started-with-authentication-api",
+      "quote_snippet": "Authentication API accepts JWT (Bearer) token for authorization.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:15:36",
+      "quote_verified": true
+    },
+    {
+      "url": "https://buddy.works/docs/api/getting-started",
+      "quote_snippet": "OAuth 2.0 tokens and how to use them in Buddy.",
+      "field_supported": "auth_methods",
+      "fetched_at": "2026-11-23T16:15:37",
+      "quote_verified": false
+    },
+    {
+      "url": "https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+      "quote_snippet": "CAKE.com Bundle subscription plan: $12.99 per user per month",
+      "field_supported": "api_access_pricing",
+      "fetched_at": "2026-11-23T16:15:40",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/infralayers/pumble-mcp",
+      "quote_snippet": "100% Official REST API Coverage: 26 autonomous tools covering messaging, threads, scheduling, reactions, channel operations, user directories, and status updates.",
+      "field_supported": "existing_mcp",
+      "fetched_at": "2026-11-23T16:15:45",
+      "quote_verified": false
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "unclearself_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "verifier-rejected: unclear https://pumble.com",
+    "dropped-quote-not-in-page: auth_methods https://buddy.works/docs/api/getting-started",
+    "dropped-quote-not-in-page: api_access_pricing https://pumble.com/help/workspace-administration/pricing/pumble-subscription-plans-and-extra-features",
+    "dropped-quote-not-in-page: existing_mcp https://github.com/infralayers/pumble-mcp",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://www.saasworthy.com/product/pumble/pricing']"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_line_description": "QuickBooks API toolkit for building AI-agent integrations",
+  "website": "https://developer.intuit.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "OAuth 2.0 authentication with Client ID and Client Secret credentials",
+  "self_serve": "yes",
+  "gate_detail": "https://appcenter.intuit.com/connect/oauth2",
+  "api_surface": {
+    "type": "unclear",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://developer.intuit.com/docs/api-reference/quickbooks-online-api",
+    "rate_limits": "500,000 CorePlus API calls per month (Builder Tier)"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://github.com/asklokesh/mcp-servers"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_with_caveats",
+  "main_blocker": "no_public_api",
+  "blocker_detail": "Limited public API access",
+  "suggested_form": "agent skills",
+  "webhooks": true,
+  "pagination": "",
+  "sandbox_test_env": true,
+  "sdk_languages": [
+    "Node.js",
+    "Python"
+  ],
+  "api_access_pricing": "Free up to 500,000 CorePlus API calls per month (Builder Tier)",
+  "time_to_first_call": "unclear",
+  "outreach_needed": true,
+  "evidence": [],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "Limited public API access and complex authentication flowsauth has no verified evidence; self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "cross-source-missing: auth backed by 0 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: ['https://stackoverflow.com/questions/59577398/how-can-i-authenticate-my-quickbook-intuit-api-access-without-user-interection-a']"
+  ]
+}

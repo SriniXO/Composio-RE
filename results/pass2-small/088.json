@@ -1,0 +1,76 @@
+{
+  "id": 88,
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_line_description": "Brex is a corporate card and spend management platform that provides APIs for accounting, budgets, expenses, fields, onboarding, payments, team, transactions, travel, and webhooks.",
+  "website": "https://developer.brex.com",
+  "auth_methods": [
+    "oauth2",
+    "api_key",
+    "basic",
+    "bearer_token",
+    "jwt"
+  ],
+  "auth_notes": "User tokens expire after 90 days of inactivity and die immediately if the user they belong to is deactivated.",
+  "self_serve": "yes",
+  "gate_detail": "https://api.brex.com",
+  "api_surface": {
+    "type": "REST",
+    "breadth": "unclear",
+    "docs_quality": "unclear",
+    "openapi_spec_url": "https://api.brex.com/openapi",
+    "rate_limits": "yes"
+  },
+  "existing_mcp": {
+    "exists": true,
+    "official": true,
+    "url": "https://api.brex.com/mcp"
+  },
+  "composio_status": "unverified",
+  "buildability": "ready_now",
+  "main_blocker": "none",
+  "blocker_detail": "",
+  "suggested_form": "MCP server",
+  "webhooks": true,
+  "pagination": "yes",
+  "sandbox_test_env": true,
+  "sdk_languages": [],
+  "api_access_pricing": "yes",
+  "time_to_first_call": "unclear",
+  "outreach_needed": false,
+  "evidence": [
+    {
+      "url": "https://developer.brex.com/guides/authentication",
+      "quote_snippet": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers.",
+      "field_supported": "authentication",
+      "fetched_at": "2026-11-23T18:48:42",
+      "quote_verified": true
+    },
+    {
+      "url": "https://github.com/crazyrabbitLTC/mcp-brex-server",
+      "quote_snippet": "The Brex MCP Server bridges standard large language models directly via the platform.brexapis.com to your startup's core spend engine.",
+      "field_supported": "MCP server",
+      "fetched_at": "2026-11-23T18:48:45",
+      "quote_verified": false
+    },
+    {
+      "url": "https://github.com/vinkius-labs/mcp-database/blob/main/mcps/brex.md",
+      "quote_snippet": "The Brex MCP Server bridges standard large language models directly via the platform.brexapis.com to your startup's core spend engine.",
+      "field_supported": "MCP server",
+      "fetched_at": "2026-11-23T18:48:46",
+      "quote_verified": true
+    }
+  ],
+  "confidence": "low",
+  "needs_human": {
+    "flag": true,
+    "reason": "self_serve has no verified evidence; low confidence or no verified evidence; "
+  },
+  "pass_name": "pass2",
+  "verification_log": [
+    "dropped-quote-not-in-page: MCP server https://github.com/crazyrabbitLTC/mcp-brex-server",
+    "cross-source-missing: auth backed by 1 verified page(s)",
+    "cross-source-missing: self_serve backed by 0 verified page(s)",
+    "dead_or_unreachable_sources: []"
+  ]
+}
